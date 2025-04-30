@@ -47,7 +47,7 @@ namespace TubesKPL.Model
         public string GetPenulis() { return penulis; }
         public string GetPenerbit() { return penerbit; }
         public KATEGORIBUKU GetKategori() { return kategori; }
-        public string GetSinopsis() { return sinopsis}
+        public string GetSinopsis() { return sinopsis; }
         public STATUSBUKU GetStatus() { return status; }
 
         public void UpdateBukuData(string newJudul, string newPenulis, string newPenerbit, KATEGORIBUKU newKategori)
