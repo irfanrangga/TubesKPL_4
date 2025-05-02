@@ -1,9 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Dev\\Konstruksi PL\\TubesKPL\\",
+  "WorkspaceRootPath": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tugas Besar KPL\\TubesKPL_4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\TubesKPL.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\TubesKPL.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tugas besar kpl\\tubeskpl_4\\tubeskpl\\model\\buku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\TubesKPL.csproj|solutionrelative:tubeskpl\\model\\buku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\TubesKPL.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tugas besar kpl\\tubeskpl_4\\tubeskpl\\model\\pengguna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\TubesKPL.csproj|solutionrelative:tubeskpl\\model\\pengguna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\TubesKPL.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tugas besar kpl\\tubeskpl_4\\tubeskpl\\tubeskpl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\TubesKPL.csproj|solutionrelative:tubeskpl\\tubeskpl.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\TubesKPL.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tugas besar kpl\\tubeskpl_4\\tubeskpl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\TubesKPL.csproj|solutionrelative:tubeskpl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,19 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Buku.cs",
+              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tugas Besar KPL\\TubesKPL_4\\TubesKPL\\Model\\Buku.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Model\\Buku.cs",
+              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tugas Besar KPL\\TubesKPL_4\\TubesKPL\\Model\\Buku.cs",
+              "RelativeToolTip": "TubesKPL\\Model\\Buku.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T07:57:41.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pengguna.cs",
+              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tugas Besar KPL\\TubesKPL_4\\TubesKPL\\Model\\Pengguna.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Model\\Pengguna.cs",
+              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tugas Besar KPL\\TubesKPL_4\\TubesKPL\\Model\\Pengguna.cs",
+              "RelativeToolTip": "TubesKPL\\Model\\Pengguna.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T07:56:01.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TubesKPL",
+              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tugas Besar KPL\\TubesKPL_4\\TubesKPL\\TubesKPL.csproj",
+              "RelativeDocumentMoniker": "TubesKPL\\TubesKPL.csproj",
+              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tugas Besar KPL\\TubesKPL_4\\TubesKPL\\TubesKPL.csproj",
+              "RelativeToolTip": "TubesKPL\\TubesKPL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-29T07:54:11.652Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tugas Besar KPL\\TubesKPL_4\\TubesKPL\\Program.cs",
               "RelativeDocumentMoniker": "TubesKPL\\Program.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Program.cs",
+              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tugas Besar KPL\\TubesKPL_4\\TubesKPL\\Program.cs",
               "RelativeToolTip": "TubesKPL\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
