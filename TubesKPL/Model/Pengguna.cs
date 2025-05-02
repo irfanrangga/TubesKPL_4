@@ -26,10 +26,10 @@ namespace TubesKPL.Model
 
         public Pengguna(string idPengguna, string username, string password, ROLEPENGGUNA role, string fullname, string email, string phone, string address)
         {
-            this.idPengguna = idPengguna;
+            this.idPengguna = idPengguna; // Format ID: "YXXX" (Y = A untuk Admin OR P untuk pengguna, XXX = 3 digit angka unik)
             this.username = username;
             this.password = password;
-            this.role = role;
+            this.role = role; 
 
             this.fullname = fullname;
             this.email = email;

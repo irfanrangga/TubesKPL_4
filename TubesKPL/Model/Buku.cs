@@ -18,8 +18,7 @@ namespace TubesKPL.Model
         public enum KATEGORIBUKU
         {
             FIKSI,
-            NONFIKSI,
-            SELFDEVELOPMENT
+            NONFIKSI
         }
 
         //Data Buku

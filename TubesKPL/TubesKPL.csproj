@@ -5,6 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <BaseOutputPath>C:\Users\Tubagus Aulia\Kuliah\KPL\Tubes KPL\TubesKPL_4\TubesKPL\bin\Debug\net8.0</BaseOutputPath>
   </PropertyGroup>
 
 </Project>
