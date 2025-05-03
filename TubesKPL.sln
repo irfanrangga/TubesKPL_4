@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TubesKPL", "TubesKPL\TubesKPL.csproj", "{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestAPI", "RestAPI\RestAPI.csproj", "{D428B6F0-5927-4B68-8A0B-33A3DFA8C7EF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F91B1189-53BF-42C3-8E4B-0419DACA7F9F} = {F91B1189-53BF-42C3-8E4B-0419DACA7F9F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
