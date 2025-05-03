@@ -1,0 +1,4 @@
+﻿{
+    "MaxBorrowBooks": 5,
+    "DefaultMembershipDurationDays": 365
+}
