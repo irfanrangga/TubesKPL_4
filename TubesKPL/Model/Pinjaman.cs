@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace TubesKPL.Model
 {
     internal class Pinjaman
@@ -20,5 +21,10 @@ namespace TubesKPL.Model
             this.idAnggota = idAnggota;
             this.batasPengembalian = batasPengembalian;
         }
+
+        public string GetIdPinjaman() => idPinjaman;
+        public string GetIdBuku() => idBuku;
+        public string GetIdAnggota() => idAnggota;
+        public DateTime GetBatasPengembalian() => batasPengembalian;
     }
 }
