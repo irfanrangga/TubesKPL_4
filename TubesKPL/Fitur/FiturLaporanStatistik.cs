@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ManajemenPerpus.CLI.Fitur
+namespace SistemPerpustakaan.Feature
 {
     public class FiturLaporanStatistik
     {

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using ManajemenPerpus.Core.Models;
 
-namespace ManajemenPerpus.CLI.Service
+namespace TubesKPL.Service
 {
-    public class PenggunaService
+    internal class PenggunaService
     {
         List<Pengguna> listPengguna;
 

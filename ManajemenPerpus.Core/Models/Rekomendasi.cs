@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ManajemenPerpus.CLI.Service
+namespace ManajemenPerpus.Core.Models
 {
-    internal class RekomendasiService
+    public class Rekomendasi
     {
-
+        
     }
 }

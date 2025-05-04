@@ -1,13 +1,10 @@
 ﻿using System;
-using ManajemenPerpus.CLI.Service;
 
-namespace ManajemenPerpus.CLI.Fitur
+namespace SistemPerpustakaan.Feature
 {
     public class FiturUlasanRekomendasi
     {
-        public UlasanService ulasanService;
-        
-        public void MenuUlasanRekomendasi()
+        public void TampilkanUlasanRekomendasi()
         {
             Console.Clear();
             Console.WriteLine("=== ULASAN & REKOMENDASI ===");
@@ -22,14 +19,8 @@ namespace ManajemenPerpus.CLI.Fitur
             {
                 switch (pilihan)
                 {
-                    case 1:
-                        ulasanService.buatUlasan();
-                        ulasanService.addUlasan(ulasanService.buatUlasan());
-                        ulasanService.simpanUlasanKeFile();
-                        break;
-                    case 2:
-                        Console.WriteLine(ulasanService.getAllUlasan());
-                        break;
+                    case 0:
+                        return;
                     default:
                         Console.WriteLine($"Fitur {pilihan} akan diimplementasikan");
                         Console.ReadKey();

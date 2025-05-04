@@ -1,13 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ManajemenPerpus.Core.Models;
-using System.Text.Json;
 
 namespace RestAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PenggunaController : ControllerBase
+    public class UserController : ControllerBase
     {
         public static List<Pengguna> users = new List<Pengguna>();
 
@@ -16,18 +15,14 @@ namespace RestAPI.Controllers
         public ActionResult<List<Pengguna>> GetAllUsers()
         {
             // Gunakan path absolut relatif terhadap direktori kerja aplikasi
-            string filePath = "D:\\Dev\\Konstruksi PL\\TubesKPL\\SharedData\\DataJson\\DataPengguna.json";
-            var options = new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true
-            };
+            string filePath = "TubesKPL/SharedData/DataJson/DataPengguna.json";
 
             if (System.IO.File.Exists(filePath))
             {
                 try
                 {
                     string jsonData = System.IO.File.ReadAllText(filePath);
-                    var data = System.Text.Json.JsonSerializer.Deserialize<List<Pengguna>>(jsonData, options);
+                    var data = System.Text.Json.JsonSerializer.Deserialize<List<Pengguna>>(jsonData);
                     users = data ?? new List<Pengguna>();
                 }
                 catch (Exception ex)
