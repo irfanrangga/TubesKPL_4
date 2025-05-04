@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using TubesKPL.Model;
+using ManajemenPerpus.Core.Models;
 
 namespace TubesKPL.Service
 {

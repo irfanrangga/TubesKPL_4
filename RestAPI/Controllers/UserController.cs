@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using RestAPI.Models;
+using ManajemenPerpus.Core.Models;
 
 namespace RestAPI.Controllers
 {
