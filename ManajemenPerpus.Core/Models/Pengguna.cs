@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-<<<<<<< HEAD
-namespace RestAPI.Models
-=======
-namespace TubesKPL.Model
->>>>>>> e421fb651235b7488be0161950110f5452b23893
+namespace ManajemenPerpus.Core.Models
 {
-    internal class Pengguna
+    public class Pengguna
     {
         public enum ROLEPENGGUNA
         {

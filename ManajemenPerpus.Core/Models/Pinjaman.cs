@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace TubesKPL.Model
+namespace ManajemenPerpus.Core.Models
 {
-    internal class Pinjaman
+    public class Pinjaman
     {
         private string idPinjaman;
         private string idBuku;

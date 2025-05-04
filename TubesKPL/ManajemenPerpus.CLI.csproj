@@ -8,4 +8,9 @@
     <BaseOutputPath>C:\Users\Tubagus Aulia\Kuliah\KPL\Tubes KPL\TubesKPL_4\TubesKPL\bin\Debug\net8.0</BaseOutputPath>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ManajemenPerpus.Core\ManajemenPerpus.Core.csproj" />
+    <ProjectReference Include="..\RestAPI\ManajemenPerpus.API.csproj" />
+  </ItemGroup>
+
 </Project>

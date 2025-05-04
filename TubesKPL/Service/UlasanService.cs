@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TubesKPL.Model
+namespace TubesKPL.Service
 {
-    internal class Rekomendasi
+    internal class UlasanService
     {
+        public void buatUlasan()
+        {
+            
+        }
     }
 }

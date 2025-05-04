@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TubesKPL.Model
+namespace ManajemenPerpus.Core.Models
 {
-    internal class Buku
+    public class Buku
     {
         public enum STATUSBUKU
         {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using TubesKPL.Model;
+using ManajemenPerpus.Core.Models;
 
 namespace TubesKPL.Service
 {

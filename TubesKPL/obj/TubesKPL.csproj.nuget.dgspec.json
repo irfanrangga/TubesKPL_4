@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\TubesKPL_4\\TubesKPL\\TubesKPL.csproj": {}
+    "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\TubesKPL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\TubesKPL_4\\TubesKPL\\TubesKPL.csproj": {
+    "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\TubesKPL_4\\TubesKPL\\TubesKPL.csproj",
-        "projectName": "TubesKPL",
-        "projectPath": "C:\\Users\\user\\TubesKPL_4\\TubesKPL\\TubesKPL.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\TubesKPL_4\\TubesKPL\\obj\\",
+        "projectUniqueName": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj",
+        "projectName": "ManajemenPerpus.Core",
+        "projectPath": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj",
+        "packagesPath": "C:\\Users\\Irfan Rangga\\.nuget\\packages\\",
+        "outputPath": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Irfan Rangga\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -42,9 +42,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -65,7 +65,157 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Dev\\Konstruksi PL\\TubesKPL\\RestAPI\\ManajemenPerpus.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Dev\\Konstruksi PL\\TubesKPL\\RestAPI\\ManajemenPerpus.API.csproj",
+        "projectName": "ManajemenPerpus.API",
+        "projectPath": "D:\\Dev\\Konstruksi PL\\TubesKPL\\RestAPI\\ManajemenPerpus.API.csproj",
+        "packagesPath": "C:\\Users\\Irfan Rangga\\.nuget\\packages\\",
+        "outputPath": "D:\\Dev\\Konstruksi PL\\TubesKPL\\RestAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Irfan Rangga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj": {
+                "projectPath": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\TubesKPL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\TubesKPL.csproj",
+        "projectName": "TubesKPL",
+        "projectPath": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\TubesKPL.csproj",
+        "packagesPath": "C:\\Users\\Irfan Rangga\\.nuget\\packages\\",
+        "outputPath": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Irfan Rangga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj": {
+                "projectPath": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj"
+              },
+              "D:\\Dev\\Konstruksi PL\\TubesKPL\\RestAPI\\ManajemenPerpus.API.csproj": {
+                "projectPath": "D:\\Dev\\Konstruksi PL\\TubesKPL\\RestAPI\\ManajemenPerpus.API.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
