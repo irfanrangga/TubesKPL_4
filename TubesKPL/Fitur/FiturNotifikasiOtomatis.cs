@@ -1,56 +1,51 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
-//using TubesKPL.Model;
+﻿using System;
 
-//namespace TubesKPL.Fitur
-//{
-//    internal class FiturNotifikasiOtomatis
-//    {
-//        public enum STATUSNOTIFIKASI
-//        {
-            
-//        }
+namespace SistemPerpustakaan.Feature
+{
+    public class FiturNotifikasiOtomatis
+    {
+        public void TampilkanMenuNotifikasi()
+        {
+            Console.Clear();
+            Console.WriteLine("=== FITUR NOTIFIKASI OTOMATIS ===");
+            Console.WriteLine("1. Pengingat Pengembalian");
+            Console.WriteLine("2. Notifikasi Denda");
+            Console.WriteLine("3. Informasi Buku Baru");
+            Console.WriteLine("4. Pemberitahuan Status Keanggotaan");
+            Console.WriteLine("0. Kembali ke Menu Utama");
+            Console.Write("Pilih opsi: ");
 
-//        public string pesanPengingatPengembalian (string buku, string batas)
-//        {
-//            return $"Pengingat !\nBatas pengembalian buku {buku} adalah {batas}.";
-//        }
+            //int pilihan;
+            //if (int.TryParse(Console.ReadLine(), out pilihan))
+            //{
+            //    switch (pilihan)
+            //    {
+            //        case 1:
+            //            TampilkanPengingatPengembalian();
+            //            break;
+            //        case 2:
+            //            TampilkanNotifikasiDenda();
+            //            break;
+            //        case 3:
+            //            TampilkanInformasiBukuBaru();
+            //            break;
+            //        case 4:
+            //            TampilkanPemberitahuanStatusKeanggotaan();
+            //            break;
+            //        case 0:
+            //            return;
+            //        default:
+            //            Console.WriteLine("Pilihan tidak valid.");
+            //            Console.ReadKey();
+            //            break;
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Input tidak valid. Harap masukkan angka.");
+            //    Console.ReadKey();
+            //}
+        }
 
-//        public string pesanNotifikasiDenda(float denda, string buku, string batas)
-//        {
-//            return $"Pengingat !\nAnda terkena denda sebesar Rp.{denda} karena anda telat mengembalikan buku {buku} selama {batas} hari.";
-//        }
-
-//        public string pesanInformasiBukuBaru(string buku)
-//        {
-//            return $"Informasi !\nAda buku baru dengan judul {buku}";
-//        }
-
-//        public string pesanPemberitahuanStatusKeanggotaan(string nama, string status)
-//        {
-//            return $"Informasi !\nSelamat {nama}, dnda telah resmi menjadi anggota perpustakaan.";
-//        }
-
-//        //Otomatis generate semua notifikasi yang diperlukan
-//        public void updateNotifikasi(Pengguna pengguna)
-//        {
-//            if (/*pengguna.pinjaman.batasPengembalian - DateTime.Now < 3*/ false) 
-//            {
-//                string pesan = pesanPengingatPengembalian(/*pengguna.pinjaman.judul , pengguna.pinjaman.batasPengembalian*/ "buku", "batas");
-//            }
-
-//            if (/*pengguna.pinjaman.batasPengembalian < DateTime.Now*/ false)
-//            {
-//                string pesan = pesanNotifikasiDenda(/*DateTime.Now - pengguna.pinjaman.batasPengembalian * 10000, pengguna.pinjaman.judul, pengguna.pinjaman.batasPengembalia*/ 0 , "buku", "batas");
-//            }
-
-//            if (/**/ false)
-
-//        }
-
-
-//    }
-//}
+    }
+}
