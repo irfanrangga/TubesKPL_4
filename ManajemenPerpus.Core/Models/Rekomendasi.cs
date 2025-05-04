@@ -8,6 +8,6 @@ namespace ManajemenPerpus.Core.Models
 {
     public class Rekomendasi
     {
-
+        
     }
 }

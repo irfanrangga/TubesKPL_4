@@ -26,7 +26,7 @@ namespace TubesKPL.Service
 
             foreach (var buku in listBuku)
             {
-                if (buku.GetIdBuku().StartsWith("B") &&
+                if (buku.idBuku().StartsWith("B") &&
                     buku.GetIdBuku().Length == 4)
                 {
                     if (int.TryParse(buku.GetIdBuku().Substring(1), out int num))

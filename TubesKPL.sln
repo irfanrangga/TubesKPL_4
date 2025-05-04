@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManajemenPerpus.API", "Rest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManajemenPerpus.Core", "ManajemenPerpus.Core\ManajemenPerpus.Core.csproj", "{BEB98E74-6573-4E67-A0E4-A49910227479}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedData", "SharedData\SharedData.csproj", "{4753851E-659B-46C1-A297-BC4AD04D33BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{BEB98E74-6573-4E67-A0E4-A49910227479}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEB98E74-6573-4E67-A0E4-A49910227479}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEB98E74-6573-4E67-A0E4-A49910227479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4753851E-659B-46C1-A297-BC4AD04D33BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4753851E-659B-46C1-A297-BC4AD04D33BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4753851E-659B-46C1-A297-BC4AD04D33BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4753851E-659B-46C1-A297-BC4AD04D33BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

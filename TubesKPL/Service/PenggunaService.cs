@@ -39,11 +39,11 @@ namespace TubesKPL.Service
 
             foreach (var pengguna in listPengguna)
             {
-                if (pengguna.GetRole() == role &&
-                    pengguna.GetId().StartsWith(prefix) &&
-                    pengguna.GetId().Length == 4)
+                if (pengguna.Role == role &&
+                    pengguna.IdPengguna.StartsWith(prefix) &&
+                    pengguna.IdPengguna.Length == 4)
                 {
-                    if (int.TryParse(pengguna.GetId().Substring(1), out int num))
+                    if (int.TryParse(pengguna.IdPengguna.Substring(1), out int num))
                     {
                         existingNumbers.Add(num);
                     }
@@ -66,7 +66,7 @@ namespace TubesKPL.Service
 
         public Pengguna GetPenggunaById(string id)
         {
-            return listPengguna.FirstOrDefault(p => p.GetId() == id);
+            return listPengguna.FirstOrDefault(p => p.IdPengguna == id);
         }
 
         public bool DeletePengguna(string id)
