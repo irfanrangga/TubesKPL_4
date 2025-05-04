@@ -1,20 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using TubesKPL.Model;
-using TubesKPL.Service;
 
-namespace TubesKPL.Fitur
+namespace SistemPerpustakaan.Feature
 {
-    public class FiturSirkulasiBuku
+    public class FiturLaporanStatistik
     {
-        public void TampilkanSirkulasiBuku()
+        public void TampilkanLaporanStatistik()
         {
             Console.Clear();
-            Console.WriteLine("=== SIRKULASI BUKU ===");
-            Console.WriteLine("1. Proses Peminjaman");
-            Console.WriteLine("2. Pengembalian Buku");
-            Console.WriteLine("3. Perpanjangan Pinjaman");
-            Console.WriteLine("4. Perhitungan Denda Otomatis");
+            Console.WriteLine("=== LAPORAN & STATISTIK ===");
+            Console.WriteLine("1. Laporan Peminjaman");
+            Console.WriteLine("2. Statistik Pengunjung");
+            Console.WriteLine("3. Laporan Buku Populer");
             Console.WriteLine("0. Kembali ke Menu Utama");
             Console.Write("Pilih opsi: ");
 

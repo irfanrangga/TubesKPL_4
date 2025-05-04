@@ -9,22 +9,17 @@ namespace ManajemenPerpus.Core.Models
 {
     public class Pinjaman
     {
-        private string idPinjaman;
-        private string idBuku;
-        private string idAnggota;
-        private DateTime batasPengembalian;
+        public string IdPinjaman { get; set; }
+        public string IdBuku { get; set; }
+        public string IdAnggota { get; set; }
+        public DateTime BatasPengembalian { get; set; }
 
         public Pinjaman(string idPinjaman, string idBuku, string idAnggota, DateTime batasPengembalian)
         {
-            this.idPinjaman = idPinjaman;
-            this.idBuku = idBuku;
-            this.idAnggota = idAnggota;
-            this.batasPengembalian = batasPengembalian;
+            this.IdPinjaman = idPinjaman;
+            this.IdBuku = idBuku;
+            this.IdAnggota = idAnggota;
+            this.BatasPengembalian = batasPengembalian;
         }
-
-        public string GetIdPinjaman() => idPinjaman;
-        public string GetIdBuku() => idBuku;
-        public string GetIdAnggota() => idAnggota;
-        public DateTime GetBatasPengembalian() => batasPengembalian;
     }
 }

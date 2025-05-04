@@ -14,33 +14,20 @@ namespace ManajemenPerpus.Core.Models
             BELUMLUNAS
         }
 
-        private string idDenda;
-        private string idPengguna;
-        private string idBuku;
-        private string idPeminjaman;
-        private STATUSDENDA statusDenda;
-        private int jumlahDenda;
-        private int jumlahHariTerlambat;
+        public string IdDenda { get; set; }
+        public string IdPengguna { get; set; }
+        public string IdBuku { get; set; }
+        public string IdPeminjaman { get; set; }
+        public STATUSDENDA StatusDenda { get; set; }
+        public int JumlahDenda { get; set; }
+        public int JumlahHariTerlambat { get; set; }
 
         public Denda(string idPengguna, string idBuku, string idPeminjaman, STATUSDENDA statusDenda)
         {
-            this.idPengguna = idPengguna;
-            this.idBuku = idBuku;
-            this.idPeminjaman = idPeminjaman;
-            this.statusDenda = statusDenda;
-
+            this.IdPengguna = idPengguna;
+            this.IdBuku = idBuku;
+            this.IdPeminjaman = idPeminjaman;
+            this.StatusDenda = statusDenda;
         }
-
-        private string GenerateIdDenda()
-        {
-            int count = 0;
-            return $"DN{count:D3}";
-        }
-
-        public string GetIdDenda() { return idDenda; }
-        public string GetIdPengguna() { return idPengguna; }
-        public string GetIdBuku() { return idBuku; }
-        public string GetIdPeminjaman() { return idPeminjaman; }
-        public STATUSDENDA GetStatusDenda() { return statusDenda; }
     }
 }
