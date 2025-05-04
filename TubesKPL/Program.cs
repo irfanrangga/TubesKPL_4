@@ -1,15 +1,11 @@
 ﻿using System;
-using Mana.Fitur;
-using TubesKPL.Model;
-using TubesKPL.Service;
-using TubesKPL.Fitur;
-using SistemPerpustakaan.Feature;
+using ManajemenPerpus.CLI.Fitur;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
 using ManajemenPerpus.Core.Models;
 
-namespace TubesKPL
+namespace ManajemenPerpus.CLI
 {
-    class Program
+    public class Program
     {
         private List<Pengguna> pengguna = new List<Pengguna>();
         private List<Buku> buku = new List<Buku>();
@@ -30,9 +26,9 @@ namespace TubesKPL
             StateKeluar
         }
 
-        static ProgramState currentState = ProgramState.StateMenuUtama;
+       public static ProgramState currentState = ProgramState.StateMenuUtama;
 
-        static void Main(string[] args)
+       public static void Main(string[] args)
         {
             var fiturManajemenPengguna = new FiturManajemenPengguna();
             var fiturManajemenKoleksi = new FiturManajemenKoleksi();

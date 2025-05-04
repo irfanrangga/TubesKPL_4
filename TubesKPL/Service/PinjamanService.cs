@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using ManajemenPerpus.Core.Models;
 
-namespace TubesKPL.Service
+namespace ManajemenPerpus.CLI.Service
 {
     internal class PinjamanService
     {

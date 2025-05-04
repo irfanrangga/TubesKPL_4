@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SistemPerpustakaan.Feature
+namespace ManajemenPerpus.CLI.Fitur
 {
     public class FiturNotifikasiOtomatis
     {

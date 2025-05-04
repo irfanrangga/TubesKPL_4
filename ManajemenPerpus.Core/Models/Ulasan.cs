@@ -8,11 +8,11 @@ namespace ManajemenPerpus.Core.Models
 {
     public class Ulasan
     {
-        public int ulasanId { get; set; }
+        public string ulasanId { get; set; }
         public string penggunaId { get; set; }
         public string isiUlasan { get; set; }
 
-        public Ulasan(int ulasanId, string penggunaId, string isiUlasan)
+        public Ulasan(string ulasanId, string penggunaId, string isiUlasan)
         {
             this.ulasanId = ulasanId;
             this.penggunaId = penggunaId;

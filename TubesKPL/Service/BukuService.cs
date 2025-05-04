@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using ManajemenPerpus.Core.Models;
 
-namespace TubesKPL.Service
+namespace ManajemenPerpus.CLI.Service
 {
-    internal class BukuService
+    public class BukuService
     {
         List<Buku> listBuku = new List<Buku>();
 
@@ -26,10 +26,10 @@ namespace TubesKPL.Service
 
             foreach (var buku in listBuku)
             {
-                if (buku.idBuku().StartsWith("B") &&
-                    buku.GetIdBuku().Length == 4)
+                if (buku.IdBuku.StartsWith("B") &&
+                    buku.IdBuku.Length == 4)
                 {
-                    if (int.TryParse(buku.GetIdBuku().Substring(1), out int num))
+                    if (int.TryParse(buku.IdBuku.Substring(1), out int num))
                     {
                         existingNumbers.Add(num);
                     }
@@ -51,7 +51,7 @@ namespace TubesKPL.Service
 
         public Buku GetBukuById(string id)
         {
-            return listBuku.FirstOrDefault(b => b.GetIdBuku() == id);
+            return listBuku.FirstOrDefault(b => b.IdBuku == id);
         }
 
         public bool DeleteBuku(string id)

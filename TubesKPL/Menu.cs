@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ManajemenPerpus.Core.Models;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
-namespace TubesKPL
+namespace ManajemenPerpus.CLI
 {
     public class Menu
     {
