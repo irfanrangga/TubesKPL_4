@@ -1,0 +1,13 @@
+[
+  {
+    "idPengguna": "A001",
+    "username": "Admin",
+    "password": "Admin123",
+    "role": "admin",
+    "fullName": "Abdul Romdhon",
+    "email": "admin@gmail.com",
+    "phone": "081234567890",
+    "address": "Jl. Raya No. 1, Jakarta"
+  }
+]
+

@@ -1,56 +1,108 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
-//using TubesKPL.Model;
+﻿using System;
+using System.Linq;
+using ManajemenPerpus.CLI.Service;
+using TubesKPL;
+using static TubesKPL.Program;
 
-//namespace TubesKPL.Fitur
-//{
-//    internal class FiturNotifikasiOtomatis
-//    {
-//        public enum STATUSNOTIFIKASI
-//        {
-            
-//        }
+namespace SistemPerpustakaan.Feature
+{
+    public class FiturNotifikasiOtomatis
+    {
+        private readonly NotifikasiService _notifikasiService;
 
-//        public string pesanPengingatPengembalian (string buku, string batas)
-//        {
-//            return $"Pengingat !\nBatas pengembalian buku {buku} adalah {batas}.";
-//        }
+        public enum StateNotifikasiOtomatis
+        {
+            StateMenuNotifikasiOtomatis,
+            StateCekInboxNotifikasi,
+            StateKeluarNotifikasiOtomatis
+        }
 
-//        public string pesanNotifikasiDenda(float denda, string buku, string batas)
-//        {
-//            return $"Pengingat !\nAnda terkena denda sebesar Rp.{denda} karena anda telat mengembalikan buku {buku} selama {batas} hari.";
-//        }
+        public FiturNotifikasiOtomatis()
+        {
+            _notifikasiService = new NotifikasiService();
+        }
 
-//        public string pesanInformasiBukuBaru(string buku)
-//        {
-//            return $"Informasi !\nAda buku baru dengan judul {buku}";
-//        }
+        public ProgramState MenuNotifikasiOtomatis()
+        {
+            StateNotifikasiOtomatis currentState = StateNotifikasiOtomatis.StateMenuNotifikasiOtomatis;
 
-//        public string pesanPemberitahuanStatusKeanggotaan(string nama, string status)
-//        {
-//            return $"Informasi !\nSelamat {nama}, dnda telah resmi menjadi anggota perpustakaan.";
-//        }
+            while (currentState != StateNotifikasiOtomatis.StateKeluarNotifikasiOtomatis)
+            {
+                switch (currentState)
+                {
+                    case StateNotifikasiOtomatis.StateMenuNotifikasiOtomatis:
+                        currentState = TampilkanMenuNotifikasi();
+                        break;
+                    case StateNotifikasiOtomatis.StateCekInboxNotifikasi:
+                        currentState = CekInboxNotifikasi();
+                        break;
+                }
+            }
 
-//        //Otomatis generate semua notifikasi yang diperlukan
-//        public void updateNotifikasi(Pengguna pengguna)
-//        {
-//            if (/*pengguna.pinjaman.batasPengembalian - DateTime.Now < 3*/ false) 
-//            {
-//                string pesan = pesanPengingatPengembalian(/*pengguna.pinjaman.judul , pengguna.pinjaman.batasPengembalian*/ "buku", "batas");
-//            }
+            return ProgramState.StateMenuUtama;
+        }
 
-//            if (/*pengguna.pinjaman.batasPengembalian < DateTime.Now*/ false)
-//            {
-//                string pesan = pesanNotifikasiDenda(/*DateTime.Now - pengguna.pinjaman.batasPengembalian * 10000, pengguna.pinjaman.judul, pengguna.pinjaman.batasPengembalia*/ 0 , "buku", "batas");
-//            }
+        public StateNotifikasiOtomatis TampilkanMenuNotifikasi()
+        {
+            Console.Clear();
+            Console.WriteLine("=== FITUR NOTIFIKASI OTOMATIS ===");
+            Console.WriteLine("1. Cek Inbox Notifikasi");
+            Console.WriteLine("2. Keluar");
+            Console.Write("Pilih opsi: ");
 
-//            if (/**/ false)
+            var input = Console.ReadLine();
+            return input switch
+            {
+                "1" => StateNotifikasiOtomatis.StateCekInboxNotifikasi,
+                "2" => StateNotifikasiOtomatis.StateKeluarNotifikasiOtomatis,
+                _ => StateNotifikasiOtomatis.StateMenuNotifikasiOtomatis
+            };
+        }
 
-//        }
+        public StateNotifikasiOtomatis CekInboxNotifikasi()
+        {
+            Console.Clear();
+            Console.WriteLine("=== DAFTAR NOTIFIKASI ===");
+
+            var allNotifikasi = _notifikasiService.GetAllNotifikasi();
+
+            if (!allNotifikasi.Any())
+            {
+                Console.WriteLine("\nTidak ada notifikasi yang tersedia.");
+            }
+            else
+            {
 
 
-//    }
-//}
+                // Display only the notification messages, newest first
+                foreach (var notif in allNotifikasi.OrderByDescending(n => n.TanggalNotifikasi))
+                {
+                    Console.WriteLine($"- {notif.IsiNotifikasi}");
+                }
+
+                Console.WriteLine("");
+            }
+
+            Console.WriteLine("\nTekan tombol apa saja untuk kembali ke menu...");
+            Console.ReadKey();
+
+            return StateNotifikasiOtomatis.StateMenuNotifikasiOtomatis;
+        }
+
+        public void UpdateNotifikasi()
+        {
+            DateTime currentTime = DateTime.Now;
+
+            // Implement your automatic notification logic here:
+            // 1. Check for upcoming returns (2 days before, 1 day before, due date)
+            // 2. Check for overdue books and create fine notifications
+            // 3. Check for new books added in last 3 days
+
+            // Example:
+            // _notifikasiService.SendNotifikasi("user123", "Buku 'C# Programming' akan jatuh tempo besok");
+
+
+            Console.WriteLine("Notifikasi otomatis diperbarui.");
+        }
+    }
+}

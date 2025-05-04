@@ -3,12 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TubesKPL", "TubesKPL\TubesKPL.csproj", "{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManajemenPerpus.CLI", "TubesKPL\ManajemenPerpus.CLI.csproj", "{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D428B6F0-5927-4B68-8A0B-33A3DFA8C7EF} = {D428B6F0-5927-4B68-8A0B-33A3DFA8C7EF}
+	EndProjectSection
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestAPI", "RestAPI\RestAPI.csproj", "{D428B6F0-5927-4B68-8A0B-33A3DFA8C7EF}"
 	ProjectSection(ProjectDependencies) = postProject
 		{F91B1189-53BF-42C3-8E4B-0419DACA7F9F} = {F91B1189-53BF-42C3-8E4B-0419DACA7F9F}
 	EndProjectSection
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManajemenPerpus.API", "RestAPI\ManajemenPerpus.API.csproj", "{D428B6F0-5927-4B68-8A0B-33A3DFA8C7EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManajemenPerpus.Core", "ManajemenPerpus.Core\ManajemenPerpus.Core.csproj", "{BEB98E74-6573-4E67-A0E4-A49910227479}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedData", "SharedData\SharedData.csproj", "{4753851E-659B-46C1-A297-BC4AD04D33BB}"
+>>>>>>> origin/main
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +35,14 @@ Global
 		{D428B6F0-5927-4B68-8A0B-33A3DFA8C7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D428B6F0-5927-4B68-8A0B-33A3DFA8C7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D428B6F0-5927-4B68-8A0B-33A3DFA8C7EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEB98E74-6573-4E67-A0E4-A49910227479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEB98E74-6573-4E67-A0E4-A49910227479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEB98E74-6573-4E67-A0E4-A49910227479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEB98E74-6573-4E67-A0E4-A49910227479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4753851E-659B-46C1-A297-BC4AD04D33BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4753851E-659B-46C1-A297-BC4AD04D33BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4753851E-659B-46C1-A297-BC4AD04D33BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4753851E-659B-46C1-A297-BC4AD04D33BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
