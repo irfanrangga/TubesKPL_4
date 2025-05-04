@@ -12,15 +12,13 @@ namespace ManajemenPerpus.Core.Models
         public string IdPengguna { get; set; }
         public string IsiNotifikasi { get; set; }
         public DateTime TanggalNotifikasi { get; set; }
-        public bool StatusNotifikasi { get; set; }
 
-        public Notifikasi(string idNotifikasi, string idPengguna, string isiNotifikasi, DateTime tanggalNotifikasi, bool statusNotifikasi)
+        public Notifikasi(string idNotifikasi, string idPengguna, string isiNotifikasi, DateTime tanggalNotifikasi)
         {
             this.IdNotifikasi = idNotifikasi;
             this.IdPengguna = idPengguna;
             this.IsiNotifikasi = isiNotifikasi;
             this.TanggalNotifikasi = tanggalNotifikasi;
-            this.StatusNotifikasi = statusNotifikasi;
         }
     }
 }

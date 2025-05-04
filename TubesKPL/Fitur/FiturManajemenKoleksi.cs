@@ -84,7 +84,11 @@ namespace SistemPerpustakaan.Feature
                 string penerbit = Console.ReadLine();
 
                 Console.WriteLine("Kategori (1-Fiksi, 2-Non Fiksi, 3-Sains, 4-Sejarah): ");
-                Buku.KATEGORIBUKU kategori = (Buku.KATEGORIBUKU)(int.Parse(Console.ReadLine()) - 1);
+                if (!Enum.TryParse(Console.ReadLine(), out Buku.KATEGORIBUKU kategori))
+                {
+                    Console.WriteLine("Kategori tidak valid. Menggunakan default Fiksi.");
+                    kategori = Buku.KATEGORIBUKU.FIKSI;
+                }
 
                 Console.Write("Sinopsis: ");
                 string sinopsis = Console.ReadLine();
@@ -178,31 +182,47 @@ namespace SistemPerpustakaan.Feature
                     Console.Write("Penerbit baru: ");
                     string penerbit = Console.ReadLine();
 
-                    Console.WriteLine("Kategori baru (1-Fiksi, 2-Non Fiksi, 3-Sains, 4-Sejarah): ");
+                    Console.Write("Kategori baru (1-Fiksi, 2-Non Fiksi, 3-Sains, 4-Sejarah, kosongkan jika tidak diubah): ");
                     string kategoriInput = Console.ReadLine();
                     Buku.KATEGORIBUKU? kategori = null;
-                    if (!string.IsNullOrEmpty(kategoriInput))
+                    if (!string.IsNullOrEmpty(kategoriInput)
                     {
-                        kategori = (Buku.KATEGORIBUKU)(int.Parse(kategoriInput) - 1);
+                        if (Enum.TryParse(kategoriInput, out Buku.KATEGORIBUKU parsedKategori))
+                        {
+                            kategori = parsedKategori;
+                        }
                     }
 
                     Console.Write("Sinopsis baru: ");
                     string sinopsis = Console.ReadLine();
 
-                    _bukuService.DeleteBuku(id);
-                    _bukuService.AddBuku(
+                    var updatedBuku = new Buku(
+                        buku.IdBuku,
                         !string.IsNullOrEmpty(judul) ? judul : buku.Judul,
                         !string.IsNullOrEmpty(penulis) ? penulis : buku.Penulis,
                         !string.IsNullOrEmpty(penerbit) ? penerbit : buku.Penerbit,
                         kategori ?? buku.Kategori,
                         !string.IsNullOrEmpty(sinopsis) ? sinopsis : buku.Sinopsis
                     );
-                    Console.WriteLine("\nBuku berhasil diperbarui!");
+
+                    if (_bukuService.UpdateBuku(updatedBuku))
+                    {
+                        Console.WriteLine("\nBuku berhasil diperbarui!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nGagal memperbarui buku.");
+                    }
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Terjadi kesalahan: {ex.Message}");
                 }
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("Buku tidak ditemukan.");
                 Console.ReadKey();
             }
         }
@@ -214,9 +234,10 @@ namespace SistemPerpustakaan.Feature
             Console.WriteLine("1. Cari berdasarkan judul");
             Console.WriteLine("2. Cari berdasarkan penulis");
             Console.WriteLine("3. Cari berdasarkan penerbit");
+            Console.WriteLine("4. Cari berdasarkan kategori");
             Console.Write("Pilih Metode pencarian: ");
 
-            if (int.TryParse(Console.ReadLine(), out int metode) && metode >= 1 && metode <= 3)
+            if (int.TryParse(Console.ReadLine(), out int metode) && metode >= 1 && metode <= 4)
             {
                 Console.Write("Masukkan kata kunci: ");
                 string keyword = Console.ReadLine().ToLower();
@@ -235,6 +256,16 @@ namespace SistemPerpustakaan.Feature
                     case 3:
                         hasilPencarian = semuaBuku.Where(b => b.Penerbit.ToLower().Contains(keyword)).ToList();
                         break;
+                    case 4:
+                        if (Enum.TryParse(keyword, true, out Buku.KATEGORIBUKU kategori))
+                        {
+                            hasilPencarian = semuaBuku.Where(b => b.Kategori == kategori).ToList();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Kategori tidak valid.");
+                        }
+                        break;
                 }
 
                 if (hasilPencarian.Any())
@@ -243,7 +274,7 @@ namespace SistemPerpustakaan.Feature
                     foreach (var buku in hasilPencarian)
                     {
                         Console.WriteLine($"ID: {buku.IdBuku} | Judul: {buku.Judul} | Penulis: {buku.Penulis} | Penerbit: {buku.Penerbit}");
-                        Console.WriteLine($"Kategori: {buku.Kategori} | Sinopsis: {buku.Sinopsis}\n");
+                        Console.WriteLine($"Kategori: {buku.Kategori} | Status: {buku.Status} | Sinopsis: {buku.Sinopsis}\n");
                     }
                 }
                 else
@@ -267,17 +298,17 @@ namespace SistemPerpustakaan.Feature
             var semuaBuku = _bukuService.GetAllBuku();
             if (semuaBuku.Count == 0)
             {
-                Console.WriteLine("Belum ada di koleksi");
+                Console.WriteLine("Belum ada buku dalam koleksi");
             }
             else
             {
                 foreach (var buku in semuaBuku)
                 {
                     Console.WriteLine($"ID: {buku.IdBuku} | Judul: {buku.Judul} | Penulis: {buku.Penulis} | Penerbit: {buku.Penerbit}");
-                    Console.WriteLine($"Kategori: {buku.Kategori} | Sinopsis: {buku.Sinopsis}\n");
+                    Console.WriteLine($"Kategori: {buku.Kategori} | Status: {buku.Status} | Sinopsis: {buku.Sinopsis}\n");
                 }
             }
-            Console.WriteLine("\nTekan sembarang Tombol untuk melanjutkan....");
+            Console.WriteLine("\nTekan sembarang tombol untuk melanjutkan...");
             Console.ReadKey();
         }
     }

@@ -5,12 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using ManajemenPerpus.Core.Models;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
+using static TubesKPL.Program;
 namespace TubesKPL
 {
     public class Menu
     {
 
-        public static Program.ProgramState MenuUtama()
+        public static ProgramState MenuUtama()
         {
             // Placeholder for the main menu logic
             Console.WriteLine("Main Menu");
@@ -26,17 +27,17 @@ namespace TubesKPL
             var input = Console.ReadLine();
             return input switch
             {
-                "1" => Program.ProgramState.StateManajemenPengguna,
-                "2" => Program.ProgramState.StateManajemenKoleksi,
-                "3" => Program.ProgramState.StateSirkulasiBuku,
-                "4" => Program.ProgramState.StateUlasanRekomendasi,
-                "5" => Program.ProgramState.StateLaporanStatistik,
-                "6" => Program.ProgramState.StateNotifikasiOtomatis,
-                "7" => Program.ProgramState.StateKeluar,
-                _ => Program.ProgramState.StateMenuUtama
+                "1" => ProgramState.StateManajemenPengguna,
+                "2" => ProgramState.StateManajemenKoleksi,
+                "3" => ProgramState.StateSirkulasiBuku,
+                "4" => ProgramState.StateUlasanRekomendasi,
+                "5" => ProgramState.StateLaporanStatistik,
+                "6" => ProgramState.StateNotifikasiOtomatis,
+                "7" => ProgramState.StateKeluar,
+                _ => ProgramState.StateMenuUtama
             };
         }
 
-        
+
     }
 }

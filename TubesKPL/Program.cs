@@ -9,6 +9,18 @@ using ManajemenPerpus.Core.Models;
 
 namespace TubesKPL
 {
+    public enum ProgramState
+    {
+        StateMenuUtama,
+        StateManajemenPengguna,
+        StateManajemenKoleksi,
+        StateSirkulasiBuku,
+        StateUlasanRekomendasi,
+        StateLaporanStatistik,
+        StateNotifikasiOtomatis,
+        StateKeluar
+    }
+
     class Program
     {
         private List<Pengguna> pengguna = new List<Pengguna>();
@@ -18,17 +30,7 @@ namespace TubesKPL
         private List<Notifikasi> notifikasi = new List<Notifikasi>();
         private List<Denda> denda = new List<Denda>();
 
-        public enum ProgramState
-        {
-            StateMenuUtama,
-            StateManajemenPengguna,
-            StateManajemenKoleksi,
-            StateSirkulasiBuku,
-            StateUlasanRekomendasi,
-            StateLaporanStatistik,
-            StateNotifikasiOtomatis,
-            StateKeluar
-        }
+
 
         static ProgramState currentState = ProgramState.StateMenuUtama;
 
@@ -48,21 +50,21 @@ namespace TubesKPL
                     case ProgramState.StateMenuUtama:
                         currentState = Menu.MenuUtama();
                         break;
-                    case ProgramState.StateManajemenPengguna:
-                        currentState = fiturManajemenPengguna.MenuManajemenPengguna();
-                        break;
-                    case ProgramState.StateManajemenKoleksi:
-                        currentState = fiturManajemenKoleksi.MenuManajemenKoleksi();
-                        break;
-                    case ProgramState.StateSirkulasiBuku:
-                        currentState = fiturSirkulasiBuku.MenuSirkulasiBuku();
-                        break;
-                    case ProgramState.StateUlasanRekomendasi:
-                        currentState = fiturUlasanRekomendasi.MenuUlasanRekomendasi();
-                        break;
-                    case ProgramState.StateLaporanStatistik:
-                        currentState = fiturLaporanStatistik.MenuLaporanStatistik();
-                        break;
+                    //case ProgramState.StateManajemenPengguna:
+                    //    currentState = fiturManajemenPengguna.MenuManajemenPengguna();
+                    //    break;
+                    //case ProgramState.StateManajemenKoleksi:
+                    //    currentState = fiturManajemenKoleksi.MenuManajemenKoleksi();
+                    //    break;
+                    //case ProgramState.StateSirkulasiBuku:
+                    //    currentState = fiturSirkulasiBuku.MenuSirkulasiBuku();
+                    //    break;
+                    //case ProgramState.StateUlasanRekomendasi:
+                    //    currentState = fiturUlasanRekomendasi.MenuUlasanRekomendasi();
+                    //    break;
+                    //case ProgramState.StateLaporanStatistik:
+                    //    currentState = fiturLaporanStatistik.MenuLaporanStatistik();
+                    //    break;
                     case ProgramState.StateNotifikasiOtomatis:
                         currentState = fiturNotifikasiOtomatis.MenuNotifikasiOtomatis();
                         break;
