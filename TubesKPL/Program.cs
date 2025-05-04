@@ -1,13 +1,9 @@
 ﻿using System;
-using Mana.Fitur;
-using TubesKPL.Model;
-using TubesKPL.Service;
-using TubesKPL.Fitur;
-using SistemPerpustakaan.Feature;
+using ManajemenPerpus.CLI.Fitur;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
 using ManajemenPerpus.Core.Models;
 
-namespace TubesKPL
+namespace ManajemenPerpus.CLI
 {
     public enum ProgramState
     {

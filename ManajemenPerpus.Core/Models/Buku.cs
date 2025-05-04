@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace ManajemenPerpus.Core.Models
@@ -9,6 +10,7 @@ namespace ManajemenPerpus.Core.Models
 
     public class Buku
     {
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public enum STATUSBUKU
         {
             TERSEDIA,
@@ -16,6 +18,7 @@ namespace ManajemenPerpus.Core.Models
             RUSAK
         }
 
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public enum KATEGORIBUKU
         {
             FIKSI,

@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using TubesKPL.Model;
-using TubesKPL.Service;
 
-namespace TubesKPL.Fitur
+namespace ManajemenPerpus.CLI.Fitur
 {
     public class FiturSirkulasiBuku
     {

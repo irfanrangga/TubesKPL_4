@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using ManajemenPerpus.Core.Models;
 
-namespace TubesKPL.Service
+namespace ManajemenPerpus.CLI.Service
 {
     internal class PinjamanService
     {
@@ -28,7 +28,7 @@ namespace TubesKPL.Service
                 return;
             }
 
-            if (anggota == null || anggota.GetRole() != Pengguna.ROLEPENGGUNA.anggota)
+            if (anggota == null || anggota.Role != Pengguna.ROLEPENGGUNA.anggota)
             {
                 Console.WriteLine("Anggota tidak valid.");
                 return;
@@ -61,7 +61,7 @@ namespace TubesKPL.Service
 
         public Pinjaman GetPinjamanById(string id)
         {
-            return listPinjaman.FirstOrDefault(p => p.GetIdPinjaman() == id);
+            return listPinjaman.FirstOrDefault(p => p.IdPinjaman == id);
         }
 
         public bool HapusPinjaman(string id)
@@ -69,7 +69,7 @@ namespace TubesKPL.Service
             var pinjaman = GetPinjamanById(id);
             if (pinjaman != null)
             {
-                var buku = bukuService.GetBukuById(pinjaman.GetIdBuku());
+                var buku = bukuService.GetBukuById(pinjaman.IdBuku);
                 if (buku != null)
                 {
                     buku.status = Buku.STATUSBUKU.TERSEDIA;
