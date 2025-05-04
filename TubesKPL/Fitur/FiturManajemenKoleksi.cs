@@ -1,20 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using TubesKPL.Model;
-using TubesKPL.Service;
+using ManajemenPerpus.Core.Models;
 
-namespace TubesKPL.Fitur
+namespace SistemPerpustakaan.Feature
 {
-    public class FiturSirkulasiBuku
+    public class FiturManajemenKoleksi
     {
-        public void TampilkanSirkulasiBuku()
+        public void TampilkanManajemenKoleksi()
         {
             Console.Clear();
-            Console.WriteLine("=== SIRKULASI BUKU ===");
-            Console.WriteLine("1. Proses Peminjaman");
-            Console.WriteLine("2. Pengembalian Buku");
-            Console.WriteLine("3. Perpanjangan Pinjaman");
-            Console.WriteLine("4. Perhitungan Denda Otomatis");
+            Console.WriteLine("=== MANAJEMEN KOLEKSI BUKU ===");
+            Console.WriteLine("1. Tambah Buku Baru");
+            Console.WriteLine("2. Edit Data Buku");
+            Console.WriteLine("3. Hapus Buku");
+            Console.WriteLine("4. Cari Buku");
+            Console.WriteLine("5. Lihat Daftar Buku");
             Console.WriteLine("0. Kembali ke Menu Utama");
             Console.Write("Pilih opsi: ");
 
@@ -37,5 +36,8 @@ namespace TubesKPL.Fitur
                 Console.ReadKey();
             }
         }
+
+
+        //...
     }
 }

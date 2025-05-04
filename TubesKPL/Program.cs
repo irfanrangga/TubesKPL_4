@@ -1,86 +1,74 @@
 ﻿using System;
+using Mana.Fitur;
 using TubesKPL.Model;
 using TubesKPL.Service;
+using TubesKPL.Fitur;
+using SistemPerpustakaan.Feature;
+using Microsoft.AspNetCore.Mvc.ViewEngines;
+using ManajemenPerpus.Core.Models;
 
-class Program
+namespace TubesKPL
 {
-    static void Main()
+    class Program
     {
-        Console.WriteLine("Testing PenggunaService");
-        TestPenggunaService();
+        private List<Pengguna> pengguna = new List<Pengguna>();
+        private List<Buku> buku = new List<Buku>();
+        private List<Pinjaman> pinjaman = new List<Pinjaman>();
+        private List<Ulasan> ulasan = new List<Ulasan>();
+        private List<Notifikasi> notifikasi = new List<Notifikasi>();
+        private List<Denda> denda = new List<Denda>();
 
-        Console.WriteLine("\nTesting BukuService");
-        TestBukuService();
-    }
-
-    static void TestPenggunaService()
-    {
-        var penggunaService = new PenggunaService();
-
-        Console.WriteLine("\nAddPengguna");
-        penggunaService.AddPengguna("Admin", "budi", "budi123", Pengguna.ROLEPENGGUNA.admin, "budima", "budi@email.com", "081211112222", "Bandung");
-        penggunaService.AddPengguna("Admin", "joko", "joko123", Pengguna.ROLEPENGGUNA.admin, "jokowi", "joko@email.com", "081222221111", "Jakarta");
-        penggunaService.AddPengguna("Anggota", "ahmad", "ahmad123", Pengguna.ROLEPENGGUNA.anggota, "ahmadani", "ahmad@email.com", "081211221122", "Bogor");
-        penggunaService.AddPengguna("Anggota", "ari", "ari123", Pengguna.ROLEPENGGUNA.anggota, "arilasso", "ari@email.com", "081222112211", "Jakarta");
-
-        Console.WriteLine("\nGetAllPengguna");
-        var allPengguna = penggunaService.GetAllPengguna();
-        foreach (var p in allPengguna)
+        public enum ProgramState
         {
-            Console.WriteLine($"{p.GetId()}: {p.GetUsername()}");
+            StateMenuUtama,
+            StateManajemenPengguna,
+            StateManajemenKoleksi,
+            StateSirkulasiBuku,
+            StateUlasanRekomendasi,
+            StateLaporanStatistik,
+            StateNotifikasiOtomatis,
+            StateKeluar
         }
 
-        Console.WriteLine("\nGetPenggunaById");
-        var pengguna = penggunaService.GetPenggunaById("A001");
-        Console.WriteLine(pengguna != null
-            ? $"Found: {pengguna.GetUsername()}"
-            : "Not found");
+        static ProgramState currentState = ProgramState.StateMenuUtama;
 
-        Console.WriteLine("\nDeletePengguna");
-        bool deleted = penggunaService.DeletePengguna("A001");
-        Console.WriteLine(deleted ? "Successfully deleted A001" : "Delete failed");
-
-        Console.WriteLine("\nGetAllPengguna");
-        allPengguna = penggunaService.GetAllPengguna();
-        foreach (var p in allPengguna)
+        static void Main(string[] args)
         {
-            Console.WriteLine($"{p.GetId()}: {p.GetUsername()}");
-        }
-    }
+            var fiturManajemenPengguna = new FiturManajemenPengguna();
+            var fiturManajemenKoleksi = new FiturManajemenKoleksi();
+            var fiturSirkulasiBuku = new FiturSirkulasiBuku();
+            var fiturUlasanRekomendasi = new FiturUlasanRekomendasi();
+            var fiturLaporanStatistik = new FiturLaporanStatistik();
+            var fiturNotifikasiOtomatis = new FiturNotifikasiOtomatis();
 
-    static void TestBukuService()
-    {
-        var bukuService = new BukuService();
-        Console.WriteLine("\nAddBuku");
-        bukuService.AddBuku("Laut Bercerita", "Leila S Chudori", "Gramedia", Buku.KATEGORIBUKU.FIKSI, "Novel tentang perjuangan dan kehilangan");
-        bukuService.AddBuku("Norwegian Wood", "Haruki Murakami", "Gramedia", Buku.KATEGORIBUKU.FIKSI, "Kisah cinta dan kedewasaan di Tokyo");
-        bukuService.AddBuku("Cantik Itu Luka", "Eka Kurniawan", "Gramedia", Buku.KATEGORIBUKU.FIKSI, "Novel magis-realisme tentang perempuan kuat");
-        bukuService.AddBuku("Atomic Habits", "James Clear", "Gramedia", Buku.KATEGORIBUKU.NONFIKSI, "Membangun kebiasaan baik dan menghilangkan yang buruk");
-        bukuService.AddBuku("Bicara Itu Ada Seninya", "Oh Su Hyang", "Bentang Pustaka", Buku.KATEGORIBUKU.NONFIKSI, "Seni berkomunikasi efektif");
-        bukuService.AddBuku("Berani Tidak Disukai", "Ichiro Kishimi & Fumitake Koga", "Gramedia", Buku.KATEGORIBUKU.NONFIKSI, "Mengubah hidup dengan filosofi Adler");
-
-        Console.WriteLine("\nGetAllBuku");
-        var allBuku = bukuService.GetAllBuku();
-        foreach (var b in allBuku)
-        {
-            Console.WriteLine($"{b.GetIdBuku()}: {b.GetJudul()} ({b.GetKategori()})");
-        }
-
-        Console.WriteLine("\nGetBukuById");
-        var buku = bukuService.GetBukuById("B001");
-        Console.WriteLine(buku != null
-            ? $"Found: {buku.GetJudul()}"
-            : "Not found");
-
-        Console.WriteLine("\nDeleteBuku");
-        bool deleted = bukuService.DeleteBuku("B001");
-        Console.WriteLine(deleted ? "Successfully deleted B001" : "Delete failed");
-
-        Console.WriteLine("\nGetAllBuku");
-        allBuku = bukuService.GetAllBuku();
-        foreach (var b in allBuku)
-        {
-            Console.WriteLine($"{b.GetIdBuku()}: {b.GetJudul()}");
+            while (currentState != ProgramState.StateKeluar)
+            {
+                switch (currentState)
+                {
+                    case ProgramState.StateMenuUtama:
+                        currentState = Menu.MenuUtama();
+                        break;
+                    case ProgramState.StateManajemenPengguna:
+                        currentState = fiturManajemenPengguna.MenuManajemenPengguna();
+                        break;
+                    case ProgramState.StateManajemenKoleksi:
+                        currentState = fiturManajemenKoleksi.MenuManajemenKoleksi();
+                        break;
+                    case ProgramState.StateSirkulasiBuku:
+                        currentState = fiturSirkulasiBuku.MenuSirkulasiBuku();
+                        break;
+                    case ProgramState.StateUlasanRekomendasi:
+                        currentState = fiturUlasanRekomendasi.MenuUlasanRekomendasi();
+                        break;
+                    case ProgramState.StateLaporanStatistik:
+                        currentState = fiturLaporanStatistik.MenuLaporanStatistik();
+                        break;
+                    case ProgramState.StateNotifikasiOtomatis:
+                        currentState = fiturNotifikasiOtomatis.MenuNotifikasiOtomatis();
+                        break;
+                }
+            }
         }
     }
 }
+
