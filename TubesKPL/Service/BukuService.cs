@@ -6,7 +6,7 @@ using System.Xml;
 using ManajemenPerpus.Core.Models;
 using Newtonsoft.Json;
 
-namespace TubesKPL.Service
+namespace ManajemenPerpus.CLI.Service
 {
     public class BukuService
     {

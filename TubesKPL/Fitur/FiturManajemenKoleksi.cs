@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using ManajemenPerpus.Core.Models;
-using TubesKPL.Service;
+using ManajemenPerpus.CLI.Service;
 
-namespace SistemPerpustakaan.Feature
+namespace ManajemenPerpus.CLI.Fitur
 {
     public class FiturManajemenKoleksi
     {
