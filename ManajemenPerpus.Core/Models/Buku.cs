@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ManajemenPerpus.Core.Models
 {
+
     public class Buku
     {
         public enum STATUSBUKU
@@ -30,6 +31,8 @@ namespace ManajemenPerpus.Core.Models
         public string Sinopsis { get; set; }
         public STATUSBUKU Status { get; set; }
 
+        public DateTime TanggalMasuk { get; set; } // Tanggal buku masuk ke perpustakaan
+
         public Buku(string idBuku, string judul, string penulis, string penerbit, KATEGORIBUKU kategori, string sinopsis)
         {
             IdBuku = idBuku;
@@ -39,6 +42,7 @@ namespace ManajemenPerpus.Core.Models
             Kategori = kategori;
             Sinopsis = sinopsis;
             Status = STATUSBUKU.TERSEDIA; // status default  
+            TanggalMasuk = DateTime.Now; // Set tanggal masuk ke waktu sekarang
         }
     }
 }
