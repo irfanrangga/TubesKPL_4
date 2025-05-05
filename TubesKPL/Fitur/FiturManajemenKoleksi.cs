@@ -186,7 +186,7 @@ namespace ManajemenPerpus.CLI.Fitur
                     Console.Write("Kategori baru (1-Fiksi, 2-Non Fiksi, 3-Sains, 4-Sejarah, kosongkan jika tidak diubah): ");
                     string kategoriInput = Console.ReadLine();
                     Buku.KATEGORIBUKU? kategori = null;
-                    if (!string.IsNullOrEmpty(kategoriInput)
+                    if (!string.IsNullOrEmpty(kategoriInput))
                     {
                         if (Enum.TryParse(kategoriInput, out Buku.KATEGORIBUKU parsedKategori))
                         {
