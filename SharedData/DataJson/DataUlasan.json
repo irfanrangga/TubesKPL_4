@@ -1,7 +1,17 @@
 [
   {
     "ulasanId": "1",
-    "penggunaId": "A001",
+    "bukuId": "A001",
     "isiUlasan": "Buku ini sangat membantu saya dalam memahami dasar-dasar pemrograman."
+  },
+  {
+    "ulasanId": "ULS002",
+    "bukuId": "B001",
+    "isiUlasan": "Bukunya kerenn"
+  },
+  {
+    "ulasanId": "ULS003",
+    "bukuId": "B001",
+    "isiUlasan": "Gokss bukunya seruu"
   }
 ]

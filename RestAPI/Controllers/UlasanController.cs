@@ -10,9 +10,7 @@ namespace ManajemenPerpus.API.Controllers
     public class UlasanController : ControllerBase
     {
         public static List<Ulasan> ulasanList;
-        private static int currentID = 0;
-        private static string basePath = AppDomain.CurrentDomain.BaseDirectory;
-        private static string filePath = Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "SharedData", "DataJson", "DataUlasan.json");
+        private string filePath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).FullName, "SharedData", "DataJson", "DataUlasan.json");
 
         [HttpGet]
         public ActionResult<List<Ulasan>> GetAllUlasan()
