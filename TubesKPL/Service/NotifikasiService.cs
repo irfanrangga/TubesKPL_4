@@ -9,7 +9,7 @@ using ManajemenPerpus.Core.Models;
 
 namespace ManajemenPerpus.CLI.Service
 {
-    internal class NotifikasiService
+    public class NotifikasiService
     {
         private readonly string _jsonFilePath;
         private List<Notifikasi> _notifikasiList;

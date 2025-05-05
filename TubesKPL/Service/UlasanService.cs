@@ -4,7 +4,6 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using ManajemenPerpus.Core.Models;
-using ManajemenPerpus.CLI.Service;
 
 namespace ManajemenPerpus.CLI.Service
 {

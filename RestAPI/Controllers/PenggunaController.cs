@@ -1,15 +1,16 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 using ManajemenPerpus.Core.Models;
 
-namespace RestAPI.Controllers
+namespace ManajemenPerpus.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class PenggunaController : ControllerBase
     {
-        public static List<Pengguna> users = new List<Pengguna>();
-
+        private static List<Pengguna> users;
+        private static string filePath = "TubesKPL/SharedData/DataJson/DataPengguna.json";
 
         [HttpGet]
         public ActionResult<List<Pengguna>> GetAllUsers()
@@ -22,7 +23,7 @@ namespace RestAPI.Controllers
                 try
                 {
                     string jsonData = System.IO.File.ReadAllText(filePath);
-                    var data = System.Text.Json.JsonSerializer.Deserialize<List<Pengguna>>(jsonData);
+                    var data = JsonSerializer.Deserialize<List<Pengguna>>(jsonData);
                     users = data ?? new List<Pengguna>();
                 }
                 catch (Exception ex)
@@ -48,6 +49,19 @@ namespace RestAPI.Controllers
                 return NotFound();
             }
             return Ok(user);
+        }
+
+        [HttpPost]
+        public ActionResult<Pengguna> CreateUser([FromBody] Pengguna newUser)
+        {
+            if (newUser == null)
+            {
+                return BadRequest("Invalid user data.");
+            }
+            // Generate ID for the new user
+            newUser.IdPengguna = newUser.Role == Pengguna.ROLEPENGGUNA.admin ? "A" : "P";
+            users.Add(newUser);
+            return CreatedAtAction(nameof(GetUserById), new { id = newUser.IdPengguna }, newUser);
         }
     }
 }

@@ -55,15 +55,15 @@ namespace ManajemenPerpus.CLI
                     //case ProgramState.StateSirkulasiBuku:
                     //    currentState = fiturSirkulasiBuku.MenuSirkulasiBuku();
                     //    break;
-                    //case ProgramState.StateUlasanRekomendasi:
-                    //    currentState = fiturUlasanRekomendasi.MenuUlasanRekomendasi();
-                    //    break;
+                    case ProgramState.StateUlasanRekomendasi:
+                        currentState = fiturUlasanRekomendasi.MenuUlasanRekomendasi();
+                        break;
                     //case ProgramState.StateLaporanStatistik:
                     //    currentState = fiturLaporanStatistik.MenuLaporanStatistik();
                     //    break;
-                    case ProgramState.StateNotifikasiOtomatis:
-                        currentState = fiturNotifikasiOtomatis.MenuNotifikasiOtomatis();
-                        break;
+                    //case ProgramState.StateNotifikasiOtomatis:
+                    //    currentState = fiturNotifikasiOtomatis.MenuNotifikasiOtomatis();
+                    //    break;
                 }
             }
         }

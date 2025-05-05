@@ -29,11 +29,6 @@ namespace ManajemenPerpus.CLI.Fitur
                         break;
                 }
             }
-            else
-            {
-                Console.WriteLine("Input tidak valid. Harap masukkan angka.");
-                Console.ReadKey();
-            }
         }
     }
 }

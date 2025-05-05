@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Xml;
 using ManajemenPerpus.Core.Models;
-using Newtonsoft.Json;
+using System.Text.Json;
 
 namespace ManajemenPerpus.CLI.Service
 {
@@ -26,7 +26,7 @@ namespace ManajemenPerpus.CLI.Service
             if (File.Exists(_jsonFilePath))
             {
                 string json = File.ReadAllText(_jsonFilePath);
-                _listBuku = JsonConvert.DeserializeObject<List<Buku>>(json) ?? new List<Buku>();
+                _listBuku = JsonSerializer.Deserialize<List<Buku>>(json) ?? new List<Buku>();
             }
             else
             {
@@ -37,7 +37,7 @@ namespace ManajemenPerpus.CLI.Service
 
         private void SaveData()
         {
-            string json = JsonConvert.SerializeObject(_listBuku, Formatting.Indented);
+            string json = JsonSerializer.Serialize;
             File.WriteAllText(_jsonFilePath, json);
         }
 

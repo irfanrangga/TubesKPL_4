@@ -5,7 +5,7 @@ using ManajemenPerpus.Core.Models;
 
 namespace ManajemenPerpus.CLI.Service
 {
-    internal class PinjamanService
+    public class PinjamanService
     {
         private List<Pinjaman> listPinjaman = new List<Pinjaman>();
         private BukuService bukuService;
