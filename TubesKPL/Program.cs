@@ -9,6 +9,17 @@ using ManajemenPerpus.Core.Models;
 
 namespace TubesKPL
 {
+    public enum ProgramState
+    {
+        StateMenuUtama,
+        StateManajemenPengguna,
+        StateManajemenKoleksi,
+        StateSirkulasiBuku,
+        StateUlasanRekomendasi,
+        StateLaporanStatistik,
+        StateNotifikasiOtomatis,
+        StateKeluar
+    }
     class Program
     {
         private List<Pengguna> pengguna = new List<Pengguna>();
@@ -18,17 +29,7 @@ namespace TubesKPL
         private List<Notifikasi> notifikasi = new List<Notifikasi>();
         private List<Denda> denda = new List<Denda>();
 
-        public enum ProgramState
-        {
-            StateMenuUtama,
-            StateManajemenPengguna,
-            StateManajemenKoleksi,
-            StateSirkulasiBuku,
-            StateUlasanRekomendasi,
-            StateLaporanStatistik,
-            StateNotifikasiOtomatis,
-            StateKeluar
-        }
+       
 
         static ProgramState currentState = ProgramState.StateMenuUtama;
 
