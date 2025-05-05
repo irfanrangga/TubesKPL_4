@@ -1,6 +1,20 @@
-﻿using System;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Text.Json;
+//using ManajemenPerpus.Core.Models;
+
+//namespace ManajemenPerpus.CLI.Service
+//{
+//    public class DendaService
+//    {
+//    }
+//}
+
+using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
 using ManajemenPerpus.Core.Models;
 
@@ -13,8 +27,19 @@ namespace ManajemenPerpus.CLI.Service
 
         public DendaService()
         {
-            // Adjust the path according to your project structure
-            _jsonFilePath = Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "SharedData", "DataJson", "DataDenda.json");
+            // Get the directory where the application is running from
+            string baseDirectory = AppContext.BaseDirectory;
+
+            // Navigate up to the project root directory (assuming it's 3 levels up from bin/Debug/net8.0)
+            string projectRoot = Path.GetFullPath(Path.Combine(baseDirectory, @"..\..\..\"));
+
+            // Combine with the SharedData path
+            string sharedDataPath = Path.Combine(projectRoot, "SharedData", "DataJson");
+
+            // Ensure the directory exists
+            Directory.CreateDirectory(sharedDataPath);
+
+            _jsonFilePath = Path.Combine(sharedDataPath, "DataDenda.json");
             _dendaList = new List<Denda>();
             LoadData();
         }
