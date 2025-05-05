@@ -15,6 +15,10 @@ namespace ManajemenPerpus.CLI.Service
 
         public BukuService()
         {
+<<<<<<< HEAD
+            string sharedDataPath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName,
+                                               "SharedData", "DataJson");
+=======
             // Get the directory where the application is running from
             string baseDirectory = AppContext.BaseDirectory;
 
@@ -27,6 +31,7 @@ namespace ManajemenPerpus.CLI.Service
             // Ensure the directory exists
             Directory.CreateDirectory(sharedDataPath);
 
+>>>>>>> 75fe7c549b65ea87862708abae1b546a5b4223b0
             _jsonFilePath = Path.Combine(sharedDataPath, "DataBuku.json");
             LoadData();
         }
@@ -36,7 +41,15 @@ namespace ManajemenPerpus.CLI.Service
             if (File.Exists(_jsonFilePath))
             {
                 string json = File.ReadAllText(_jsonFilePath);
-                _listBuku = JsonSerializer.Deserialize<List<Buku>>(json) ?? new List<Buku>();
+                try
+                {
+                    _listBuku = JsonSerializer.Deserialize<List<Buku>>(json) ?? new List<Buku>();
+                }
+                catch (JsonException ex)
+                {
+                    Console.WriteLine($"Error deserializing JSON: {ex.Message}");
+                    _listBuku = new List<Buku>();
+                }
             }
             else
             {
@@ -47,7 +60,12 @@ namespace ManajemenPerpus.CLI.Service
 
         private void SaveData()
         {
+<<<<<<< HEAD
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            string json = JsonSerializer.Serialize(GetAllBuku(), options);
+=======
             string json = JsonSerializer.Serialize(_listBuku);
+>>>>>>> 75fe7c549b65ea87862708abae1b546a5b4223b0
             File.WriteAllText(_jsonFilePath, json);
         }
 

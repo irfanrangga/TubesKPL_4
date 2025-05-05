@@ -7,16 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="DataJson\DataDenda.json" />
-    <Content Remove="DataJson\DataNotifikasi.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="DataJson\DataDenda.json" />
-    <None Include="DataJson\DataNotifikasi.json" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 

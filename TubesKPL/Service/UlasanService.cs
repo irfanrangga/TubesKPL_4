@@ -23,9 +23,18 @@ namespace ManajemenPerpus.CLI.Service
 {
     public class UlasanService
     {
+<<<<<<< HEAD
+        private static int currentID = 0;
+        public List<Buku> bukuList = new List<Buku>();
+        public Buku buku;
+        public Pengguna pengguna;
+        public BukuService bukuService = new BukuService();
+        public List<Ulasan> ulasanList = new List<Ulasan>();
+=======
         private List<Ulasan> ulasanList;
         private readonly BukuService bukuService;
         private readonly string _jsonFilePath;
+>>>>>>> 75fe7c549b65ea87862708abae1b546a5b4223b0
 
         public UlasanService(BukuService bukuService)
         {
@@ -117,9 +126,30 @@ namespace ManajemenPerpus.CLI.Service
             int maxId = 0;
             foreach (var ulasan in ulasanList)
             {
+<<<<<<< HEAD
+                WriteIndented = true
+            };
+            string basePath = AppContext.BaseDirectory;
+            string filePath = Path.Combine(basePath, "..", "..", "..", "SharedData", "DataJson", "DataUlasan.json");
+            filePath = Path.GetFullPath(filePath);
+
+            // Ensure the directory exists
+            string directoryPath = Path.GetDirectoryName(filePath);
+            if (!string.IsNullOrEmpty(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            string jsonString = JsonSerializer.Serialize(getAllUlasan(), options);
+            File.WriteAllText(filePath, jsonString);
+        }
+    }
+}
+=======
                 if (int.TryParse(ulasan.ulasanId.Substring(1), out int currentId))
                 {
                     maxId = Math.Max(maxId, currentId);
                 }
             }
             return $"U{(maxId
+>>>>>>> 75fe7c549b65ea87862708abae1b546a5b4223b0

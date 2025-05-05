@@ -5,8 +5,14 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <BaseOutputPath>C:\Users\Tubagus Aulia\Kuliah\KPL\Tubes KPL\TubesKPL_4\TubesKPL\bin\Debug\net8.0</BaseOutputPath>
+    <BaseOutputPath>D:\Dev\Konstruksi PL\TubesKPL\TubesKPL\bin\Debug\net8.0</BaseOutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <None Remove="bin\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ManajemenPerpus.Core\ManajemenPerpus.Core.csproj" />

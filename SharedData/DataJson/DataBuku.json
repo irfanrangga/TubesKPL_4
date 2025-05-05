@@ -1,8 +1,22 @@
-{
-  "idBuku": 1,
-  "judul": "Belajar Pemrograman",
-  "penulis": "John Doe",
-  "penerbit": "Penerbit ABC",
-  "kategori": "Teknologi",
-  "sinopsis": "Buku ini membahas dasar-dasar pemrograman dengan bahasa Python."
-}
+[
+  {
+    "IdBuku": "B001",
+    "Judul": "How to win friends \u0026 influence people",
+    "Penulis": "Dale Carnegie",
+    "Penerbit": "Gramedia",
+    "Kategori": 2,
+    "Sinopsis": "abcd",
+    "Status": "TERSEDIA",
+    "TanggalMasuk": "2025-05-05T23:25:38.2040242+07:00"
+  },
+  {
+    "IdBuku": "B002",
+    "Judul": "Buku A",
+    "Penulis": "Rija",
+    "Penerbit": "Gramedia",
+    "Kategori": "NONFIKSI",
+    "Sinopsis": "AAbcas",
+    "Status": "TERSEDIA",
+    "TanggalMasuk": "2025-05-05T23:33:31.5114606+07:00"
+  }
+]
