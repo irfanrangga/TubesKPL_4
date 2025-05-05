@@ -15,9 +15,19 @@ namespace ManajemenPerpus.CLI.Service
 
         public BukuService()
         {
-            string sharedDataPath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName,
-                                               "SharedData", "DataJson");
-            _jsonFilePath = Path.Combine(sharedDataPath, "buku.json");
+            // Get the directory where the application is running from
+            string baseDirectory = AppContext.BaseDirectory;
+
+            // Navigate up to the project root directory (assuming it's 3 levels up from bin/Debug/net8.0)
+            string projectRoot = Path.GetFullPath(Path.Combine(baseDirectory, @"..\..\..\"));
+
+            // Combine with the SharedData path
+            string sharedDataPath = Path.Combine(projectRoot, "SharedData", "DataJson");
+
+            // Ensure the directory exists
+            Directory.CreateDirectory(sharedDataPath);
+
+            _jsonFilePath = Path.Combine(sharedDataPath, "DataBuku.json");
             LoadData();
         }
 
@@ -37,12 +47,12 @@ namespace ManajemenPerpus.CLI.Service
 
         private void SaveData()
         {
-            string json = JsonSerializer.Serialize(GetAllBuku());
+            string json = JsonSerializer.Serialize(_listBuku);
             File.WriteAllText(_jsonFilePath, json);
         }
 
         public void AddBuku(string judul, string penulis, string penerbit,
-                          Buku.KATEGORIBUKU kategori, string sinopsis)
+                            Buku.KATEGORIBUKU kategori, string sinopsis)
         {
             string id = GenerateBukuId();
             Buku newBuku = new Buku(id, judul, penulis, penerbit, kategori, sinopsis);

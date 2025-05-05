@@ -1,4 +1,20 @@
-﻿using System;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.IO;
+//using System.Linq;
+//using System.Text;
+//using System.Text.Json;
+//using System.Threading.Tasks;
+//using ManajemenPerpus.Core.Models;
+
+//namespace ManajemenPerpus.CLI.Service
+//{
+//    public class NotifikasiService
+//    {
+//    }
+//}
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -16,8 +32,19 @@ namespace ManajemenPerpus.CLI.Service
 
         public NotifikasiService()
         {
-            // Adjust the path according to your project structure
-            _jsonFilePath = Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "SharedData", "DataJson", "DataNotifikasi.json");
+            // Get the directory where the application is running from
+            string baseDirectory = AppContext.BaseDirectory;
+
+            // Navigate up to the project root directory (assuming it's 3 levels up from bin/Debug/net8.0)
+            string projectRoot = Path.GetFullPath(Path.Combine(baseDirectory, @"..\..\..\"));
+
+            // Combine with the SharedData path
+            string sharedDataPath = Path.Combine(projectRoot, "SharedData", "DataJson");
+
+            // Ensure the directory exists
+            Directory.CreateDirectory(sharedDataPath);
+
+            _jsonFilePath = Path.Combine(sharedDataPath, "DataNotifikasi.json");
             _notifikasiList = new List<Notifikasi>();
             LoadData();
         }
