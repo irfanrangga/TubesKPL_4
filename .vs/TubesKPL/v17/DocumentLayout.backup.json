@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tubes kpl 5\\tubeskpl_4\\tubeskpl\\fitur\\fiturnotifikasiotomatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fiturnotifikasiotomatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tubes kpl 5\\tubeskpl_4\\tubeskpl\\fitur\\fiturmanajemenkoleksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fiturmanajemenkoleksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tubes kpl 5\\tubeskpl_4\\tubeskpl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tubes kpl 5\\tubeskpl_4\\tubeskpl\\service\\ulasanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\service\\ulasanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tubes kpl 5\\tubeskpl_4\\tubeskpl\\fitur\\fiturulasanrekomendasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fiturulasanrekomendasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tubes kpl 5\\tubeskpl_4\\tubeskpl\\fitur\\fiturmanajemenkoleksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fiturmanajemenkoleksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tubes kpl 5\\tubeskpl_4\\tubeskpl\\fitur\\fitursirkulasibuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fitursirkulasibuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tubes kpl 5\\tubeskpl_4\\tubeskpl\\fitur\\fiturmanajemenpengguna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,16 +27,20 @@
       "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fiturlaporanstatistik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tubes kpl 5\\tubeskpl_4\\tubeskpl\\fitur\\fitursirkulasibuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fitursirkulasibuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tubes kpl 5\\tubeskpl_4\\tubeskpl\\fitur\\fiturnotifikasiotomatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fiturnotifikasiotomatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tubes kpl 5\\tubeskpl_4\\tubeskpl\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tubes kpl 5\\tubeskpl_4\\tubeskpl\\service\\ulasanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\service\\ulasanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tubes kpl 5\\tubeskpl_4\\tubeskpl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tubes kpl 5\\tubeskpl_4\\manajemenperpus.core\\models\\pengguna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|solutionrelative:manajemenperpus.core\\models\\pengguna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tubes kpl 5\\tubeskpl_4\\tubeskpl\\service\\pinjamanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -95,10 +99,6 @@
       "RelativeMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|solutionrelative:shareddata\\datajson\\databuku.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tubes kpl 5\\tubeskpl_4\\manajemenperpus.core\\models\\pengguna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|solutionrelative:manajemenperpus.core\\models\\pengguna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|c:\\users\\tubagus aulia\\kuliah\\kpl\\tubes kpl 5\\tubeskpl_4\\manajemenperpus.core\\models\\ulasan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|solutionrelative:manajemenperpus.core\\models\\ulasan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -110,7 +110,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,39 +126,104 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FiturManajemenKoleksi.cs",
-              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
-              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
-              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
-              "RelativeToolTip": "TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
-              "ViewState": "AgIAANIAAAAAAAAAAAAYwCsBAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:47:56.852Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "FiturManajemenPengguna.cs",
               "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturManajemenPengguna.cs",
               "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturManajemenPengguna.cs",
               "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturManajemenPengguna.cs",
               "RelativeToolTip": "TubesKPL\\Fitur\\FiturManajemenPengguna.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAACMAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAArwBcAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T11:47:47.399Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FiturSirkulasiBuku.cs",
+              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
+              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
+              "RelativeToolTip": "TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAArwBgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:46:42.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FiturUlasanRekomendasi.cs",
+              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturUlasanRekomendasi.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturUlasanRekomendasi.cs",
+              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturUlasanRekomendasi.cs",
+              "RelativeToolTip": "TubesKPL\\Fitur\\FiturUlasanRekomendasi.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwCIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:42:46.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "UlasanService.cs",
+              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Service\\UlasanService.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Service\\UlasanService.cs",
+              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Service\\UlasanService.cs",
+              "RelativeToolTip": "TubesKPL\\Service\\UlasanService.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAuwFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:37:40.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FiturManajemenKoleksi.cs",
+              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
+              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
+              "RelativeToolTip": "TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAvwLwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:47:56.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FiturLaporanStatistik.cs",
+              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturLaporanStatistik.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturLaporanStatistik.cs",
+              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturLaporanStatistik.cs",
+              "RelativeToolTip": "TubesKPL\\Fitur\\FiturLaporanStatistik.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:48:15.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FiturNotifikasiOtomatis.cs",
+              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturNotifikasiOtomatis.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturNotifikasiOtomatis.cs",
+              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturNotifikasiOtomatis.cs",
+              "RelativeToolTip": "TubesKPL\\Fitur\\FiturNotifikasiOtomatis.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T10:44:30.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Program.cs",
               "RelativeDocumentMoniker": "TubesKPL\\Program.cs",
               "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Program.cs",
               "RelativeToolTip": "TubesKPL\\Program.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwEAAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-22T13:53:15.669Z",
               "EditorCaption": ""
@@ -171,79 +236,27 @@
               "RelativeDocumentMoniker": "TubesKPL\\Menu.cs",
               "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Menu.cs",
               "RelativeToolTip": "TubesKPL\\Menu.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBsAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAUwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T11:41:46.948Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FiturUlasanRekomendasi.cs",
-              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturUlasanRekomendasi.cs",
-              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturUlasanRekomendasi.cs",
-              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturUlasanRekomendasi.cs",
-              "RelativeToolTip": "TubesKPL\\Fitur\\FiturUlasanRekomendasi.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:42:46.518Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FiturNotifikasiOtomatis.cs",
-              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturNotifikasiOtomatis.cs",
-              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturNotifikasiOtomatis.cs",
-              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturNotifikasiOtomatis.cs",
-              "RelativeToolTip": "TubesKPL\\Fitur\\FiturNotifikasiOtomatis.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T10:44:30.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FiturSirkulasiBuku.cs",
-              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
-              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
-              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
-              "RelativeToolTip": "TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:46:42.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FiturLaporanStatistik.cs",
-              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturLaporanStatistik.cs",
-              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturLaporanStatistik.cs",
-              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Fitur\\FiturLaporanStatistik.cs",
-              "RelativeToolTip": "TubesKPL\\Fitur\\FiturLaporanStatistik.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:48:15.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UlasanService.cs",
-              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Service\\UlasanService.cs",
-              "RelativeDocumentMoniker": "TubesKPL\\Service\\UlasanService.cs",
-              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Service\\UlasanService.cs",
-              "RelativeToolTip": "TubesKPL\\Service\\UlasanService.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAywHwAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:37:40.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "Pengguna.cs",
+              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\ManajemenPerpus.Core\\Models\\Pengguna.cs",
+              "RelativeDocumentMoniker": "ManajemenPerpus.Core\\Models\\Pengguna.cs",
+              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\ManajemenPerpus.Core\\Models\\Pengguna.cs",
+              "RelativeToolTip": "ManajemenPerpus.Core\\Models\\Pengguna.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:38:18.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "PinjamanService.cs",
               "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Service\\PinjamanService.cs",
               "RelativeDocumentMoniker": "TubesKPL\\Service\\PinjamanService.cs",
@@ -256,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "PenggunaService.cs",
               "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Service\\PenggunaService.cs",
               "RelativeDocumentMoniker": "TubesKPL\\Service\\PenggunaService.cs",
@@ -269,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "NotifikasiService.cs",
               "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Service\\NotifikasiService.cs",
               "RelativeDocumentMoniker": "TubesKPL\\Service\\NotifikasiService.cs",
@@ -282,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "DendaService.cs",
               "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Service\\DendaService.cs",
               "RelativeDocumentMoniker": "TubesKPL\\Service\\DendaService.cs",
@@ -295,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "BukuService.cs",
               "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Service\\BukuService.cs",
               "RelativeDocumentMoniker": "TubesKPL\\Service\\BukuService.cs",
@@ -308,7 +321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ApiService.cs",
               "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\TubesKPL\\Service\\ApiService.cs",
               "RelativeDocumentMoniker": "TubesKPL\\Service\\ApiService.cs",
@@ -321,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Buku.cs",
               "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\ManajemenPerpus.Core\\Models\\Buku.cs",
               "RelativeDocumentMoniker": "ManajemenPerpus.Core\\Models\\Buku.cs",
@@ -333,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "PenggunaController.cs",
               "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\RestAPI\\Controllers\\PenggunaController.cs",
               "RelativeDocumentMoniker": "RestAPI\\Controllers\\PenggunaController.cs",
@@ -345,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "DataBuku.json",
               "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\RestAPI\\DataJson\\DataBuku.json",
               "RelativeDocumentMoniker": "RestAPI\\DataJson\\DataBuku.json",
@@ -357,7 +370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "ManajemenPerpus.API.csproj",
               "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\RestAPI\\ManajemenPerpus.API.csproj",
               "RelativeDocumentMoniker": "RestAPI\\ManajemenPerpus.API.csproj",
@@ -369,7 +382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "DataPengguna.json",
               "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\SharedData\\DataJson\\DataPengguna.json",
               "RelativeDocumentMoniker": "SharedData\\DataJson\\DataPengguna.json",
@@ -381,7 +394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "DataNotifikasi.json",
               "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\SharedData\\DataJson\\DataNotifikasi.json",
               "RelativeDocumentMoniker": "SharedData\\DataJson\\DataNotifikasi.json",
@@ -393,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "DataDenda.json",
               "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\SharedData\\DataJson\\DataDenda.json",
               "RelativeDocumentMoniker": "SharedData\\DataJson\\DataDenda.json",
@@ -405,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "DataBuku.json",
               "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\SharedData\\DataJson\\DataBuku.json",
               "RelativeDocumentMoniker": "SharedData\\DataJson\\DataBuku.json",
@@ -414,18 +427,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-05-05T09:27:47.883Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Pengguna.cs",
-              "DocumentMoniker": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\ManajemenPerpus.Core\\Models\\Pengguna.cs",
-              "RelativeDocumentMoniker": "ManajemenPerpus.Core\\Models\\Pengguna.cs",
-              "ToolTip": "C:\\Users\\Tubagus Aulia\\Kuliah\\KPL\\Tubes KPL 5\\TubesKPL_4\\ManajemenPerpus.Core\\Models\\Pengguna.cs",
-              "RelativeToolTip": "ManajemenPerpus.Core\\Models\\Pengguna.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:38:18.057Z"
             },
             {
               "$type": "Document",

@@ -1,109 +1,58 @@
-﻿//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Text.Json;
-//using System.Threading.Tasks;
-//using ManajemenPerpus.Core.Models;
-
-//namespace ManajemenPerpus.CLI.Service
-//{
-//    public class UlasanService
-//    {
-//    }
-//}
-
-using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Text.Json;
+using System.Threading.Tasks;
 using ManajemenPerpus.Core.Models;
 
 namespace ManajemenPerpus.CLI.Service
 {
     public class UlasanService
     {
-        private List<Ulasan> ulasanList;
-        private readonly BukuService bukuService;
-        private readonly string _jsonFilePath;
+        private static int currentID = 0;
+        public List<Buku> bukuList;
+        public Buku buku;
+        public Pengguna pengguna;
+        public BukuService bukuService;
+        public List<Ulasan> ulasanList;
 
-        public UlasanService(BukuService bukuService)
+        // Function untuk buat Ulasan
+        public Ulasan buatUlasan()
         {
-            this.bukuService = bukuService;
-
-            // Initialize JSON file path
-            string baseDirectory = AppContext.BaseDirectory;
-            string projectRoot = Path.GetFullPath(Path.Combine(baseDirectory, @"..\..\..\"));
-            string sharedDataPath = Path.Combine(projectRoot, "SharedData", "DataJson");
-            Directory.CreateDirectory(sharedDataPath);
-
-            _jsonFilePath = Path.Combine(sharedDataPath, "DataUlasan.json");
-            LoadData();
-        }
-
-        private void LoadData()
-        {
-            if (File.Exists(_jsonFilePath))
-            {
-                string jsonData = File.ReadAllText(_jsonFilePath);
-                if (!string.IsNullOrEmpty(jsonData))
-                {
-                    ulasanList = JsonSerializer.Deserialize<List<Ulasan>>(jsonData) ?? new List<Ulasan>();
-                }
-                else
-                {
-                    ulasanList = new List<Ulasan>();
-                }
-            }
-            else
-            {
-                ulasanList = new List<Ulasan>();
-            }
-        }
-
-        private void SaveData()
-        {
-            var options = new JsonSerializerOptions { WriteIndented = true };
-            string jsonData = JsonSerializer.Serialize(ulasanList, options);
-            File.WriteAllText(_jsonFilePath, jsonData);
-        }
-
-        public Ulasan BuatUlasan(string bukuId, string penggunaId, string isiUlasan)
-        {
-            if (string.IsNullOrEmpty(bukuId))
+            Console.WriteLine("=== Buat Ulasan ===");
+            Console.Write("Masukkan ID Buku: ");
+            string idBuku = Console.ReadLine();
+            if (string.IsNullOrEmpty(idBuku))
             {
                 Console.WriteLine("ID Buku tidak boleh kosong.");
                 return null;
             }
 
-            if (string.IsNullOrEmpty(isiUlasan))
+            bukuList = bukuService.GetAllBuku();
+            foreach (var buku in bukuList)
             {
-                Console.WriteLine("Ulasan tidak boleh kosong.");
-                return null;
+                if (buku.IdBuku == idBuku)
+                {
+                    Console.Write("Masukkan Ulasan: ");
+                    string ulasan = Console.ReadLine();
+                    if (string.IsNullOrEmpty(ulasan))
+                    {
+                        Console.WriteLine("Ulasan tidak boleh kosong.");
+                        return null;
+                    }
+                    Console.WriteLine("Ulasan berhasil ditambahkan pada buku:.");
+                    return new Ulasan(generateIdUlasan(), pengguna.IdPengguna, ulasan);
+                }
             }
-
-            var buku = bukuService.GetBukuById(bukuId);
-            if (buku == null)
-            {
-                Console.WriteLine("Buku tidak ditemukan.");
-                return null;
-            }
-
-            string ulasanId = GenerateIdUlasan();
-            var newUlasan = new Ulasan(ulasanId, penggunaId, isiUlasan);
-            ulasanList.Add(newUlasan);
-            SaveData();
-
-            Console.WriteLine($"Ulasan berhasil ditambahkan pada buku: {buku.Judul}");
-            return newUlasan;
+            return null;
         }
 
-        public void AddUlasan(Ulasan ulasan)
+        // Function untuk menambahkan Ulasan ke dalam list
+        public void addUlasan(Ulasan ulasan)
         {
             if (ulasan != null)
             {
                 ulasanList.Add(ulasan);
-                SaveData();
                 Console.WriteLine("Ulasan berhasil ditambahkan.");
             }
             else
@@ -112,14 +61,32 @@ namespace ManajemenPerpus.CLI.Service
             }
         }
 
-        private string GenerateIdUlasan()
+        // Function untuk generate ID Ulasan dengan format "U" + "3 digit angka" -> "U001"
+        public static string generateIdUlasan()
         {
-            int maxId = 0;
-            foreach (var ulasan in ulasanList)
+            currentID++;
+            return "U" + currentID.ToString("D3");
+        }
+
+        // Function untuk mendapatkan semua ulasan dari list
+        public List<Ulasan> getAllUlasan()
+        {
+            return ulasanList;
+        }
+
+        // Function untuk menyimpan data ulasan ke dalam file JSON
+        public void simpanUlasanKeFile()
+        {
+            var options = new JsonSerializerOptions
             {
-                if (int.TryParse(ulasan.ulasanId.Substring(1), out int currentId))
-                {
-                    maxId = Math.Max(maxId, currentId);
-                }
-            }
-            return $"U{(maxId
+                WriteIndented = true
+            };
+            string basePath = AppContext.BaseDirectory;
+            string filePath = Path.Combine(basePath, "..", "..", "..", "SharedData", "DataJson", "DataUlasan.json");
+            filePath = Path.GetFullPath(filePath);
+
+            string jsonString = JsonSerializer.Serialize(getAllUlasan(), options);
+            File.WriteAllText(filePath, jsonString);
+        }
+    }
+}
