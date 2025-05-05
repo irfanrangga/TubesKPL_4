@@ -8,7 +8,7 @@ namespace ManajemenPerpus.CLI.Fitur
         public UlasanService ulasanService;
 
         int pilihan;
-        public void MenuUlasanRekomendasi()
+        public ProgramState MenuUlasanRekomendasi()
         {
             Console.Clear();
             Console.WriteLine("=== ULASAN & REKOMENDASI ===");
@@ -29,6 +29,7 @@ namespace ManajemenPerpus.CLI.Fitur
                         break;
                 }
             }
+            return ProgramState.StateMenuUtama;
         }
     }
 }

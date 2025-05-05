@@ -37,7 +37,7 @@ namespace ManajemenPerpus.CLI.Service
 
         private void SaveData()
         {
-            string json = JsonSerializer.Serialize;
+            string json = JsonSerializer.Serialize(GetAllBuku());
             File.WriteAllText(_jsonFilePath, json);
         }
 

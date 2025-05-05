@@ -4,7 +4,7 @@ namespace ManajemenPerpus.CLI.Fitur
 {
     public class FiturLaporanStatistik
     {
-        public void TampilkanLaporanStatistik()
+        public ProgramState MenuLaporanStatistik()
         {
             Console.Clear();
             Console.WriteLine("=== LAPORAN & STATISTIK ===");
@@ -20,7 +20,7 @@ namespace ManajemenPerpus.CLI.Fitur
                 switch (pilihan)
                 {
                     case 0:
-                        return;
+                        return ;
                     default:
                         Console.WriteLine($"Fitur {pilihan} akan diimplementasikan");
                         Console.ReadKey();
@@ -32,6 +32,7 @@ namespace ManajemenPerpus.CLI.Fitur
                 Console.WriteLine("Input tidak valid. Harap masukkan angka.");
                 Console.ReadKey();
             }
+            return ProgramState.StateMenuUtama;
         }
     }
 }
