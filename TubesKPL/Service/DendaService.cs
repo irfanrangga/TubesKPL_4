@@ -6,7 +6,7 @@ using ManajemenPerpus.Core.Models;
 
 namespace ManajemenPerpus.CLI.Service
 {
-    internal class DendaService
+    public class DendaService
     {
         private readonly string _jsonFilePath;
         private List<Denda> _dendaList;

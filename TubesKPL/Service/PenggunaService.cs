@@ -8,7 +8,7 @@ using ManajemenPerpus.Core.Models;
 
 namespace ManajemenPerpus.CLI.Service
 {
-    internal class PenggunaService
+    public class PenggunaService
     {
         List<Pengguna> listPengguna;
 
@@ -80,5 +80,15 @@ namespace ManajemenPerpus.CLI.Service
             return false;
         }
 
+        public void saveUsersToFile(string filePath)
+        {
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                foreach (var pengguna in listPengguna)
+                {
+                    writer.WriteLine($"{pengguna.IdPengguna},{pengguna.Username},{pengguna.Password},{pengguna.Role},{pengguna.Fullname},{pengguna.Email},{pengguna.Phone},{pengguna.Address}");
+                }
+            }
+        }
     }
 }
