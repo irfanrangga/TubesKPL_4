@@ -46,24 +46,24 @@ namespace ManajemenPerpus.CLI
                     case ProgramState.StateMenuUtama:
                         currentState = Menu.MenuUtama();
                         break;
-                    //case ProgramState.StateManajemenPengguna:
-                    //    currentState = fiturManajemenPengguna.MenuManajemenPengguna();
-                    //    break;
-                    //case ProgramState.StateManajemenKoleksi:
-                    //    currentState = fiturManajemenKoleksi.MenuManajemenKoleksi();
-                    //    break;
-                    //case ProgramState.StateSirkulasiBuku:
-                    //    currentState = fiturSirkulasiBuku.MenuSirkulasiBuku();
-                    //    break;
+                    case ProgramState.StateManajemenPengguna:
+                        currentState = fiturManajemenPengguna.MenuManajemenPengguna();
+                        break;
+                    case ProgramState.StateManajemenKoleksi:
+                        currentState = fiturManajemenKoleksi.MenuManajemenKoleksi();
+                        break;
+                    case ProgramState.StateSirkulasiBuku:
+                        currentState = fiturSirkulasiBuku.MenuSirkulasiBuku();
+                        break;
                     case ProgramState.StateUlasanRekomendasi:
                         currentState = fiturUlasanRekomendasi.MenuUlasanRekomendasi();
                         break;
-                    //case ProgramState.StateLaporanStatistik:
-                    //    currentState = fiturLaporanStatistik.MenuLaporanStatistik();
-                    //    break;
-                    //case ProgramState.StateNotifikasiOtomatis:
-                    //    currentState = fiturNotifikasiOtomatis.MenuNotifikasiOtomatis();
-                    //    break;
+                    case ProgramState.StateLaporanStatistik:
+                        currentState = fiturLaporanStatistik.MenuLaporanStatistik();
+                        break;
+                    case ProgramState.StateNotifikasiOtomatis:
+                        currentState = fiturNotifikasiOtomatis.MenuNotifikasiOtomatis();
+                        break;
                 }
             }
         }

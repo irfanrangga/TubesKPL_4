@@ -5,7 +5,7 @@ namespace ManajemenPerpus.CLI.Fitur
 {
     public class FiturSirkulasiBuku
     {
-        public void TampilkanSirkulasiBuku()
+        public ProgramState MenuSirkulasiBuku()
         {
             Console.Clear();
             Console.WriteLine("=== SIRKULASI BUKU ===");
@@ -34,6 +34,7 @@ namespace ManajemenPerpus.CLI.Fitur
                 Console.WriteLine("Input tidak valid. Harap masukkan angka.");
                 Console.ReadKey();
             }
+            return ProgramState.StateMenuUtama;
         }
     }
 }

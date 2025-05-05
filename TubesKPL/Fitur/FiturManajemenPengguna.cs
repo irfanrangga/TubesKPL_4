@@ -4,7 +4,7 @@ namespace ManajemenPerpus.CLI.Fitur
 {
     public class FiturManajemenPengguna
     {
-        public void TampilkanManajemenPengguna()
+        public ProgramState MenuManajemenPengguna()
         {
             Console.Clear();
             Console.WriteLine("=== MANAJEMEN PENGGUNA & KEANGGOTAAN ===");
@@ -33,6 +33,7 @@ namespace ManajemenPerpus.CLI.Fitur
                 Console.WriteLine("Input tidak valid. Harap masukkan angka.");
                 Console.ReadKey();
             }
+            return ProgramState.StateMenuUtama;
         }
     }
 }

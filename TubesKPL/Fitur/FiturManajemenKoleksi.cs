@@ -15,7 +15,7 @@ namespace ManajemenPerpus.CLI.Fitur
             _bukuService = new BukuService();
         }
 
-        public void TampilkanManajemenKoleksi()
+        public ProgramState MenuManajemenKoleksi()
         {
             bool kembaliKeMenuUtama = false;
 
@@ -65,6 +65,7 @@ namespace ManajemenPerpus.CLI.Fitur
                     Console.ReadKey();
                 }
             }
+            return ProgramState.StateMenuUtama;
         }
 
         private void TambahBuku()

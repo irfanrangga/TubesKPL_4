@@ -34,17 +34,11 @@ namespace ManajemenPerpus.CLI.Service
                 return;
             }
 
-            if (!buku.IsTersedia())
-            {
-                Console.WriteLine("Buku tidak tersedia untuk dipinjam.");
-                return;
-            }
-
             string idPinjaman = GeneratePinjamanId();
             Pinjaman pinjaman = new Pinjaman(idPinjaman, idBuku, idAnggota, batasPengembalian);
             listPinjaman.Add(pinjaman);
 
-            buku.status = Buku.STATUSBUKU.DIPINJAM;
+            buku.Status = Buku.STATUSBUKU.DIPINJAM;
             Console.WriteLine("Pinjaman berhasil ditambahkan.");
         }
 
@@ -72,7 +66,7 @@ namespace ManajemenPerpus.CLI.Service
                 var buku = bukuService.GetBukuById(pinjaman.IdBuku);
                 if (buku != null)
                 {
-                    buku.status = Buku.STATUSBUKU.TERSEDIA;
+                    buku.Status = Buku.STATUSBUKU.TERSEDIA;
                 }
 
                 listPinjaman.Remove(pinjaman);

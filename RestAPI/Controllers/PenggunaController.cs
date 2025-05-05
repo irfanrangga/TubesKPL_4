@@ -10,14 +10,12 @@ namespace ManajemenPerpus.API.Controllers
     public class PenggunaController : ControllerBase
     {
         private static List<Pengguna> users;
-        private static string filePath = "TubesKPL/SharedData/DataJson/DataPengguna.json";
+        private static string filePath = "DataJson/DataPengguna.json";
 
         [HttpGet]
         public ActionResult<List<Pengguna>> GetAllUsers()
         {
             // Gunakan path absolut relatif terhadap direktori kerja aplikasi
-            string filePath = "TubesKPL/SharedData/DataJson/DataPengguna.json";
-
             if (System.IO.File.Exists(filePath))
             {
                 try
