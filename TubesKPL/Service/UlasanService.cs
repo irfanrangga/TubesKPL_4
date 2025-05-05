@@ -10,11 +10,11 @@ namespace ManajemenPerpus.CLI.Service
     public class UlasanService
     {
         private static int currentID = 0;
-        public List<Buku> bukuList;
+        public List<Buku> bukuList = new List<Buku>();
         public Buku buku;
         public Pengguna pengguna;
-        public BukuService bukuService;
-        public List<Ulasan> ulasanList;
+        public BukuService bukuService = new BukuService();
+        public List<Ulasan> ulasanList = new List<Ulasan>();
 
         // Function untuk buat Ulasan
         public Ulasan buatUlasan()
@@ -84,6 +84,13 @@ namespace ManajemenPerpus.CLI.Service
             string basePath = AppContext.BaseDirectory;
             string filePath = Path.Combine(basePath, "..", "..", "..", "SharedData", "DataJson", "DataUlasan.json");
             filePath = Path.GetFullPath(filePath);
+
+            // Ensure the directory exists
+            string directoryPath = Path.GetDirectoryName(filePath);
+            if (!string.IsNullOrEmpty(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
 
             string jsonString = JsonSerializer.Serialize(getAllUlasan(), options);
             File.WriteAllText(filePath, jsonString);

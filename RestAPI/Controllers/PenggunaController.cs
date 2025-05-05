@@ -61,5 +61,38 @@ namespace ManajemenPerpus.API.Controllers
             users.Add(newUser);
             return CreatedAtAction(nameof(GetUserById), new { id = newUser.IdPengguna }, newUser);
         }
+
+        [HttpPut("{id}")]
+        public ActionResult UpdateUser(string id, [FromBody] Pengguna updatedUser)
+        {
+            if (updatedUser == null || updatedUser.IdPengguna != id)
+            {
+                return BadRequest("Invalid user data.");
+            }
+            var user = users.FirstOrDefault(u => u.IdPengguna == id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            user.Username = updatedUser.Username;
+            user.Password = updatedUser.Password;
+            user.Fullname = updatedUser.Fullname;
+            user.Email = updatedUser.Email;
+            user.Phone = updatedUser.Phone;
+            user.Address = updatedUser.Address;
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult DeleteUser(string id)
+        {
+            var user = users.FirstOrDefault(u => u.IdPengguna == id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            users.Remove(user);
+            return NoContent();
+        }
     }
 }

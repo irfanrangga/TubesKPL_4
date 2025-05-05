@@ -21,7 +21,7 @@ namespace ManajemenPerpus.CLI.Fitur
                 switch (pilihan)
                 {
                     case 0:
-                        return;
+                        return ProgramState.StateKeluar;
                     default:
                         Console.WriteLine($"Fitur {pilihan} akan diimplementasikan");
                         Console.ReadKey();
