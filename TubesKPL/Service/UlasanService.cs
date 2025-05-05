@@ -1,155 +1,112 @@
-﻿//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Text.Json;
-//using System.Threading.Tasks;
-//using ManajemenPerpus.Core.Models;
-
-//namespace ManajemenPerpus.CLI.Service
-//{
-//    public class UlasanService
-//    {
-//    }
-//}
-
-using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Text.Json;
+using System.Threading.Tasks;
 using ManajemenPerpus.Core.Models;
 
 namespace ManajemenPerpus.CLI.Service
 {
+
     public class UlasanService
     {
-<<<<<<< HEAD
-        private static int currentID = 0;
-        public List<Buku> bukuList = new List<Buku>();
-        public Buku buku;
-        public Pengguna pengguna;
-        public BukuService bukuService = new BukuService();
-        public List<Ulasan> ulasanList = new List<Ulasan>();
-=======
-        private List<Ulasan> ulasanList;
-        private readonly BukuService bukuService;
-        private readonly string _jsonFilePath;
->>>>>>> 75fe7c549b65ea87862708abae1b546a5b4223b0
-
-        public UlasanService(BukuService bukuService)
+        private readonly string filePath;
+        private List<Ulasan> listUlasan;
+        private List<Buku> listBuku;
+        private BukuService bukuService = new BukuService();
+        public UlasanService()
         {
-            this.bukuService = bukuService;
-
-            // Initialize JSON file path
-            string baseDirectory = AppContext.BaseDirectory;
-            string projectRoot = Path.GetFullPath(Path.Combine(baseDirectory, @"..\..\..\"));
-            string sharedDataPath = Path.Combine(projectRoot, "SharedData", "DataJson");
-            Directory.CreateDirectory(sharedDataPath);
-
-            _jsonFilePath = Path.Combine(sharedDataPath, "DataUlasan.json");
+            string sharedDataPath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName,
+                                               "SharedData", "DataJson");
+            filePath = Path.Combine(sharedDataPath, "DataUlasan.json");
             LoadData();
         }
 
-        private void LoadData()
+        public void LoadData()
         {
-            if (File.Exists(_jsonFilePath))
+            if (File.Exists(filePath))
             {
-                string jsonData = File.ReadAllText(_jsonFilePath);
-                if (!string.IsNullOrEmpty(jsonData))
+                string json = File.ReadAllText(filePath);
+                try
                 {
-                    ulasanList = JsonSerializer.Deserialize<List<Ulasan>>(jsonData) ?? new List<Ulasan>();
+                    listUlasan = JsonSerializer.Deserialize<List<Ulasan>>(json) ?? new List<Ulasan>();
+                }
+                catch (JsonException ex)
+                {
+                    Console.WriteLine($"Error deserializing JSON: {ex.Message}");
+                    listUlasan = new List<Ulasan>();
+                }
+            }
+            else
+            {
+                listUlasan = new List<Ulasan>();
+                SaveData();
+            }
+        }
+
+        public void SaveData()
+        {
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            string json = JsonSerializer.Serialize(GetAllUlasan(), options);
+            File.WriteAllText(filePath, json);
+        }
+
+        public void AddUlasan(string ulasanId, string bukuId, string isiUlasan)
+        {
+            Ulasan ulasan = new Ulasan(generateUlasanId(), bukuId, isiUlasan);
+            listUlasan.Add(ulasan);
+            SaveData();
+        }
+
+        public string generateUlasanId()
+        {
+            string id = "ULS" + (listUlasan.Count + 1).ToString("D3");
+            return id;
+        }
+
+        public List<Ulasan> GetAllUlasan()
+        {
+            return listUlasan;
+        }
+
+        public Ulasan GetUlasanById(string id)
+        {
+            return listUlasan.FirstOrDefault(u => u.ulasanId == id);
+        }
+
+        public void tambahUlasan()
+        {
+            Console.WriteLine("Masukan ID Buku: ");
+            string bukuId = Console.ReadLine();
+            listBuku = bukuService.GetAllBuku();
+            foreach (var buku in listBuku)
+            {
+                if (buku.IdBuku == bukuId)
+                {
+                    Console.WriteLine("Masukan Ulasan: ");
+                    string isiUlasan = Console.ReadLine();
+                    AddUlasan(generateUlasanId(), bukuId, isiUlasan);
+                    Console.WriteLine("Ulasan berhasil ditambahkan.");
+                    break;
                 }
                 else
                 {
-                    ulasanList = new List<Ulasan>();
+                    Console.WriteLine("ID Buku tidak ditemukan.");
                 }
             }
-            else
-            {
-                ulasanList = new List<Ulasan>();
-            }
+            Console.WriteLine("Tekan sembarang tombol untuk melanjutkan...");
+            Console.ReadKey();
         }
 
-        private void SaveData()
+        public void tampilkanSemuaUlasan()
         {
-            var options = new JsonSerializerOptions { WriteIndented = true };
-            string jsonData = JsonSerializer.Serialize(ulasanList, options);
-            File.WriteAllText(_jsonFilePath, jsonData);
-        }
-
-        public Ulasan BuatUlasan(string bukuId, string penggunaId, string isiUlasan)
-        {
-            if (string.IsNullOrEmpty(bukuId))
+            Console.WriteLine("Daftar Ulasan:");
+            foreach (var ulasan in listUlasan)
             {
-                Console.WriteLine("ID Buku tidak boleh kosong.");
-                return null;
+                Console.WriteLine($"ID Ulasan: {ulasan.ulasanId}, ID Buku: {ulasan.bukuId}, Isi Ulasan: {ulasan.isiUlasan}");
             }
-
-            if (string.IsNullOrEmpty(isiUlasan))
-            {
-                Console.WriteLine("Ulasan tidak boleh kosong.");
-                return null;
-            }
-
-            var buku = bukuService.GetBukuById(bukuId);
-            if (buku == null)
-            {
-                Console.WriteLine("Buku tidak ditemukan.");
-                return null;
-            }
-
-            string ulasanId = GenerateIdUlasan();
-            var newUlasan = new Ulasan(ulasanId, penggunaId, isiUlasan);
-            ulasanList.Add(newUlasan);
-            SaveData();
-
-            Console.WriteLine($"Ulasan berhasil ditambahkan pada buku: {buku.Judul}");
-            return newUlasan;
-        }
-
-        public void AddUlasan(Ulasan ulasan)
-        {
-            if (ulasan != null)
-            {
-                ulasanList.Add(ulasan);
-                SaveData();
-                Console.WriteLine("Ulasan berhasil ditambahkan.");
-            }
-            else
-            {
-                Console.WriteLine("Gagal menambahkan ulasan.");
-            }
-        }
-
-        private string GenerateIdUlasan()
-        {
-            int maxId = 0;
-            foreach (var ulasan in ulasanList)
-            {
-<<<<<<< HEAD
-                WriteIndented = true
-            };
-            string basePath = AppContext.BaseDirectory;
-            string filePath = Path.Combine(basePath, "..", "..", "..", "SharedData", "DataJson", "DataUlasan.json");
-            filePath = Path.GetFullPath(filePath);
-
-            // Ensure the directory exists
-            string directoryPath = Path.GetDirectoryName(filePath);
-            if (!string.IsNullOrEmpty(directoryPath))
-            {
-                Directory.CreateDirectory(directoryPath);
-            }
-
-            string jsonString = JsonSerializer.Serialize(getAllUlasan(), options);
-            File.WriteAllText(filePath, jsonString);
+            Console.WriteLine("Tekan sembarang tombol untuk melanjutkan...");
+            Console.ReadKey();
         }
     }
 }
-=======
-                if (int.TryParse(ulasan.ulasanId.Substring(1), out int currentId))
-                {
-                    maxId = Math.Max(maxId, currentId);
-                }
-            }
-            return $"U{(maxId
->>>>>>> 75fe7c549b65ea87862708abae1b546a5b4223b0

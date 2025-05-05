@@ -1,19 +1,4 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
-//using System.Collections.Generic;
-//using ManajemenPerpus.Core.Models;
-
-//namespace ManajemenPerpus.CLI.Service
-//{
-//    public class PenggunaService
-//    {
-//    }
-//}
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -26,24 +11,12 @@ namespace ManajemenPerpus.CLI.Service
 {
     public class PenggunaService
     {
-        private readonly string _jsonFilePath;
+        private readonly string filePath;
         private List<Pengguna> _listPengguna;
 
         public PenggunaService()
         {
-            // Get the directory where the application is running from
-            string baseDirectory = AppContext.BaseDirectory;
-
-            // Navigate up to the project root directory (assuming it's 3 levels up from bin/Debug/net8.0)
-            string projectRoot = Path.GetFullPath(Path.Combine(baseDirectory, @"..\..\..\"));
-
-            // Combine with the SharedData path
-            string sharedDataPath = Path.Combine(projectRoot, "SharedData", "DataJson");
-
-            // Ensure the directory exists
-            Directory.CreateDirectory(sharedDataPath);
-
-            _jsonFilePath = Path.Combine(sharedDataPath, "DataPengguna.json");
+            filePath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "SharedData", "DataJson", "DataPengguna.json");
             _listPengguna = new List<Pengguna>();
             LoadData();
         }
@@ -52,15 +25,15 @@ namespace ManajemenPerpus.CLI.Service
         {
             try
             {
-                if (File.Exists(_jsonFilePath))
+                if (File.Exists(filePath))
                 {
-                    string jsonData = File.ReadAllText(_jsonFilePath);
+                    string jsonData = File.ReadAllText(filePath);
                     _listPengguna = JsonSerializer.Deserialize<List<Pengguna>>(jsonData) ?? new List<Pengguna>();
                 }
                 else
                 {
                     // Create file if it doesn't exist
-                    File.WriteAllText(_jsonFilePath, "[]");
+                    File.WriteAllText(filePath, "[]");
                     _listPengguna = new List<Pengguna>();
                 }
             }
@@ -77,7 +50,7 @@ namespace ManajemenPerpus.CLI.Service
             {
                 var options = new JsonSerializerOptions { WriteIndented = true };
                 string jsonData = JsonSerializer.Serialize(_listPengguna, options);
-                File.WriteAllText(_jsonFilePath, jsonData);
+                File.WriteAllText(filePath, jsonData);
             }
             catch (Exception ex)
             {
@@ -148,25 +121,6 @@ namespace ManajemenPerpus.CLI.Service
                 return true;
             }
             return false;
-        }
-
-        // Optional: You can keep this method if you need CSV export functionality
-        public void SaveUsersToFile(string filePath)
-        {
-            try
-            {
-                using (StreamWriter writer = new StreamWriter(filePath))
-                {
-                    foreach (var pengguna in _listPengguna)
-                    {
-                        writer.WriteLine($"{pengguna.IdPengguna},{pengguna.Username},{pengguna.Password},{pengguna.Role},{pengguna.Fullname},{pengguna.Email},{pengguna.Phone},{pengguna.Address}");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error saving users to CSV: {ex.Message}");
-            }
         }
     }
 }

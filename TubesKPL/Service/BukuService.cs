@@ -15,23 +15,8 @@ namespace ManajemenPerpus.CLI.Service
 
         public BukuService()
         {
-<<<<<<< HEAD
             string sharedDataPath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName,
                                                "SharedData", "DataJson");
-=======
-            // Get the directory where the application is running from
-            string baseDirectory = AppContext.BaseDirectory;
-
-            // Navigate up to the project root directory (assuming it's 3 levels up from bin/Debug/net8.0)
-            string projectRoot = Path.GetFullPath(Path.Combine(baseDirectory, @"..\..\..\"));
-
-            // Combine with the SharedData path
-            string sharedDataPath = Path.Combine(projectRoot, "SharedData", "DataJson");
-
-            // Ensure the directory exists
-            Directory.CreateDirectory(sharedDataPath);
-
->>>>>>> 75fe7c549b65ea87862708abae1b546a5b4223b0
             _jsonFilePath = Path.Combine(sharedDataPath, "DataBuku.json");
             LoadData();
         }
@@ -60,12 +45,8 @@ namespace ManajemenPerpus.CLI.Service
 
         private void SaveData()
         {
-<<<<<<< HEAD
             var options = new JsonSerializerOptions { WriteIndented = true };
             string json = JsonSerializer.Serialize(GetAllBuku(), options);
-=======
-            string json = JsonSerializer.Serialize(_listBuku);
->>>>>>> 75fe7c549b65ea87862708abae1b546a5b4223b0
             File.WriteAllText(_jsonFilePath, json);
         }
 

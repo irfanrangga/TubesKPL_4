@@ -10,7 +10,7 @@ namespace ManajemenPerpus.API.Controllers
     public class PenggunaController : ControllerBase
     {
         private static List<Pengguna> users;
-        private static string filePath = "DataJson/DataPengguna.json";
+        private string filePath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).FullName, "SharedData", "DataJson", "DataPengguna.json");
 
         [HttpGet]
         public ActionResult<List<Pengguna>> GetAllUsers()
