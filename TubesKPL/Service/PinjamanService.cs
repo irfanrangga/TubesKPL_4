@@ -10,9 +10,17 @@ namespace ManajemenPerpus.CLI.Service
     public class PinjamanService
     {
         private List<Pinjaman> listPinjaman = new List<Pinjaman>();
-        private BukuService bukuService;
-        private PenggunaService penggunaService;
+        private BukuService bukuService = new BukuService();
+        private PenggunaService penggunaService = new PenggunaService();
         private readonly string _jsonFilePath;
+
+        public PinjamanService()
+        {
+            string sharedDataPath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName,
+                                               "SharedData", "DataJson");
+            _jsonFilePath = Path.Combine(sharedDataPath, "DataBuku.json");
+            LoadData();
+        }
 
         public PinjamanService(BukuService bukuService, PenggunaService penggunaService)
         {

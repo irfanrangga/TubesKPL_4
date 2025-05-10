@@ -9,10 +9,10 @@ namespace ManajemenPerpus.CLI.Fitur
 {
     public class FiturSirkulasiBuku
     {
-        private readonly BukuService _bukuService;
-        private readonly PenggunaService _penggunaService;
-        private readonly PinjamanService _pinjamanService;
-        private readonly DendaService _dendaService;
+        private readonly BukuService _bukuService = new BukuService();
+        private readonly PenggunaService _penggunaService = new PenggunaService();
+        private readonly PinjamanService _pinjamanService = new PinjamanService();
+        private readonly DendaService _dendaService = new DendaService();
 
         public ProgramState MenuSirkulasiBuku()
         {
@@ -182,7 +182,7 @@ namespace ManajemenPerpus.CLI.Fitur
             Console.Clear();
             Console.WriteLine("=== PERPANJANGAN PINJAMAN ===");
 
-            // Input ID pinjaman
+            
             Console.Write("Masukkan ID Pinjaman: ");
             string idPinjaman = Console.ReadLine().Trim();
             var pinjaman = _pinjamanService.GetPinjamanById(idPinjaman);
@@ -194,10 +194,10 @@ namespace ManajemenPerpus.CLI.Fitur
                 return;
             }
 
-            // Perpanjang 7 hari dari batas sebelumnya
+            
             DateTime batasBaru = pinjaman.BatasPengembalian.AddDays(7);
 
-            // Update pinjaman (karena kita tidak punya method update, kita hapus dan buat baru)
+            
             _pinjamanService.HapusPinjaman(idPinjaman);
             _pinjamanService.TambahPinjaman(pinjaman.IdBuku, pinjaman.IdAnggota, batasBaru);
 
@@ -211,7 +211,7 @@ namespace ManajemenPerpus.CLI.Fitur
             Console.Clear();
             Console.WriteLine("=== PERHITUNGAN DENDA ===");
 
-            // Tampilkan denda yang belum lunas
+            
             var dendaBelumLunas = _dendaService.GetAllDenda()
                 .Where(d => d.StatusDenda == Denda.STATUSDENDA.BELUMLUNAS)
                 .ToList();
@@ -238,7 +238,6 @@ namespace ManajemenPerpus.CLI.Fitur
                 Console.WriteLine();
             }
 
-            // Pilihan untuk membayar denda
             Console.Write("Pilih nomor denda yang akan dibayar (0 untuk batal): ");
             if (!int.TryParse(Console.ReadLine(), out int pilihan) ||
                 pilihan < 0 || pilihan > dendaBelumLunas.Count)

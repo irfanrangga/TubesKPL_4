@@ -16,9 +16,8 @@ namespace ManajemenPerpus.CLI.Service
         private BukuService bukuService = new BukuService();
         public UlasanService()
         {
-            string sharedDataPath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName,
-                                               "SharedData", "DataJson");
-            filePath = Path.Combine(sharedDataPath, "DataUlasan.json");
+            var root = Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName;
+            filePath = Path.Combine(root, "SharedData", "DataJson", "DataUlasan.json");
             LoadData();
         }
 
