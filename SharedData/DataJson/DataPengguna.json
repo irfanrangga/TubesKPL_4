@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "IdPengguna": "P001",
+    "Username": "Rija132",
+    "Password": "rijaganzz",
+    "Role": "anggota",
+    "Fullname": "Rija Putra",
+    "Email": "rija@gmail.com",
+    "Phone": "0812393812321",
+    "Address": "Kobong"
+  }
+]

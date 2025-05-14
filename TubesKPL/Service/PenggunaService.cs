@@ -16,7 +16,8 @@ namespace ManajemenPerpus.CLI.Service
 
         public PenggunaService()
         {
-            filePath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName, "SharedData", "DataJson", "DataPengguna.json");
+            var root = Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName;
+            filePath = Path.Combine(root, "SharedData", "DataJson", "DataPengguna.json");
             _listPengguna = new List<Pengguna>();
             LoadData();
         }

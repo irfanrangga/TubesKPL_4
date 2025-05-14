@@ -1,42 +1,3 @@
-﻿//using System;
-
-//namespace ManajemenPerpus.CLI.Fitur
-//{
-//    public class FiturLaporanStatistik
-//    {
-//        public ProgramState MenuLaporanStatistik()
-//        {
-//            Console.Clear();
-//            Console.WriteLine("=== LAPORAN & STATISTIK ===");
-//            Console.WriteLine("1. Laporan Peminjaman");
-//            Console.WriteLine("2. Statistik Pengunjung");
-//            Console.WriteLine("3. Laporan Buku Populer");
-//            Console.WriteLine("0. Kembali ke Menu Utama");
-//            Console.Write("Pilih opsi: ");
-
-//            int pilihan;
-//            if (int.TryParse(Console.ReadLine(), out pilihan))
-//            {
-//                switch (pilihan)
-//                {
-//                    case 0:
-//                        return ProgramState.StateMenuUtama;
-//                    default:
-//                        Console.WriteLine($"Fitur {pilihan} akan diimplementasikan");
-//                        Console.ReadKey();
-//                        break;
-//                }
-//            }
-//            else
-//            {
-//                Console.WriteLine("Input tidak valid. Harap masukkan angka.");
-//                Console.ReadKey();
-//            }
-//            return ProgramState.StateMenuUtama;
-//        }
-//    }
-//}
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -148,7 +109,8 @@ namespace ManajemenPerpus.CLI.Fitur
                 if (loans.Any())
                 {
                     var bukuGroups = loans.GroupBy(p => p.IdBuku)
-                        .Select(g => new {
+                        .Select(g => new
+                        {
                             BukuId = g.Key,
                             Judul = _bukuService.GetBukuById(g.Key)?.Judul ?? "Unknown",
                             Count = g.Count()
@@ -162,7 +124,8 @@ namespace ManajemenPerpus.CLI.Fitur
                     }
 
                     var anggotaGroups = loans.GroupBy(p => p.IdAnggota)
-                        .Select(g => new {
+                        .Select(g => new
+                        {
                             AnggotaId = g.Key,
                             Nama = _penggunaService.GetPenggunaById(g.Key)?.Fullname ?? "Unknown",
                             Count = g.Count()
@@ -202,7 +165,8 @@ namespace ManajemenPerpus.CLI.Fitur
 
                 var bukuPopuler = _pinjamanService.GetAllPinjaman()
                     .GroupBy(p => p.IdBuku)
-                    .Select(g => new {
+                    .Select(g => new
+                    {
                         BukuId = g.Key,
                         Judul = _bukuService.GetBukuById(g.Key)?.Judul ?? "Unknown",
                         PeminjamanCount = g.Count(),
@@ -226,7 +190,8 @@ namespace ManajemenPerpus.CLI.Fitur
 
                 var bukuByCategory = _bukuService.GetAllBuku()
                     .GroupBy(b => b.Kategori)
-                    .Select(g => new {
+                    .Select(g => new
+                    {
                         Kategori = g.Key.ToString(),
                         JumlahBuku = g.Count(),
                         RataPeminjaman = g.Average(b =>
@@ -270,7 +235,8 @@ namespace ManajemenPerpus.CLI.Fitur
                 {
                     var dendaByMember = allDenda
                         .GroupBy(d => d.IdPengguna)
-                        .Select(g => new {
+                        .Select(g => new
+                        {
                             AnggotaId = g.Key,
                             Nama = _penggunaService.GetPenggunaById(g.Key)?.Fullname ?? "Unknown",
                             TotalDenda = g.Sum(d => d.JumlahDenda),
@@ -330,7 +296,8 @@ namespace ManajemenPerpus.CLI.Fitur
                 Console.WriteLine("---------------------------------");
 
                 var activeMembers = allMembers
-                    .Select(m => new {
+                    .Select(m => new
+                    {
                         Anggota = m,
                         LoanCount = allLoans.Count(l => l.IdAnggota == m.IdPengguna),
                         LastActivity = allLoans.Where(l => l.IdAnggota == m.IdPengguna)
@@ -347,7 +314,8 @@ namespace ManajemenPerpus.CLI.Fitur
                 }
 
                 var membersWithFines = allMembers
-                    .Select(m => new {
+                    .Select(m => new
+                    {
                         Anggota = m,
                         TotalFines = allFines.Where(f => f.IdPengguna == m.IdPengguna).Sum(f => f.JumlahDenda),
                         UnpaidFines = allFines.Count(f => f.IdPengguna == m.IdPengguna && f.StatusDenda == Denda.STATUSDENDA.BELUMLUNAS)

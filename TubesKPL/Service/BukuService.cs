@@ -15,9 +15,8 @@ namespace ManajemenPerpus.CLI.Service
 
         public BukuService()
         {
-            string sharedDataPath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.Parent.FullName,
-                                               "SharedData", "DataJson");
-            _jsonFilePath = Path.Combine(sharedDataPath, "DataBuku.json");
+            var root = Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName;
+            _jsonFilePath = Path.Combine(root, "SharedData", "DataJson", "DataBuku.json");
             LoadData();
         }
 
