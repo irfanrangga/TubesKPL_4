@@ -4,6 +4,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using ManajemenPerpus.Core.Models;
+using ManajemenPerpus.Core.Helper;
 
 namespace ManajemenPerpus.CLI.Service
 {
@@ -14,6 +15,7 @@ namespace ManajemenPerpus.CLI.Service
         private List<Ulasan> listUlasan;
         private List<Buku> listBuku;
         private BukuService bukuService = new BukuService();
+        
         public UlasanService()
         {
             var root = Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName;
@@ -28,7 +30,7 @@ namespace ManajemenPerpus.CLI.Service
                 string json = File.ReadAllText(filePath);
                 try
                 {
-                    listUlasan = JsonSerializer.Deserialize<List<Ulasan>>(json) ?? new List<Ulasan>();
+                    listUlasan = JsonHelper.ReadJson<List<Ulasan>>(filePath);
                 }
                 catch (JsonException ex)
                 {
@@ -39,33 +41,45 @@ namespace ManajemenPerpus.CLI.Service
             else
             {
                 listUlasan = new List<Ulasan>();
-                SaveData();
+                JsonHelper.WriteJson(filePath, listUlasan);
             }
         }
 
-        public void SaveData()
+        public void AddUlasan()
         {
-            var options = new JsonSerializerOptions { WriteIndented = true };
-            string json = JsonSerializer.Serialize(GetAllUlasan(), options);
-            File.WriteAllText(filePath, json);
+            try
+            {
+                Console.WriteLine("Masukan ID Buku: ");
+                string bukuId = Console.ReadLine();
+                listBuku = bukuService.GetAllBuku();
+                foreach (var buku in listBuku)
+                {
+                    if (buku.IdBuku == bukuId)
+                    {
+                        Console.WriteLine("Masukan Ulasan: ");
+                        string isiUlasan = Console.ReadLine();
+                        Ulasan ulasan = new Ulasan(GenerateUlasanId(), bukuId, isiUlasan);
+                        listUlasan.Add(ulasan);
+                        Console.WriteLine("Ulasan berhasil ditambahkan.");
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("ID Buku tidak ditemukan.");
+                    }
+                }
+                JsonHelper.WriteJson(filePath, listUlasan);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error adding ulasan: {ex.Message}");
+            }
         }
 
-        public void AddUlasan(string ulasanId, string bukuId, string isiUlasan)
-        {
-            Ulasan ulasan = new Ulasan(generateUlasanId(), bukuId, isiUlasan);
-            listUlasan.Add(ulasan);
-            SaveData();
-        }
-
-        public string generateUlasanId()
+        public string GenerateUlasanId()
         {
             string id = "ULS" + (listUlasan.Count + 1).ToString("D3");
             return id;
-        }
-
-        public List<Ulasan> GetAllUlasan()
-        {
-            return listUlasan;
         }
 
         public Ulasan GetUlasanById(string id)
@@ -73,31 +87,7 @@ namespace ManajemenPerpus.CLI.Service
             return listUlasan.FirstOrDefault(u => u.ulasanId == id);
         }
 
-        public void tambahUlasan()
-        {
-            Console.WriteLine("Masukan ID Buku: ");
-            string bukuId = Console.ReadLine();
-            listBuku = bukuService.GetAllBuku();
-            foreach (var buku in listBuku)
-            {
-                if (buku.IdBuku == bukuId)
-                {
-                    Console.WriteLine("Masukan Ulasan: ");
-                    string isiUlasan = Console.ReadLine();
-                    AddUlasan(generateUlasanId(), bukuId, isiUlasan);
-                    Console.WriteLine("Ulasan berhasil ditambahkan.");
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("ID Buku tidak ditemukan.");
-                }
-            }
-            Console.WriteLine("Tekan sembarang tombol untuk melanjutkan...");
-            Console.ReadKey();
-        }
-
-        public void tampilkanSemuaUlasan()
+        public void ShowAllUlasan()
         {
             Console.WriteLine("Daftar Ulasan:");
             foreach (var ulasan in listUlasan)

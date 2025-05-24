@@ -68,7 +68,6 @@ namespace ManajemenPerpus.CLI.Fitur
             Console.Clear();
             Console.WriteLine("=== PROSES PEMINJAMAN ===");
 
-            // Tampilkan daftar buku yang tersedia
             var bukuTersedia = _bukuService.GetAllBuku()
                 .Where(b => b.Status == Buku.STATUSBUKU.TERSEDIA)
                 .ToList();
@@ -86,7 +85,6 @@ namespace ManajemenPerpus.CLI.Fitur
                 Console.WriteLine($"{i + 1}. {bukuTersedia[i].Judul} (ID: {bukuTersedia[i].IdBuku})");
             }
 
-            // Pilih buku
             Console.Write("\nPilih nomor buku: ");
             if (!int.TryParse(Console.ReadLine(), out int pilihanBuku) ||
                 pilihanBuku < 1 || pilihanBuku > bukuTersedia.Count)
@@ -98,7 +96,6 @@ namespace ManajemenPerpus.CLI.Fitur
 
             var bukuDipinjam = bukuTersedia[pilihanBuku - 1];
 
-            // Input ID anggota
             Console.Write("Masukkan ID Anggota: ");
             string idAnggota = Console.ReadLine().Trim();
             var anggota = _penggunaService.GetPenggunaById(idAnggota);
@@ -110,8 +107,7 @@ namespace ManajemenPerpus.CLI.Fitur
                 return;
             }
 
-            // Proses peminjaman
-            DateTime batasPengembalian = DateTime.Now.AddDays(7); // Batas 7 hari
+            DateTime batasPengembalian = DateTime.Now.AddDays(7);
             _pinjamanService.TambahPinjaman(bukuDipinjam.IdBuku, idAnggota, batasPengembalian);
 
             Console.WriteLine("\nPeminjaman berhasil!");
@@ -126,7 +122,6 @@ namespace ManajemenPerpus.CLI.Fitur
             Console.Clear();
             Console.WriteLine("=== PENGEMBALIAN BUKU ===");
 
-            // Input ID pinjaman
             Console.Write("Masukkan ID Pinjaman: ");
             string idPinjaman = Console.ReadLine().Trim();
             var pinjaman = _pinjamanService.GetPinjamanById(idPinjaman);
@@ -141,12 +136,11 @@ namespace ManajemenPerpus.CLI.Fitur
             var buku = _bukuService.GetBukuById(pinjaman.IdBuku);
             var anggota = _penggunaService.GetPenggunaById(pinjaman.IdAnggota);
 
-            // Hitung denda jika terlambat
             if (DateTime.Now > pinjaman.BatasPengembalian)
             {
                 TimeSpan keterlambatan = DateTime.Now - pinjaman.BatasPengembalian;
                 int hariTerlambat = (int)Math.Ceiling(keterlambatan.TotalDays);
-                int jumlahDenda = hariTerlambat * 5000; // Rp5000 per hari
+                int jumlahDenda = hariTerlambat * 5000;
 
                 string idDenda = "D" + DateTime.Now.ToString("yyyyMMddHHmmss");
                 var denda = new Denda(
@@ -170,7 +164,6 @@ namespace ManajemenPerpus.CLI.Fitur
                 Console.WriteLine("\nBuku dikembalikan tepat waktu.");
             }
 
-            // Hapus pinjaman
             _pinjamanService.HapusPinjaman(idPinjaman);
 
             Console.WriteLine("\nPengembalian berhasil diproses!");
