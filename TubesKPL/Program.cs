@@ -36,7 +36,7 @@ namespace ManajemenPerpus.CLI
             var fiturManajemenKoleksi = new FiturManajemenKoleksi();
             var fiturSirkulasiBuku = new FiturSirkulasiBuku();
             var fiturUlasanRekomendasi = new FiturUlasanRekomendasi();
-            var fiturLaporanStatistik = new FiturLaporanStatistik();
+            //var fiturLaporanStatistik = new FiturLaporanStatistik();
             var fiturNotifikasiOtomatis = new FiturNotifikasiOtomatis();
 
             while (currentState != ProgramState.StateKeluar)
@@ -59,7 +59,7 @@ namespace ManajemenPerpus.CLI
                         currentState = fiturUlasanRekomendasi.MenuUlasanRekomendasi();
                         break;
                     case ProgramState.StateLaporanStatistik:
-                        currentState = fiturLaporanStatistik.MenuLaporanStatistik();
+                        //currentState = fiturLaporanStatistik.MenuLaporanStatistik();
                         break;
                     case ProgramState.StateNotifikasiOtomatis:
                         currentState = fiturNotifikasiOtomatis.MenuNotifikasiOtomatis();

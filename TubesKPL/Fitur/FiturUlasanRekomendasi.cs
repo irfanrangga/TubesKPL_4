@@ -22,10 +22,10 @@ namespace ManajemenPerpus.CLI.Fitur
                 switch (pilihan)
                 {
                     case 1:
-                        ulasanService.tambahUlasan();
+                        ulasanService.AddUlasan();
                         break;
                     case 2:
-                        ulasanService.tampilkanSemuaUlasan();
+                        ulasanService.ShowAllUlasan();
                         break;
                     default:
                         Console.WriteLine($"Fitur {pilihan} akan diimplementasikan");
