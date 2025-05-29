@@ -1,0 +1,14 @@
+[
+  {
+    "IdPinjaman": "PJ001",
+    "IdBuku": "B001",
+    "IdAnggota": null,
+    "BatasPengembalian": "2020-06-04T22:30:27.478362+07:00"
+  },
+  {
+    "IdPinjaman": "PJ002",
+    "IdBuku": "B002",
+    "IdAnggota": "P001",
+    "BatasPengembalian": "2025-06-04T22:50:57.5206772+07:00"
+  }
+]
