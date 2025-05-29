@@ -82,11 +82,6 @@ namespace ManajemenPerpus.CLI.Service
             return id;
         }
 
-        public Ulasan GetUlasanById(string id)
-        {
-            return listUlasan.FirstOrDefault(u => u.ulasanId == id);
-        }
-
         public void ShowAllUlasan()
         {
             Console.WriteLine("Daftar Ulasan:");
