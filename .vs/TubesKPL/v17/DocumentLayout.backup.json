@@ -1,134 +1,137 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Dev\\Konstruksi PL\\TubesKPL\\",
+  "WorkspaceRootPath": "C:\\Tubes KPL1\\TubesKPL_4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\fitur\\fiturmanajemenpengguna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fiturmanajemenpengguna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\fitur\\fiturmanajemenkoleksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fiturmanajemenkoleksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\fitur\\fiturulasanrekomendasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fiturulasanrekomendasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\fitur\\fiturnotifikasiotomatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fiturnotifikasiotomatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\service\\dendaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\service\\dendaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\service\\notifikasiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\service\\notifikasiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\service\\pinjamanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\service\\pinjamanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\service\\pinjamanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\service\\penggunaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\service\\penggunaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\service\\ulasanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\service\\ulasanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\service\\rekomendasiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\service\\rekomendasiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\fitur\\fitursirkulasibuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fitursirkulasibuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\shareddata\\datajson\\databuku.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|solutionrelative:shareddata\\datajson\\databuku.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\shareddata\\datajson\\datanotifikasi.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|solutionrelative:shareddata\\datajson\\datanotifikasi.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\shareddata\\datajson\\datapengguna.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|solutionrelative:shareddata\\datajson\\datapengguna.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\shareddata\\datajson\\datadenda.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|solutionrelative:shareddata\\datajson\\datadenda.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\shareddata\\datajson\\dataulasan.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|solutionrelative:shareddata\\datajson\\dataulasan.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\service\\bukuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\service\\bukuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\restapi\\controllers\\bukucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|solutionrelative:restapi\\controllers\\bukucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\restapi\\controllers\\ulasancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|solutionrelative:restapi\\controllers\\ulasancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\fitur\\fiturlaporanstatistik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\fitur\\fiturlaporanstatistik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fiturlaporanstatistik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\manajemenperpus.core\\helper\\crudhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|solutionrelative:manajemenperpus.core\\helper\\crudhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|c:\\tubes kpl1\\tubeskpl_4\\manajemenperpus.core\\models\\pinjaman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|solutionrelative:manajemenperpus.core\\models\\pinjaman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\manajemenperpus.core\\models\\ulasan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\fitur\\fiturnotifikasiotomatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fiturnotifikasiotomatis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\fitur\\fiturulasanrekomendasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fiturulasanrekomendasi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\fitur\\fitursirkulasibuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fitursirkulasibuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\fitur\\fiturmanajemenpengguna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fiturmanajemenpengguna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\fitur\\fiturmanajemenkoleksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fiturmanajemenkoleksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\service\\dendaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\service\\dendaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\service\\notifikasiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\service\\notifikasiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\service\\penggunaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\service\\penggunaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\service\\rekomendasiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\service\\rekomendasiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\service\\ulasanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\service\\ulasanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\config\\libraryconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\config\\libraryconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\config\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\config\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|c:\\tubes kpl1\\tubeskpl_4\\shareddata\\datajson\\datadenda.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|solutionrelative:shareddata\\datajson\\datadenda.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|c:\\tubes kpl1\\tubeskpl_4\\shareddata\\datajson\\datanotifikasi.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|solutionrelative:shareddata\\datajson\\datanotifikasi.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|c:\\tubes kpl1\\tubeskpl_4\\shareddata\\datajson\\dataulasan.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|solutionrelative:shareddata\\datajson\\dataulasan.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\service\\bukuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\service\\bukuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|c:\\tubes kpl1\\tubeskpl_4\\shareddata\\datajson\\databuku.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|solutionrelative:shareddata\\datajson\\databuku.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|c:\\tubes kpl1\\tubeskpl_4\\shareddata\\datajson\\datapengguna.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|solutionrelative:shareddata\\datajson\\datapengguna.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|c:\\tubes kpl1\\tubeskpl_4\\restapi\\controllers\\bukucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|solutionrelative:restapi\\controllers\\bukucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|c:\\tubes kpl1\\tubeskpl_4\\restapi\\controllers\\ulasancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|solutionrelative:restapi\\controllers\\ulasancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|c:\\tubes kpl1\\tubeskpl_4\\manajemenperpus.core\\models\\ulasan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|solutionrelative:manajemenperpus.core\\models\\ulasan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\manajemenperpus.core\\helper\\jsonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|solutionrelative:manajemenperpus.core\\helper\\jsonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\manajemenperpus.core\\manajemenperpus.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|c:\\tubes kpl1\\tubeskpl_4\\manajemenperpus.core\\manajemenperpus.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|solutionrelative:manajemenperpus.core\\manajemenperpus.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\restapi\\controllers\\penggunacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|c:\\tubes kpl1\\tubeskpl_4\\restapi\\controllers\\penggunacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|solutionrelative:restapi\\controllers\\penggunacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\manajemenperpus.core\\models\\pengguna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|c:\\tubes kpl1\\tubeskpl_4\\manajemenperpus.core\\models\\pengguna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|solutionrelative:manajemenperpus.core\\models\\pengguna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\manajemenperpus.core\\models\\buku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|c:\\tubes kpl1\\tubeskpl_4\\manajemenperpus.core\\models\\buku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|solutionrelative:manajemenperpus.core\\models\\buku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\manajemenperpus.cli.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\tubes kpl1\\tubeskpl_4\\tubeskpl\\manajemenperpus.cli.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\manajemenperpus.cli.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\restapi\\manajemenperpus.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|c:\\tubes kpl1\\tubeskpl_4\\restapi\\manajemenperpus.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|solutionrelative:restapi\\manajemenperpus.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\bin\\Debug\\net8.0\\TubesKPL.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TubesKPL\\bin\\Debug\\net8.0\\TubesKPL.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\bin\\Debug\\net8.0\\TubesKPL.exe||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     }
   ],
   "DocumentGroupContainers": [
@@ -138,7 +141,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -150,37 +153,115 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FiturLaporanStatistik.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Fitur\\FiturLaporanStatistik.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturLaporanStatistik.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Fitur\\FiturLaporanStatistik.cs",
+              "RelativeToolTip": "TubesKPL\\Fitur\\FiturLaporanStatistik.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAwwHAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:48:15.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Program.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Program.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Program.cs",
+              "RelativeToolTip": "TubesKPL\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T13:53:15.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pinjaman.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\ManajemenPerpus.Core\\Models\\Pinjaman.cs",
+              "RelativeDocumentMoniker": "ManajemenPerpus.Core\\Models\\Pinjaman.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\ManajemenPerpus.Core\\Models\\Pinjaman.cs",
+              "RelativeToolTip": "ManajemenPerpus.Core\\Models\\Pinjaman.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T09:44:40.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PinjamanService.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Service\\PinjamanService.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Service\\PinjamanService.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Service\\PinjamanService.cs",
+              "RelativeToolTip": "TubesKPL\\Service\\PinjamanService.cs",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAowK8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T03:01:00.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "FiturNotifikasiOtomatis.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Fitur\\FiturNotifikasiOtomatis.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Fitur\\FiturNotifikasiOtomatis.cs",
               "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturNotifikasiOtomatis.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Fitur\\FiturNotifikasiOtomatis.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Fitur\\FiturNotifikasiOtomatis.cs",
               "RelativeToolTip": "TubesKPL\\Fitur\\FiturNotifikasiOtomatis.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAgwBoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAIBJwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T10:44:30.786Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "FiturUlasanRekomendasi.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Fitur\\FiturUlasanRekomendasi.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturUlasanRekomendasi.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Fitur\\FiturUlasanRekomendasi.cs",
+              "RelativeToolTip": "TubesKPL\\Fitur\\FiturUlasanRekomendasi.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBQwBIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:42:46.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FiturSirkulasiBuku.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
+              "RelativeToolTip": "TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAzwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:46:42.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "FiturManajemenPengguna.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Fitur\\FiturManajemenPengguna.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Fitur\\FiturManajemenPengguna.cs",
               "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturManajemenPengguna.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Fitur\\FiturManajemenPengguna.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Fitur\\FiturManajemenPengguna.cs",
               "RelativeToolTip": "TubesKPL\\Fitur\\FiturManajemenPengguna.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwBcAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T11:47:47.399Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "FiturManajemenKoleksi.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
               "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
               "RelativeToolTip": "TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADsBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -189,89 +270,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FiturUlasanRekomendasi.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Fitur\\FiturUlasanRekomendasi.cs",
-              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturUlasanRekomendasi.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Fitur\\FiturUlasanRekomendasi.cs",
-              "RelativeToolTip": "TubesKPL\\Fitur\\FiturUlasanRekomendasi.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBIAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:42:46.518Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DendaService.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Service\\DendaService.cs",
-              "RelativeDocumentMoniker": "TubesKPL\\Service\\DendaService.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Service\\DendaService.cs",
-              "RelativeToolTip": "TubesKPL\\Service\\DendaService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T08:20:29.953Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "NotifikasiService.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Service\\NotifikasiService.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Service\\NotifikasiService.cs",
               "RelativeDocumentMoniker": "TubesKPL\\Service\\NotifikasiService.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Service\\NotifikasiService.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Service\\NotifikasiService.cs",
               "RelativeToolTip": "TubesKPL\\Service\\NotifikasiService.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAowDUAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwDUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T08:20:20.143Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PinjamanService.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Service\\PinjamanService.cs",
-              "RelativeDocumentMoniker": "TubesKPL\\Service\\PinjamanService.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Service\\PinjamanService.cs",
-              "RelativeToolTip": "TubesKPL\\Service\\PinjamanService.cs",
-              "ViewState": "AgIAAKcAAAAAAAAAAAAUwD0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T03:01:00.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "PenggunaService.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Service\\PenggunaService.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Service\\PenggunaService.cs",
               "RelativeDocumentMoniker": "TubesKPL\\Service\\PenggunaService.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Service\\PenggunaService.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Service\\PenggunaService.cs",
               "RelativeToolTip": "TubesKPL\\Service\\PenggunaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAUwC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T02:17:27.093Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UlasanService.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Service\\UlasanService.cs",
-              "RelativeDocumentMoniker": "TubesKPL\\Service\\UlasanService.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Service\\UlasanService.cs",
-              "RelativeToolTip": "TubesKPL\\Service\\UlasanService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:37:40.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "RekomendasiService.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Service\\RekomendasiService.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Service\\RekomendasiService.cs",
               "RelativeDocumentMoniker": "TubesKPL\\Service\\RekomendasiService.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Service\\RekomendasiService.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Service\\RekomendasiService.cs",
               "RelativeToolTip": "TubesKPL\\Service\\RekomendasiService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -280,24 +309,128 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FiturSirkulasiBuku.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
-              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
-              "RelativeToolTip": "TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwEEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "DendaService.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Service\\DendaService.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Service\\DendaService.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Service\\DendaService.cs",
+              "RelativeToolTip": "TubesKPL\\Service\\DendaService.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAgwAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:46:42.612Z",
+              "WhenOpened": "2025-05-05T08:20:29.953Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
+              "Title": "UlasanService.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Service\\UlasanService.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Service\\UlasanService.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Service\\UlasanService.cs",
+              "RelativeToolTip": "TubesKPL\\Service\\UlasanService.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAYwFkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:37:40.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Menu.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Menu.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Menu.cs",
+              "RelativeToolTip": "TubesKPL\\Menu.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:41:46.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LibraryConfig.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Config\\LibraryConfig.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Config\\LibraryConfig.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Config\\LibraryConfig.cs",
+              "RelativeToolTip": "TubesKPL\\Config\\LibraryConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T09:32:42.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "config.json",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Config\\config.json",
+              "RelativeDocumentMoniker": "TubesKPL\\Config\\config.json",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Config\\config.json",
+              "RelativeToolTip": "TubesKPL\\Config\\config.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-03T09:32:57.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DataDenda.json",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\SharedData\\DataJson\\DataDenda.json",
+              "RelativeDocumentMoniker": "SharedData\\DataJson\\DataDenda.json",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\SharedData\\DataJson\\DataDenda.json",
+              "RelativeToolTip": "SharedData\\DataJson\\DataDenda.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-05T09:27:51.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DataUlasan.json",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\SharedData\\DataJson\\DataUlasan.json",
+              "RelativeDocumentMoniker": "SharedData\\DataJson\\DataUlasan.json",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\SharedData\\DataJson\\DataUlasan.json",
+              "RelativeToolTip": "SharedData\\DataJson\\DataUlasan.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-05T16:14:50.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BukuService.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Service\\BukuService.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Service\\BukuService.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\Service\\BukuService.cs",
+              "RelativeToolTip": "TubesKPL\\Service\\BukuService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T01:40:01.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DataNotifikasi.json",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\SharedData\\DataJson\\DataNotifikasi.json",
+              "RelativeDocumentMoniker": "SharedData\\DataJson\\DataNotifikasi.json",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\SharedData\\DataJson\\DataNotifikasi.json",
+              "RelativeToolTip": "SharedData\\DataJson\\DataNotifikasi.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-05T09:27:53.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "DataBuku.json",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\SharedData\\DataJson\\DataBuku.json",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\SharedData\\DataJson\\DataBuku.json",
               "RelativeDocumentMoniker": "SharedData\\DataJson\\DataBuku.json",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\SharedData\\DataJson\\DataBuku.json",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\SharedData\\DataJson\\DataBuku.json",
               "RelativeToolTip": "SharedData\\DataJson\\DataBuku.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -306,240 +439,140 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DataUlasan.json",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\SharedData\\DataJson\\DataUlasan.json",
-              "RelativeDocumentMoniker": "SharedData\\DataJson\\DataUlasan.json",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\SharedData\\DataJson\\DataUlasan.json",
-              "RelativeToolTip": "SharedData\\DataJson\\DataUlasan.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-05T16:14:50.155Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "DataPengguna.json",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\SharedData\\DataJson\\DataPengguna.json",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\SharedData\\DataJson\\DataPengguna.json",
               "RelativeDocumentMoniker": "SharedData\\DataJson\\DataPengguna.json",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\SharedData\\DataJson\\DataPengguna.json",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\SharedData\\DataJson\\DataPengguna.json",
               "RelativeToolTip": "SharedData\\DataJson\\DataPengguna.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-05T09:27:54.942Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DataNotifikasi.json",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\SharedData\\DataJson\\DataNotifikasi.json",
-              "RelativeDocumentMoniker": "SharedData\\DataJson\\DataNotifikasi.json",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\SharedData\\DataJson\\DataNotifikasi.json",
-              "RelativeToolTip": "SharedData\\DataJson\\DataNotifikasi.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-05T09:27:53.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DataDenda.json",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\SharedData\\DataJson\\DataDenda.json",
-              "RelativeDocumentMoniker": "SharedData\\DataJson\\DataDenda.json",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\SharedData\\DataJson\\DataDenda.json",
-              "RelativeToolTip": "SharedData\\DataJson\\DataDenda.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-05T09:27:51.901Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "BukuService.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Service\\BukuService.cs",
-              "RelativeDocumentMoniker": "TubesKPL\\Service\\BukuService.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Service\\BukuService.cs",
-              "RelativeToolTip": "TubesKPL\\Service\\BukuService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T01:40:01.094Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BukuController.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\RestAPI\\Controllers\\BukuController.cs",
-              "RelativeDocumentMoniker": "RestAPI\\Controllers\\BukuController.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\RestAPI\\Controllers\\BukuController.cs",
-              "RelativeToolTip": "RestAPI\\Controllers\\BukuController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:38:04.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UlasanController.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\RestAPI\\Controllers\\UlasanController.cs",
-              "RelativeDocumentMoniker": "RestAPI\\Controllers\\UlasanController.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\RestAPI\\Controllers\\UlasanController.cs",
-              "RelativeToolTip": "RestAPI\\Controllers\\UlasanController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:38:21.15Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Program.cs",
-              "RelativeDocumentMoniker": "TubesKPL\\Program.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Program.cs",
-              "RelativeToolTip": "TubesKPL\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwD8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T13:53:15.669Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "FiturLaporanStatistik.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Fitur\\FiturLaporanStatistik.cs",
-              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturLaporanStatistik.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Fitur\\FiturLaporanStatistik.cs",
-              "RelativeToolTip": "TubesKPL\\Fitur\\FiturLaporanStatistik.cs",
-              "ViewState": "AgIAAEcBAAAAAAAAAAAowGABAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:48:15.962Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Menu.cs",
-              "RelativeDocumentMoniker": "TubesKPL\\Menu.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Menu.cs",
-              "RelativeToolTip": "TubesKPL\\Menu.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:41:46.948Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CrudHelper.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\Helper\\CrudHelper.cs",
-              "RelativeDocumentMoniker": "ManajemenPerpus.Core\\Helper\\CrudHelper.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\Helper\\CrudHelper.cs",
-              "RelativeToolTip": "ManajemenPerpus.Core\\Helper\\CrudHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T03:07:09.916Z"
+              "WhenOpened": "2025-05-05T09:27:54.942Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "Ulasan.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\Models\\Ulasan.cs",
-              "RelativeDocumentMoniker": "ManajemenPerpus.Core\\Models\\Ulasan.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\Models\\Ulasan.cs",
-              "RelativeToolTip": "ManajemenPerpus.Core\\Models\\Ulasan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Title": "BukuController.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\RestAPI\\Controllers\\BukuController.cs",
+              "RelativeDocumentMoniker": "RestAPI\\Controllers\\BukuController.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\RestAPI\\Controllers\\BukuController.cs",
+              "RelativeToolTip": "RestAPI\\Controllers\\BukuController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:40:02.933Z"
+              "WhenOpened": "2025-05-05T15:38:04.115Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "JsonHelper.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\Helper\\JsonHelper.cs",
-              "RelativeDocumentMoniker": "ManajemenPerpus.Core\\Helper\\JsonHelper.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\Helper\\JsonHelper.cs",
-              "RelativeToolTip": "ManajemenPerpus.Core\\Helper\\JsonHelper.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Title": "UlasanController.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\RestAPI\\Controllers\\UlasanController.cs",
+              "RelativeDocumentMoniker": "RestAPI\\Controllers\\UlasanController.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\RestAPI\\Controllers\\UlasanController.cs",
+              "RelativeToolTip": "RestAPI\\Controllers\\UlasanController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T02:23:12.832Z"
+              "WhenOpened": "2025-05-05T15:38:21.15Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "ManajemenPerpus.Core.csproj",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj",
-              "RelativeDocumentMoniker": "ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj",
-              "RelativeToolTip": "ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-22T02:22:11.837Z"
+              "Title": "Ulasan.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\ManajemenPerpus.Core\\Models\\Ulasan.cs",
+              "RelativeDocumentMoniker": "ManajemenPerpus.Core\\Models\\Ulasan.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\ManajemenPerpus.Core\\Models\\Ulasan.cs",
+              "RelativeToolTip": "ManajemenPerpus.Core\\Models\\Ulasan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:40:02.933Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "PenggunaController.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\RestAPI\\Controllers\\PenggunaController.cs",
-              "RelativeDocumentMoniker": "RestAPI\\Controllers\\PenggunaController.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\RestAPI\\Controllers\\PenggunaController.cs",
-              "RelativeToolTip": "RestAPI\\Controllers\\PenggunaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:46:01.685Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Buku.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\Models\\Buku.cs",
-              "RelativeDocumentMoniker": "ManajemenPerpus.Core\\Models\\Buku.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\Models\\Buku.cs",
-              "RelativeToolTip": "ManajemenPerpus.Core\\Models\\Buku.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAB5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:49:20.037Z"
+              "Title": "ManajemenPerpus.Core.csproj",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj",
+              "RelativeDocumentMoniker": "ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj",
+              "RelativeToolTip": "ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-22T02:22:11.837Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "Pengguna.cs",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\Models\\Pengguna.cs",
-              "RelativeDocumentMoniker": "ManajemenPerpus.Core\\Models\\Pengguna.cs",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.Core\\Models\\Pengguna.cs",
-              "RelativeToolTip": "ManajemenPerpus.Core\\Models\\Pengguna.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
+              "Title": "PenggunaController.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\RestAPI\\Controllers\\PenggunaController.cs",
+              "RelativeDocumentMoniker": "RestAPI\\Controllers\\PenggunaController.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\RestAPI\\Controllers\\PenggunaController.cs",
+              "RelativeToolTip": "RestAPI\\Controllers\\PenggunaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:38:18.057Z"
+              "WhenOpened": "2025-05-04T11:46:01.685Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "ManajemenPerpus.CLI.csproj",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\ManajemenPerpus.CLI.csproj",
-              "RelativeDocumentMoniker": "TubesKPL\\ManajemenPerpus.CLI.csproj",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\ManajemenPerpus.CLI.csproj",
-              "RelativeToolTip": "TubesKPL\\ManajemenPerpus.CLI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-05T15:32:28.632Z"
+              "Title": "Buku.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\ManajemenPerpus.Core\\Models\\Buku.cs",
+              "RelativeDocumentMoniker": "ManajemenPerpus.Core\\Models\\Buku.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\ManajemenPerpus.Core\\Models\\Buku.cs",
+              "RelativeToolTip": "ManajemenPerpus.Core\\Models\\Buku.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAB5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:49:20.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Pengguna.cs",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\ManajemenPerpus.Core\\Models\\Pengguna.cs",
+              "RelativeDocumentMoniker": "ManajemenPerpus.Core\\Models\\Pengguna.cs",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\ManajemenPerpus.Core\\Models\\Pengguna.cs",
+              "RelativeToolTip": "ManajemenPerpus.Core\\Models\\Pengguna.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T11:38:18.057Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 30,
-              "Title": "ManajemenPerpus.API.csproj",
-              "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\RestAPI\\ManajemenPerpus.API.csproj",
-              "RelativeDocumentMoniker": "RestAPI\\ManajemenPerpus.API.csproj",
-              "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\RestAPI\\ManajemenPerpus.API.csproj",
-              "RelativeToolTip": "RestAPI\\ManajemenPerpus.API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ManajemenPerpus.CLI.csproj",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\ManajemenPerpus.CLI.csproj",
+              "RelativeDocumentMoniker": "TubesKPL\\ManajemenPerpus.CLI.csproj",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\TubesKPL\\ManajemenPerpus.CLI.csproj",
+              "RelativeToolTip": "TubesKPL\\ManajemenPerpus.CLI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-05T09:40:31.57Z"
+              "WhenOpened": "2025-05-05T15:32:28.632Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
+              "Title": "ManajemenPerpus.API.csproj",
+              "DocumentMoniker": "C:\\Tubes KPL1\\TubesKPL_4\\RestAPI\\ManajemenPerpus.API.csproj",
+              "RelativeDocumentMoniker": "RestAPI\\ManajemenPerpus.API.csproj",
+              "ToolTip": "C:\\Tubes KPL1\\TubesKPL_4\\RestAPI\\ManajemenPerpus.API.csproj",
+              "RelativeToolTip": "RestAPI\\ManajemenPerpus.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-05T09:40:31.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "TubesKPL.exe",
               "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\bin\\Debug\\net8.0\\TubesKPL.exe",
-              "RelativeDocumentMoniker": "TubesKPL\\bin\\Debug\\net8.0\\TubesKPL.exe",
               "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\bin\\Debug\\net8.0\\TubesKPL.exe",
-              "RelativeToolTip": "TubesKPL\\bin\\Debug\\net8.0\\TubesKPL.exe",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000165|",
               "WhenOpened": "2025-05-05T15:29:40.074Z"
             }
