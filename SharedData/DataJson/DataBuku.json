@@ -1,22 +1,11 @@
 [
   {
     "IdBuku": "B001",
-    "Judul": "How to win friends \u0026 influence people",
-    "Penulis": "Dale Carnegie",
+    "Judul": "Atomic Habits",
+    "Penulis": "James Clear",
     "Penerbit": "Gramedia",
-    "Kategori": 2,
-    "Sinopsis": "abcd",
-    "Status": "DIPINJAM",
-    "TanggalMasuk": "2025-05-05T23:25:38.2040242+07:00"
-  },
-  {
-    "IdBuku": "B002",
-    "Judul": "Buku A",
-    "Penulis": "Rija",
-    "Penerbit": "Gramedia",
-    "Kategori": "NONFIKSI",
-    "Sinopsis": "AAbcas",
-    "Status": "TERSEDIA",
-    "TanggalMasuk": "2025-05-05T23:33:31.5114606+07:00"
+    "Kategori": "non fiksi",
+    "Sinopsis": "-",
+    "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
   }
 ]

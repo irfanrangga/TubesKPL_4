@@ -64,7 +64,7 @@ namespace ManajemenPerpus.CLI.Service
             listPinjaman.Add(pinjaman);
             SaveData();
 
-            buku.Status = Buku.STATUSBUKU.DIPINJAM;
+            buku.Status = BukuDeprecated.STATUSBUKU.DIPINJAM;
             _bukuService.UpdateBuku(buku); // Make sure to call UpdateBuku to save the status change
             Console.WriteLine("Pinjaman berhasil ditambahkan.");
         }
@@ -93,7 +93,7 @@ namespace ManajemenPerpus.CLI.Service
                 var buku = _bukuService.GetBukuById(pinjaman.IdBuku);
                 if (buku != null)
                 {
-                    buku.Status = Buku.STATUSBUKU.TERSEDIA;
+                    buku.Status = BukuDeprecated.STATUSBUKU.TERSEDIA;
                     _bukuService.UpdateBuku(buku); // Make sure to call UpdateBuku to save the status change
                 }
 
@@ -110,7 +110,7 @@ namespace ManajemenPerpus.CLI.Service
             Console.WriteLine("=== PROSES PEMINJAMAN ===");
 
             var bukuTersedia = _bukuService.GetAllBuku()
-                .Where(b => b.Status == Buku.STATUSBUKU.TERSEDIA)
+                .Where(b => b.Status == BukuDeprecated.STATUSBUKU.TERSEDIA)
                 .ToList();
 
             if (!bukuTersedia.Any())

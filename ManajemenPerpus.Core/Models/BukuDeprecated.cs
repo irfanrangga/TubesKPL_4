@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ManajemenPerpus.Core.Models
 {
 
-    public class Buku
+    public class BukuDeprecated
     {
         [JsonConverter(typeof(JsonStringEnumConverter))]
         public enum STATUSBUKU
@@ -36,7 +36,7 @@ namespace ManajemenPerpus.Core.Models
 
         public DateTime TanggalMasuk { get; set; } // Tanggal buku masuk ke perpustakaan
 
-        public Buku(string idBuku, string judul, string penulis, string penerbit, KATEGORIBUKU kategori, string sinopsis)
+        public BukuDeprecated(string idBuku, string judul, string penulis, string penerbit, KATEGORIBUKU kategori, string sinopsis)
         {
             IdBuku = idBuku;
             Judul = judul;

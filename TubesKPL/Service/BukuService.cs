@@ -11,7 +11,7 @@ namespace ManajemenPerpus.CLI.Service
     public class BukuService
     {
         private readonly string _jsonFilePath;
-        private List<Buku> _listBuku;
+        private List<BukuDeprecated> _listBuku;
 
         public BukuService()
         {
@@ -27,17 +27,17 @@ namespace ManajemenPerpus.CLI.Service
                 string json = File.ReadAllText(_jsonFilePath);
                 try
                 {
-                    _listBuku = JsonSerializer.Deserialize<List<Buku>>(json) ?? new List<Buku>();
+                    _listBuku = JsonSerializer.Deserialize<List<BukuDeprecated>>(json) ?? new List<BukuDeprecated>();
                 }
                 catch (JsonException ex)
                 {
                     Console.WriteLine($"Error deserializing JSON: {ex.Message}");
-                    _listBuku = new List<Buku>();
+                    _listBuku = new List<BukuDeprecated>();
                 }
             }
             else
             {
-                _listBuku = new List<Buku>();
+                _listBuku = new List<BukuDeprecated>();
                 SaveData();
             }
         }
@@ -50,10 +50,10 @@ namespace ManajemenPerpus.CLI.Service
         }
 
         public void AddBuku(string judul, string penulis, string penerbit,
-                            Buku.KATEGORIBUKU kategori, string sinopsis)
+                            BukuDeprecated.KATEGORIBUKU kategori, string sinopsis)
         {
             string id = GenerateBukuId();
-            Buku newBuku = new Buku(id, judul, penulis, penerbit, kategori, sinopsis);
+            BukuDeprecated newBuku = new BukuDeprecated(id, judul, penulis, penerbit, kategori, sinopsis);
             _listBuku.Add(newBuku);
             SaveData();
         }
@@ -82,12 +82,12 @@ namespace ManajemenPerpus.CLI.Service
             return $"B{newNumber:D3}";
         }
 
-        public List<Buku> GetAllBuku()
+        public List<BukuDeprecated> GetAllBuku()
         {
             return _listBuku.OrderBy(b => b.IdBuku).ToList();
         }
 
-        public Buku GetBukuById(string id)
+        public BukuDeprecated GetBukuById(string id)
         {
             return _listBuku.FirstOrDefault(b => b.IdBuku.Equals(id, StringComparison.OrdinalIgnoreCase));
         }
@@ -104,7 +104,7 @@ namespace ManajemenPerpus.CLI.Service
             return false;
         }
 
-        public bool UpdateBuku(Buku updatedBuku)
+        public bool UpdateBuku(BukuDeprecated updatedBuku)
         {
             var existingBuku = GetBukuById(updatedBuku.IdBuku);
             if (existingBuku != null)

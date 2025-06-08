@@ -1,7 +1,7 @@
 [
   {
-    "ulasanId": "1",
-    "bukuId": "A001",
+    "ulasanId": "ULS001",
+    "bukuId": "B001",
     "isiUlasan": "Buku ini sangat membantu saya dalam memahami dasar-dasar pemrograman."
   },
   {
@@ -18,5 +18,10 @@
     "ulasanId": "ULS004",
     "bukuId": "B001",
     "isiUlasan": "What a great book!, i would recommend this book to my colleagues and family"
+  },
+  {
+    "ulasanId": "ULS005",
+    "bukuId": "B002",
+    "isiUlasan": "baguss"
   }
 ]
