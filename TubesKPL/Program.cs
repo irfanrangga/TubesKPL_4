@@ -2,6 +2,7 @@
 using ManajemenPerpus.CLI.Fitur;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
 using ManajemenPerpus.Core.Models;
+using ManajemenPerpus.CLI.Service;
 
 namespace ManajemenPerpus.CLI
 {
@@ -25,11 +26,16 @@ namespace ManajemenPerpus.CLI
 
         static void Main(string[] args)
         {
+            var bukuService = new BukuService();
+            var pinjamanService = new PinjamanService();
+            var dendaService = new DendaService();
+            var penggunaService = new PenggunaService();
+
             var fiturManajemenPengguna = new FiturManajemenPengguna();
             var fiturManajemenBuku = new FiturManajemenBuku();
             var fiturSirkulasiBuku = new FiturSirkulasiBuku();
             var fiturUlasanRekomendasi = new FiturUlasanRekomendasi();
-            //var fiturLaporanStatistik = new FiturLaporanStatistik();
+            var fiturLaporanStatistik = new FiturLaporanStatistik(bukuService, pinjamanService, dendaService, penggunaService);
             var fiturNotifikasiOtomatis = new FiturNotifikasiOtomatis();
 
             while (currentState != ProgramState.StateKeluar)
@@ -52,7 +58,7 @@ namespace ManajemenPerpus.CLI
                         currentState = fiturUlasanRekomendasi.MenuUlasanRekomendasi();
                         break;
                     case ProgramState.StateLaporanStatistik:
-                        //currentState = fiturLaporanStatistik.MenuLaporanStatistik();
+                        currentState = fiturLaporanStatistik.MenuLaporanStatistik();
                         break;
                     case ProgramState.StateNotifikasiOtomatis:
                         currentState = fiturNotifikasiOtomatis.MenuNotifikasiOtomatis();
@@ -62,4 +68,3 @@ namespace ManajemenPerpus.CLI
         }
     }
 }
-
