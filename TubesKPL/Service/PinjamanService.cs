@@ -9,43 +9,53 @@ namespace ManajemenPerpus.CLI.Service
 {
     public class PinjamanService
     {
-        private List<Pinjaman> listPinjaman = new List<Pinjaman>();
-        private BukuService _bukuService = new BukuService();
-        private PenggunaService _penggunaService = new PenggunaService();
-        private DendaService _dendaService = new DendaService();
+        public readonly List<Pinjaman> pinjamanList = new();
+        public readonly BukuService bukuService = new();
+        public readonly PenggunaService penggunaService = new();
+        public readonly DendaService dendaService = new();
         private readonly string _jsonFilePath;
 
         public PinjamanService()
         {
-            string sharedDataPath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName,"SharedData", "DataJson");
+            // Inisialisasi path file JSON dan muat data awal
+            string sharedDataPath = Path.Combine(
+                Directory.GetParent(Directory.GetCurrentDirectory())!.Parent!.Parent!.Parent!.FullName,
+                "SharedData", "DataJson");
+
             _jsonFilePath = Path.Combine(sharedDataPath, "DataPinjaman.json");
             LoadData();
         }
 
-
-        private void LoadData()
+        // Baca dan deserialisasi data pinjaman dari file
+        public void LoadData()
         {
-            if (File.Exists(_jsonFilePath))
+            if (!File.Exists(_jsonFilePath)) return;
+
+            string jsonData = File.ReadAllText(_jsonFilePath);
+            if (!string.IsNullOrWhiteSpace(jsonData))
             {
-                string jsonData = File.ReadAllText(_jsonFilePath);
-                if (!string.IsNullOrEmpty(jsonData))
+                pinjamanList.Clear();
+                var deserialized = JsonSerializer.Deserialize<List<Pinjaman>>(jsonData);
+                if (deserialized != null)
                 {
-                    listPinjaman = JsonSerializer.Deserialize<List<Pinjaman>>(jsonData) ?? new List<Pinjaman>();
+                    pinjamanList.AddRange(deserialized);
                 }
             }
         }
 
+        // Serialisasi dan simpan data pinjaman ke file
         private void SaveData()
         {
             var options = new JsonSerializerOptions { WriteIndented = true };
-            string jsonData = JsonSerializer.Serialize(listPinjaman, options);
+            string jsonData = JsonSerializer.Serialize(pinjamanList, options);
             File.WriteAllText(_jsonFilePath, jsonData);
         }
 
+        // Tambah pinjaman baru: cek validitas, buat objek, simpan, update status buku
         public void TambahPinjaman(string idBuku, string idAnggota, DateTime batasPengembalian)
         {
-            var buku = _bukuService.GetBukuById(idBuku);
-            var anggota = _penggunaService.GetPenggunaById(idAnggota);
+            var buku = bukuService.GetBukuById(idBuku);
+            var anggota = penggunaService.GetPenggunaById(idAnggota);
 
             if (buku == null)
             {
@@ -59,57 +69,60 @@ namespace ManajemenPerpus.CLI.Service
                 return;
             }
 
+            // Generate ID dan tambahkan ke list
             string idPinjaman = GeneratePinjamanId();
-            Pinjaman pinjaman = new Pinjaman(idPinjaman, idBuku, idAnggota, batasPengembalian);
-            listPinjaman.Add(pinjaman);
+            var pinjaman = new Pinjaman(idPinjaman, idBuku, idAnggota, batasPengembalian);
+            pinjamanList.Add(pinjaman);
             SaveData();
 
+            // Ubah status buku menjadi dipinjam
             buku.Status = Buku.STATUSBUKU.DIPINJAM;
-            _bukuService.UpdateBuku(buku); // Make sure to call UpdateBuku to save the status change
+            bukuService.UpdateBuku(buku);
+
             Console.WriteLine("Pinjaman berhasil ditambahkan.");
         }
 
-        private string GeneratePinjamanId()
+        // Buat ID pinjaman berurutan
+        public string GeneratePinjamanId()
         {
-            int count = listPinjaman.Count + 1;
-            return $"PJ{count:D3}";
+            return $"PJ{pinjamanList.Count + 1:D3}";
         }
 
-        public List<Pinjaman> GetAllPinjaman()
+        // Ambil semua data pinjaman
+        public List<Pinjaman> GetAllPinjaman() => pinjamanList;
+
+        // Cari pinjaman berdasarkan ID
+        public Pinjaman? GetPinjamanById(string id)
         {
-            return listPinjaman;
+            return pinjamanList.FirstOrDefault(p => p.IdPinjaman == id);
         }
 
-        public Pinjaman GetPinjamanById(string id)
-        {
-            return listPinjaman.FirstOrDefault(p => p.IdPinjaman == id);
-        }
-
+        // Hapus pinjaman: kembalikan status buku, hapus dari list, simpan file
         public bool HapusPinjaman(string id)
         {
             var pinjaman = GetPinjamanById(id);
-            if (pinjaman != null)
-            {
-                var buku = _bukuService.GetBukuById(pinjaman.IdBuku);
-                if (buku != null)
-                {
-                    buku.Status = Buku.STATUSBUKU.TERSEDIA;
-                    _bukuService.UpdateBuku(buku); // Make sure to call UpdateBuku to save the status change
-                }
+            if (pinjaman == null) return false;
 
-                listPinjaman.Remove(pinjaman);
-                SaveData();
-                return true;
+            var buku = bukuService.GetBukuById(pinjaman.IdBuku);
+            if (buku != null)
+            {
+                buku.Status = Buku.STATUSBUKU.TERSEDIA;
+                bukuService.UpdateBuku(buku);
             }
-            return false;
+
+            pinjamanList.Remove(pinjaman);
+            SaveData();
+            return true;
         }
 
+        // Proses alur peminjaman via CLI: tampil pilihan buku, input anggota, simpan pinjaman
         public void ProsesPeminjaman()
         {
             Console.Clear();
             Console.WriteLine("=== PROSES PEMINJAMAN ===");
 
-            var bukuTersedia = _bukuService.GetAllBuku()
+            // Ambil daftar buku tersedia
+            var bukuTersedia = bukuService.GetAllBuku()
                 .Where(b => b.Status == Buku.STATUSBUKU.TERSEDIA)
                 .ToList();
 
@@ -120,10 +133,12 @@ namespace ManajemenPerpus.CLI.Service
                 return;
             }
 
+            // Tampilkan dan ambil pilihan buku
             Console.WriteLine("\nDaftar Buku Tersedia:");
             for (int i = 0; i < bukuTersedia.Count; i++)
             {
-                Console.WriteLine($"{i + 1}. {bukuTersedia[i].Judul} (ID: {bukuTersedia[i].IdBuku})");
+                var buku = bukuTersedia[i];
+                Console.WriteLine($"{i + 1}. {buku.Judul} (ID: {buku.IdBuku})");
             }
 
             Console.Write("\nPilih nomor buku: ");
@@ -137,10 +152,11 @@ namespace ManajemenPerpus.CLI.Service
 
             var bukuDipinjam = bukuTersedia[pilihanBuku - 1];
 
+            // Input ID anggota dan validasi
             Console.Write("Masukkan ID Anggota: ");
-            string idAnggota = Console.ReadLine().Trim();
-            var anggota = _penggunaService.GetPenggunaById(idAnggota);
+            string idAnggota = Console.ReadLine()?.Trim() ?? "";
 
+            var anggota = penggunaService.GetPenggunaById(idAnggota);
             if (anggota == null || anggota.Role != Pengguna.ROLEPENGGUNA.anggota)
             {
                 Console.WriteLine("Anggota tidak ditemukan atau ID tidak valid!");
@@ -148,9 +164,11 @@ namespace ManajemenPerpus.CLI.Service
                 return;
             }
 
+            // Tentukan batas pengembalian dan panggil tambah pinjaman
             DateTime batasPengembalian = DateTime.Now.AddDays(7);
             TambahPinjaman(bukuDipinjam.IdBuku, idAnggota, batasPengembalian);
 
+            // Tampilkan ringkasan peminjaman
             Console.WriteLine("\nPeminjaman berhasil!");
             Console.WriteLine($"ID Buku: {bukuDipinjam.IdBuku}");
             Console.WriteLine($"Judul: {bukuDipinjam.Judul}");
@@ -158,16 +176,17 @@ namespace ManajemenPerpus.CLI.Service
             Console.ReadKey();
         }
 
-
+        // Proses pengembalian via CLI: cek keterlambatan, hitung denda, hapus pinjaman
         public void ProsesPengembalian()
         {
             Console.Clear();
             Console.WriteLine("=== PENGEMBALIAN BUKU ===");
 
+            // Input ID pinjaman
             Console.Write("Masukkan ID Pinjaman: ");
-            string idPinjaman = Console.ReadLine().Trim();
-            var pinjaman = GetPinjamanById(idPinjaman);
+            string idPinjaman = Console.ReadLine()?.Trim() ?? "";
 
+            var pinjaman = GetPinjamanById(idPinjaman);
             if (pinjaman == null)
             {
                 Console.WriteLine("Pinjaman tidak ditemukan!");
@@ -175,29 +194,24 @@ namespace ManajemenPerpus.CLI.Service
                 return;
             }
 
-            var buku = _bukuService.GetBukuById(pinjaman.IdBuku);
-            var anggota = _penggunaService.GetPenggunaById(pinjaman.IdAnggota);
+            var buku = bukuService.GetBukuById(pinjaman.IdBuku);
 
+            // Cek keterlambatan dan proses denda jika perlu
             if (DateTime.Now > pinjaman.BatasPengembalian)
             {
-                TimeSpan keterlambatan = DateTime.Now - pinjaman.BatasPengembalian;
+                var keterlambatan = DateTime.Now - pinjaman.BatasPengembalian;
                 int hariTerlambat = (int)Math.Ceiling(keterlambatan.TotalDays);
                 int jumlahDenda = hariTerlambat * 5000;
 
-                string idDenda = "D" + DateTime.Now.ToString("yyyyMMddHHmmss");
-                var denda = new Denda(
-                    pinjaman.IdAnggota,
-                    pinjaman.IdBuku,
-                    pinjaman.IdPinjaman,
-                    Denda.STATUSDENDA.BELUMLUNAS)
+                string idDenda = $"D{DateTime.Now:yyyyMMddHHmmss}";
+                var denda = new Denda(pinjaman.IdAnggota, pinjaman.IdBuku, pinjaman.IdPinjaman, Denda.STATUSDENDA.BELUMLUNAS)
                 {
                     IdDenda = idDenda,
                     JumlahHariTerlambat = hariTerlambat,
                     JumlahDenda = jumlahDenda
                 };
 
-                _dendaService.AddDenda(denda);
-
+                dendaService.AddDenda(denda);
                 Console.WriteLine($"\nBuku dikembalikan terlambat {hariTerlambat} hari.");
                 Console.WriteLine($"Denda yang harus dibayar: Rp{jumlahDenda}");
             }
@@ -206,25 +220,27 @@ namespace ManajemenPerpus.CLI.Service
                 Console.WriteLine("\nBuku dikembalikan tepat waktu.");
             }
 
+            // Hapus pinjaman dan simpan perubahan
             if (!HapusPinjaman(idPinjaman))
             {
                 Console.WriteLine("Pengembalian gagal");
+                return;
             }
 
             Console.WriteLine("\nPengembalian berhasil diproses!");
             Console.ReadKey();
         }
 
+        // Proses perpanjangan pinjaman: hapus lama, tambah baru dengan batas baru
         public void ProsesPerpanjangan()
         {
             Console.Clear();
             Console.WriteLine("=== PERPANJANGAN PINJAMAN ===");
 
-
             Console.Write("Masukkan ID Pinjaman: ");
-            string idPinjaman = Console.ReadLine().Trim();
-            var pinjaman = GetPinjamanById(idPinjaman);
+            string idPinjaman = Console.ReadLine()?.Trim() ?? "";
 
+            var pinjaman = GetPinjamanById(idPinjaman);
             if (pinjaman == null)
             {
                 Console.WriteLine("Pinjaman tidak ditemukan!");
@@ -232,10 +248,7 @@ namespace ManajemenPerpus.CLI.Service
                 return;
             }
 
-
             DateTime batasBaru = pinjaman.BatasPengembalian.AddDays(7);
-
-
             HapusPinjaman(idPinjaman);
             TambahPinjaman(pinjaman.IdBuku, pinjaman.IdAnggota, batasBaru);
 
@@ -244,24 +257,24 @@ namespace ManajemenPerpus.CLI.Service
             Console.ReadKey();
         }
 
+        // Tampilkan semua pinjaman aktif beserta status
         public void TampilkanDaftarPinjaman()
         {
             Console.Clear();
             Console.WriteLine("=== DAFTAR PINJAMAN AKTIF ===");
 
-            var semuaPinjaman = GetAllPinjaman();
-
-            if (!semuaPinjaman.Any())
+            if (!pinjamanList.Any())
             {
                 Console.WriteLine("Tidak ada pinjaman aktif.");
                 Console.ReadKey();
                 return;
             }
 
-            foreach (var pinjaman in semuaPinjaman)
+            // Loop setiap pinjaman dan tampilkan detail
+            foreach (var pinjaman in pinjamanList)
             {
-                var buku = _bukuService.GetBukuById(pinjaman.IdBuku);
-                var anggota = _penggunaService.GetPenggunaById(pinjaman.IdAnggota);
+                var buku = bukuService.GetBukuById(pinjaman.IdBuku);
+                var anggota = penggunaService.GetPenggunaById(pinjaman.IdAnggota);
 
                 Console.WriteLine($"ID Pinjaman: {pinjaman.IdPinjaman}");
                 Console.WriteLine($"Buku: {buku?.Judul ?? "Unknown"} (ID: {pinjaman.IdBuku})");
@@ -274,6 +287,5 @@ namespace ManajemenPerpus.CLI.Service
             Console.WriteLine("Tekan sembarang tombol untuk kembali...");
             Console.ReadKey();
         }
-
     }
 }

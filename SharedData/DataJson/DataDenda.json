@@ -1,1 +1,56 @@
-[]
+[
+  {
+    "IdDenda": "D20250531224311",
+    "IdPengguna": null,
+    "IdBuku": "B001",
+    "IdPeminjaman": "PJ001",
+    "StatusDenda": 1,
+    "JumlahDenda": 9115000,
+    "JumlahHariTerlambat": 1823
+  },
+  {
+    "IdDenda": "D20250605114706",
+    "IdPengguna": "P001",
+    "IdBuku": "B002",
+    "IdPeminjaman": "PJ006",
+    "StatusDenda": 1,
+    "JumlahDenda": 125000,
+    "JumlahHariTerlambat": 25
+  },
+  {
+    "IdDenda": "D20250605114912",
+    "IdPengguna": "P001",
+    "IdBuku": "B002",
+    "IdPeminjaman": "PJ006",
+    "StatusDenda": 1,
+    "JumlahDenda": 125000,
+    "JumlahHariTerlambat": 25
+  },
+  {
+    "IdDenda": "D20250605120150",
+    "IdPengguna": "P001",
+    "IdBuku": "B002",
+    "IdPeminjaman": "PJ006",
+    "StatusDenda": 1,
+    "JumlahDenda": 120000,
+    "JumlahHariTerlambat": 24
+  },
+  {
+    "IdDenda": "D20250605120420",
+    "IdPengguna": "P001",
+    "IdBuku": "B002",
+    "IdPeminjaman": "PJ006",
+    "StatusDenda": 1,
+    "JumlahDenda": 120000,
+    "JumlahHariTerlambat": 24
+  },
+  {
+    "IdDenda": "D20250605123316",
+    "IdPengguna": "P001",
+    "IdBuku": "B002",
+    "IdPeminjaman": "PJ006",
+    "StatusDenda": 1,
+    "JumlahDenda": 120000,
+    "JumlahHariTerlambat": 24
+  }
+]

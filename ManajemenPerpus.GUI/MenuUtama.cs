@@ -6,5 +6,12 @@ namespace ManajemenPerpus.GUI
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Sirkulasi sirkulasiForm = new Sirkulasi();
+            sirkulasiForm.ShowDialog();
+            
+        }
     }
 }

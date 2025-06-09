@@ -1,17 +1,4 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.IO;
-//using System.Text.Json;
-//using ManajemenPerpus.Core.Models;
-
-//namespace ManajemenPerpus.CLI.Service
-//{
-//    public class DendaService
-//    {
-//    }
-//}
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -23,15 +10,23 @@ namespace ManajemenPerpus.CLI.Service
     public class DendaService
     {
         private readonly string _jsonFilePath;
-        private List<Denda> _dendaList;
-        private BukuService _bukuService = new BukuService();
-        private PenggunaService _penggunaService = new PenggunaService();
+        private readonly List<Denda> _dendaList;
+        private readonly BukuService _bukuService;
+        private readonly PenggunaService _penggunaService;
 
         public DendaService()
         {
-            string sharedDataPath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, "SharedData", "DataJson");
+            var sharedDataPath = Path.Combine(
+                Directory.GetParent(Directory.GetCurrentDirectory())!.Parent!.Parent!.Parent!.FullName,
+                "SharedData",
+                "DataJson"
+            );
+
             _jsonFilePath = Path.Combine(sharedDataPath, "DataDenda.json");
             _dendaList = new List<Denda>();
+            _bukuService = new BukuService();
+            _penggunaService = new PenggunaService();
+
             LoadData();
         }
 
@@ -39,16 +34,17 @@ namespace ManajemenPerpus.CLI.Service
         {
             try
             {
-                string jsonData = File.ReadAllText(_jsonFilePath);
-                if (!string.IsNullOrEmpty(jsonData))
+                if (!File.Exists(_jsonFilePath)) return;
+
+                var jsonData = File.ReadAllText(_jsonFilePath);
+                if (!string.IsNullOrWhiteSpace(jsonData))
                 {
-                    _dendaList = JsonSerializer.Deserialize<List<Denda>>(jsonData) ?? new List<Denda>();
+                    _dendaList.AddRange(JsonSerializer.Deserialize<List<Denda>>(jsonData) ?? new List<Denda>());
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error loading data: {ex.Message}");
-                _dendaList = new List<Denda>();
             }
         }
 
@@ -57,7 +53,7 @@ namespace ManajemenPerpus.CLI.Service
             try
             {
                 var options = new JsonSerializerOptions { WriteIndented = true };
-                string jsonData = JsonSerializer.Serialize(_dendaList, options);
+                var jsonData = JsonSerializer.Serialize(_dendaList, options);
                 File.WriteAllText(_jsonFilePath, jsonData);
             }
             catch (Exception ex)
@@ -66,71 +62,69 @@ namespace ManajemenPerpus.CLI.Service
             }
         }
 
-        public List<Denda> GetAllDenda()
-        {
-            return _dendaList;
-        }
+        /// Mengembalikan semua data denda.
+        public List<Denda> GetAllDenda() => _dendaList;
 
-        public Denda GetDendaById(string id)
-        {
-            return _dendaList.FirstOrDefault(d => d.IdDenda == id);
-        }
+        /// Mengambil data denda berdasarkan ID.
+        public Denda? GetDendaById(string id) =>
+            _dendaList.FirstOrDefault(d => d.IdDenda == id);
 
-        public List<Denda> GetDendaByPengguna(string idPengguna)
-        {
-            return _dendaList.Where(d => d.IdPengguna == idPengguna).ToList();
-        }
+        /// Mengambil semua denda milik pengguna tertentu.
+        public List<Denda> GetDendaByPengguna(string idPengguna) =>
+            _dendaList.Where(d => d.IdPengguna == idPengguna).ToList();
 
+        /// Menambahkan denda baru.
         public void AddDenda(Denda newDenda)
         {
             _dendaList.Add(newDenda);
             SaveData();
         }
 
+        /// Memperbarui data denda.
         public void UpdateDenda(Denda updatedDenda)
         {
-            var existingDenda = _dendaList.FirstOrDefault(d => d.IdDenda == updatedDenda.IdDenda);
-            if (existingDenda != null)
-            {
-                existingDenda.IdPengguna = updatedDenda.IdPengguna;
-                existingDenda.IdBuku = updatedDenda.IdBuku;
-                existingDenda.IdPeminjaman = updatedDenda.IdPeminjaman;
-                existingDenda.StatusDenda = updatedDenda.StatusDenda;
-                existingDenda.JumlahDenda = updatedDenda.JumlahDenda;
-                existingDenda.JumlahHariTerlambat = updatedDenda.JumlahHariTerlambat;
-                SaveData();
-            }
+            var denda = GetDendaById(updatedDenda.IdDenda);
+            if (denda is null) return;
+
+            denda.IdPengguna = updatedDenda.IdPengguna;
+            denda.IdBuku = updatedDenda.IdBuku;
+            denda.IdPeminjaman = updatedDenda.IdPeminjaman;
+            denda.StatusDenda = updatedDenda.StatusDenda;
+            denda.JumlahDenda = updatedDenda.JumlahDenda;
+            denda.JumlahHariTerlambat = updatedDenda.JumlahHariTerlambat;
+
+            SaveData();
         }
 
+        /// Menghapus denda berdasarkan ID.
         public void DeleteDenda(string id)
         {
-            var dendaToRemove = _dendaList.FirstOrDefault(d => d.IdDenda == id);
-            if (dendaToRemove != null)
-            {
-                _dendaList.Remove(dendaToRemove);
-                SaveData();
-            }
+            var denda = GetDendaById(id);
+            if (denda is null) return;
+
+            _dendaList.Remove(denda);
+            SaveData();
         }
 
+        /// Menandai denda sebagai lunas.
         public void BayarDenda(string id)
         {
-            var denda = _dendaList.FirstOrDefault(d => d.IdDenda == id);
-            if (denda != null)
-            {
-                denda.StatusDenda = Denda.STATUSDENDA.LUNAS;
-                SaveData();
-            }
+            var denda = GetDendaById(id);
+            if (denda is null) return;
+
+            denda.StatusDenda = Denda.STATUSDENDA.LUNAS;
+            SaveData();
         }
 
+        /// Menampilkan menu untuk menghitung dan membayar denda yang belum lunas.
         public void HitungDenda()
         {
             Console.Clear();
             Console.WriteLine("=== PERHITUNGAN DENDA ===");
 
-
-            var dendaBelumLunas = GetAllDenda()
+            var dendaBelumLunas = _dendaList
                 .Where(d => d.StatusDenda == Denda.STATUSDENDA.BELUMLUNAS)
-                .ToArray();
+                .ToList();
 
             if (!dendaBelumLunas.Any())
             {
@@ -139,38 +133,48 @@ namespace ManajemenPerpus.CLI.Service
                 return;
             }
 
-            Console.WriteLine("\nDaftar Denda Belum Lunas:");
-            for (int i = 0; i < dendaBelumLunas.Length; i++)
-            {
-                var denda = dendaBelumLunas[i];
-                var buku = _bukuService.GetBukuById(denda.IdBuku);
-                var anggota = _penggunaService.GetPenggunaById(denda.IdPengguna);
+            TampilkanDendaBelumLunas(dendaBelumLunas);
 
-                Console.WriteLine($"{i + 1}. ID Denda: {denda.IdDenda}");
-                Console.WriteLine($"   Buku: {buku?.Judul ?? "Unknown"}");
-                Console.WriteLine($"   Anggota: {anggota?.Fullname ?? "Unknown"}");
-                Console.WriteLine($"   Hari Keterlambatan: {denda.JumlahHariTerlambat}");
-                Console.WriteLine($"   Jumlah Denda: Rp{denda.JumlahDenda}");
-                Console.WriteLine();
-            }
+            int selectedIndex = PilihDendaDariList(dendaBelumLunas.Count);
+            if (selectedIndex == 0) return;
 
-            Console.Write("Pilih nomor denda yang akan dibayar (0 untuk batal): ");
-            if (!int.TryParse(Console.ReadLine(), out int pilihan) ||
-                pilihan < 0 || pilihan > dendaBelumLunas.Length)
-            {
-                Console.WriteLine("Pilihan tidak valid!");
-                Console.ReadKey();
-                return;
-            }
+            var selectedDenda = dendaBelumLunas[selectedIndex - 1];
+            BayarDenda(selectedDenda.IdDenda);
 
-            if (pilihan == 0) return;
-
-            var dendaDipilih = dendaBelumLunas[pilihan - 1];
-            BayarDenda(dendaDipilih.IdDenda);
-
-            Console.WriteLine($"\nDenda {dendaDipilih.IdDenda} telah dibayar.");
+            Console.WriteLine($"\nDenda {selectedDenda.IdDenda} telah dibayar.");
             Console.ReadKey();
         }
 
+        private void TampilkanDendaBelumLunas(List<Denda> dendaList)
+        {
+            Console.WriteLine("\nDaftar Denda Belum Lunas:");
+            for (int i = 0; i < dendaList.Count; i++)
+            {
+                var denda = dendaList[i];
+                var buku = _bukuService.GetBukuById(denda.IdBuku);
+                var pengguna = _penggunaService.GetPenggunaById(denda.IdPengguna);
+
+                Console.WriteLine($"{i + 1}. ID Denda: {denda.IdDenda}");
+                Console.WriteLine($"   Buku: {buku?.Judul ?? "Tidak Diketahui"}");
+                Console.WriteLine($"   Anggota: {pengguna?.Fullname ?? "Tidak Diketahui"}");
+                Console.WriteLine($"   Hari Keterlambatan: {denda.JumlahHariTerlambat}");
+                Console.WriteLine($"   Jumlah Denda: Rp{denda.JumlahDenda:N0}\n");
+            }
+        }
+
+        private int PilihDendaDariList(int maxPilihan)
+        {
+            Console.Write("Pilih nomor denda yang akan dibayar (0 untuk batal): ");
+            if (!int.TryParse(Console.ReadLine(), out int pilihan) ||
+                pilihan < 0 || pilihan > maxPilihan)
+            {
+                Console.WriteLine("Pilihan tidak valid!");
+                Console.WriteLine("Pilih nomor denda yang akan dibayar (0 untuk batal): ");
+                Console.ReadKey();
+                return 0;
+            }
+
+            return pilihan;
+        }
     }
 }
