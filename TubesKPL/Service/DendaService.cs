@@ -1,17 +1,4 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.IO;
-//using System.Text.Json;
-//using ManajemenPerpus.Core.Models;
-
-//namespace ManajemenPerpus.CLI.Service
-//{
-//    public class DendaService
-//    {
-//    }
-//}
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;

@@ -8,67 +8,104 @@ using ManajemenPerpus.Core.Helper;
 
 namespace ManajemenPerpus.CLI.Service
 {
-
     public class UlasanService
     {
+        private readonly HttpClient _httpClient;
+        private readonly string _apiUrl = "https://localhost:7143/api/Ulasan";
         private readonly string filePath;
-        private List<Ulasan> listUlasan;
-        private List<Buku> listBuku;
-        private BukuService bukuService = new BukuService();
+
+        private List<FactoryBuku> _listBuku;
+        public BukuServiceNew bukuService = new BukuServiceNew();
         
         public UlasanService()
         {
             var root = Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName;
             filePath = Path.Combine(root, "SharedData", "DataJson", "DataUlasan.json");
-            LoadData();
+            _httpClient = new HttpClient();
         }
 
-        public void LoadData()
+        public async Task<List<Ulasan>> GetUlasanFromApi()
         {
-            if (File.Exists(filePath))
+            try
             {
-                string json = File.ReadAllText(filePath);
-                try
-                {
-                    listUlasan = JsonHelper.ReadJson<List<Ulasan>>(filePath);
-                }
-                catch (JsonException ex)
-                {
-                    Console.WriteLine($"Error deserializing JSON: {ex.Message}");
-                    listUlasan = new List<Ulasan>();
-                }
+                var response = await _httpClient.GetAsync(_apiUrl);
+                response.EnsureSuccessStatusCode();
+                var jsonResponse = await response.Content.ReadAsStringAsync();
+                var ulasanList = JsonSerializer.Deserialize<List<Ulasan>>(jsonResponse, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                return ulasanList ?? new List<Ulasan>();
+            }
+            catch (HttpRequestException ex)
+            {
+                Console.WriteLine($"Error fetching ulasan: {ex.Message}");
+                return new List<Ulasan>();
+            }
+        }
+
+        public async Task ShowAllUlasan()
+        {
+            var listUlasan = await GetUlasanFromApi();
+
+            if (listUlasan.Count == 0)
+            {
+                Console.WriteLine("Tidak ada ulasan yang tersedia.");
             }
             else
             {
-                listUlasan = new List<Ulasan>();
-                JsonHelper.WriteJson(filePath, listUlasan);
+                Console.WriteLine("Daftar Ulasan:");
+                foreach (var u in listUlasan)
+                {
+                    Console.WriteLine($"ID Ulasan: {u.ulasanId}, ID Buku: {u.bukuId}, Isi Ulasan: {u.isiUlasan}");
+                }
             }
+            Console.WriteLine("Tekan sembarang tombol untuk melanjutkan...");
+            Console.ReadKey();
+            Console.Clear();
         }
 
-        public void AddUlasan()
+        public async Task ShowAllUlasanByBookId()
         {
+            var listUlasan = await GetUlasanFromApi();
+            Console.WriteLine("Masukkan ID Buku untuk melihat ulasan: ");
+            string bukuId = Console.ReadLine();
+            var ulasanByBookId = listUlasan.Where(u => u.bukuId == bukuId).ToList();
+            if (ulasanByBookId.Count == 0)
+            {
+                Console.WriteLine($"Tidak ada ulasan untuk buku dengan ID {bukuId}.");
+            }
+            else
+            {
+                Console.WriteLine($"Daftar Ulasan untuk Buku ID {bukuId}:");
+                foreach (var u in ulasanByBookId)
+                {
+                    Console.WriteLine($"ID Ulasan: {u.ulasanId}, Isi Ulasan: {u.isiUlasan}");
+                }
+            }
+            Console.WriteLine("Tekan sembarang tombol untuk melanjutkan...");
+            Console.ReadKey();
+            Console.Clear();
+        }
+
+         public void AddUlasan()
+        {
+            var _listUlasan = JsonHelper.ReadJson<Ulasan>(filePath) ?? new List<Ulasan>();
             try
             {
                 Console.WriteLine("Masukan ID Buku: ");
                 string bukuId = Console.ReadLine();
-                listBuku = bukuService.GetAllBuku();
-                foreach (var buku in listBuku)
+                _listBuku = bukuService.GetBukuFromApi().GetAwaiter().GetResult();
+                foreach (var buku in _listBuku)
                 {
                     if (buku.IdBuku == bukuId)
                     {
                         Console.WriteLine("Masukan Ulasan: ");
                         string isiUlasan = Console.ReadLine();
                         Ulasan ulasan = new Ulasan(GenerateUlasanId(), bukuId, isiUlasan);
-                        listUlasan.Add(ulasan);
+                        _listUlasan.Add(ulasan);
                         Console.WriteLine("Ulasan berhasil ditambahkan.");
                         break;
                     }
-                    else
-                    {
-                        Console.WriteLine("ID Buku tidak ditemukan.");
-                    }
                 }
-                JsonHelper.WriteJson(filePath, listUlasan);
+                JsonHelper.WriteJson(filePath, _listUlasan);
             }
             catch (Exception ex)
             {
@@ -78,19 +115,10 @@ namespace ManajemenPerpus.CLI.Service
 
         public string GenerateUlasanId()
         {
+            var listUlasan = JsonHelper.ReadJson<Ulasan>(filePath);
+
             string id = "ULS" + (listUlasan.Count + 1).ToString("D3");
             return id;
-        }
-
-        public void ShowAllUlasan()
-        {
-            Console.WriteLine("Daftar Ulasan:");
-            foreach (var ulasan in listUlasan)
-            {
-                Console.WriteLine($"ID Ulasan: {ulasan.ulasanId}, ID Buku: {ulasan.bukuId}, Isi Ulasan: {ulasan.isiUlasan}");
-            }
-            Console.WriteLine("Tekan sembarang tombol untuk melanjutkan...");
-            Console.ReadKey();
         }
     }
 }

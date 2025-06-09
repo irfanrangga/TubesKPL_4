@@ -29,7 +29,7 @@ namespace ManajemenPerpus.CLI
             return input switch
             {
                 "1" => ProgramState.StateManajemenPengguna,
-                "2" => ProgramState.StateManajemenKoleksi,
+                "2" => ProgramState.StateManajemenBuku,
                 "3" => ProgramState.StateSirkulasiBuku,
                 "4" => ProgramState.StateUlasanRekomendasi,
                 "5" => ProgramState.StateLaporanStatistik,
