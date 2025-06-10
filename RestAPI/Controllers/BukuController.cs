@@ -24,7 +24,7 @@ namespace ManajemenPerpus.API.Controllers
                     {
                         PropertyNameCaseInsensitive = true,
                     });
-                    if(data == null)
+                    if (data == null)
                     {
                         return Ok(new List<BukuDTO>());
                     }
@@ -37,6 +37,7 @@ namespace ManajemenPerpus.API.Controllers
                         Penerbit = b.Penerbit,
                         Kategori = b.Kategori,
                         Sinopsis = b.Sinopsis,
+                        Status = b.Status, // Fixed the invalid initializer member declarator
                         TanggalMasuk = b.TanggalMasuk
                     }).ToList();
 

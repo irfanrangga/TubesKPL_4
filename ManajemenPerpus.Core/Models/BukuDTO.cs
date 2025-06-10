@@ -14,6 +14,7 @@ namespace ManajemenPerpus.Core.Models
         public string Penerbit { get; set; }
         public string Kategori { get; set; }
         public string Sinopsis { get; set; }
+        public STATUSBUKU Status { get; set; }
         public DateTime TanggalMasuk { get; set; }
     }
 }
