@@ -50,6 +50,7 @@ namespace ManajemenPerpus.GUI
             // 
             // panelHeader
             // 
+            panelHeader.BackColor = Color.RoyalBlue;
             panelHeader.BorderStyle = BorderStyle.FixedSingle;
             panelHeader.Controls.Add(buttonBack);
             panelHeader.Controls.Add(labelTitle);
@@ -200,7 +201,6 @@ namespace ManajemenPerpus.GUI
             groupBoxPengembalian.TabIndex = 2;
             groupBoxPengembalian.TabStop = false;
             groupBoxPengembalian.Text = "Formulir Pengembalian";
-
             // 
             // labelDisplayDenda
             // 
