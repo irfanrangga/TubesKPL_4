@@ -9,10 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
-=======
     <ProjectReference Include="..\RestAPI\ManajemenPerpus.API.csproj" />
->>>>>>> main
     <ProjectReference Include="..\TubesKPL\ManajemenPerpus.CLI.csproj" />
   </ItemGroup>
 
