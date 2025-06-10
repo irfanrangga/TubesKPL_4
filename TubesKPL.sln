@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManajemenPerpus.Core", "Man
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedData", "SharedData\SharedData.csproj", "{4753851E-659B-46C1-A297-BC4AD04D33BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManajemenAdminGUI", "ManajemenAdminGUI\ManajemenAdminGUI.csproj", "{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{4753851E-659B-46C1-A297-BC4AD04D33BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4753851E-659B-46C1-A297-BC4AD04D33BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4753851E-659B-46C1-A297-BC4AD04D33BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
