@@ -28,7 +28,7 @@ namespace ManajemenPerpus.GUI
         private void LoadComboBoxBuku()
         {
             var bukuTersedia = pinjamanService.bukuService.GetAllBuku()
-                .Where(b => b.Status == Buku.STATUSBUKU.TERSEDIA)
+                .Where(b => b.Status == BukuDeprecated.STATUSBUKU.TERSEDIA)
                 .ToList();
 
             comboBoxBuku.Items.Clear();
