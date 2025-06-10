@@ -29,7 +29,8 @@ namespace ManajemenPerpus.Core.Models
 
         public FactoryBuku() { }
 
-        public FactoryBuku(string idBuku, string judul, string penulis, string penerbit, string kategori, string sinopsis, STATUSBUKU status, DateTime tanggalMasuk)
+        public FactoryBuku(string idBuku, string judul, string penulis, string penerbit,
+            string kategori, string sinopsis, STATUSBUKU status, DateTime tanggalMasuk)
         {
             IdBuku = idBuku;
             Judul = judul;
@@ -41,6 +42,7 @@ namespace ManajemenPerpus.Core.Models
             TanggalMasuk = tanggalMasuk;
         }
 
+        // Implementasi Factory Method
         public abstract IBuku FactoryMethod();
     }
 
@@ -53,7 +55,8 @@ namespace ManajemenPerpus.Core.Models
     // Concrete Creator Buku Fiksi
     public class BukuFiksiCreator : FactoryBuku
     {
-        public BukuFiksiCreator(string idBuku, string judul, string penulis, string penerbit, string kategori, string sinopsis, DateTime tanggalMasuk)
+        public BukuFiksiCreator(string idBuku, string judul, string penulis, string penerbit,
+            string kategori, string sinopsis, DateTime tanggalMasuk)
             : base(idBuku, judul, penulis, penerbit, "Fiksi", sinopsis, STATUSBUKU.TERSEDIA, DateTime.Now)
         {
         }
@@ -66,7 +69,8 @@ namespace ManajemenPerpus.Core.Models
     // Concrete Creator Buku Non-Fiksi
     public class BukuNonFiksiCreator : FactoryBuku
     {
-        public BukuNonFiksiCreator(string idBuku, string judul, string penulis, string penerbit, string kategori, string sinopsis, DateTime tanggalMasuk)
+        public BukuNonFiksiCreator(string idBuku, string judul, string penulis, string penerbit,
+            string kategori, string sinopsis, DateTime tanggalMasuk)
             : base(idBuku, judul, penulis, penerbit, "Non Fiksi", sinopsis, STATUSBUKU.TERSEDIA, DateTime.Now)
         {
         }
@@ -89,7 +93,8 @@ namespace ManajemenPerpus.Core.Models
 
         public void DisplayInfo()
         {
-            Console.WriteLine($"Buku Fiksi: {_data.Judul}, Penulis: {_data.Penulis}, Penerbit: {_data.Penerbit}, Kategori: {_data.Kategori}, Sinopsis: {_data.Sinopsis}");
+            Console.WriteLine($"Buku Fiksi: {_data.Judul}, Penulis: {_data.Penulis}, " +
+                $"Penerbit: {_data.Penerbit}, Kategori: {_data.Kategori}, Sinopsis: {_data.Sinopsis}");
         }
     }
 
@@ -103,7 +108,8 @@ namespace ManajemenPerpus.Core.Models
         }
         public void DisplayInfo()
         {
-            Console.WriteLine($"Buku Non-Fiksi: {_data.Judul}, Penulis: {_data.Penulis}, Penerbit: {_data.Penerbit}, Kategori: {_data.Kategori}, Sinopsis: {_data.Sinopsis}");
+            Console.WriteLine($"Buku Non-Fiksi: {_data.Judul}, Penulis: {_data.Penulis}, " +
+                $"Penerbit: {_data.Penerbit}, Kategori: {_data.Kategori}, Sinopsis: {_data.Sinopsis}");
         }
     }
 }
