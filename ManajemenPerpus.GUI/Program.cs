@@ -12,6 +12,7 @@ namespace ManajemenPerpus.GUI
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new MenuUtama());
+            //Application.Run(new NotifikasiGui("U123")); //Manggil Notifikasi Perlu ID User yang lagi login
         }
     }
 }

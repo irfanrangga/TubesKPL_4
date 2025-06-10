@@ -9,6 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ManajemenPerpus.Core\ManajemenPerpus.Core.csproj" />
+    <ProjectReference Include="..\RestAPI\ManajemenPerpus.API.csproj" />
+    <ProjectReference Include="..\SharedData\SharedData.csproj" />
+    <ProjectReference Include="..\TubesKPL\ManajemenPerpus.CLI.csproj" />
+    <ProjectReference Include="..\UnitTesting\UnitTesting.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
