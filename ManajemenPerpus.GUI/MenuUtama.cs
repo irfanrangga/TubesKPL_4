@@ -7,13 +7,6 @@ namespace ManajemenPerpus.GUI
             InitializeComponent();
         }
 
-<<<<<<< HEAD
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Sirkulasi sirkulasiForm = new Sirkulasi();
-            sirkulasiForm.ShowDialog();
-            
-=======
         private void MenuUtama_Load(object sender, EventArgs e)
         {
 
@@ -52,7 +45,6 @@ namespace ManajemenPerpus.GUI
         private void LogoutButton_Click(object sender, EventArgs e)
         {
 
->>>>>>> main
         }
     }
 }

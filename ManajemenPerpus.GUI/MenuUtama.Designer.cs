@@ -28,41 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
-            button1 = new Button();
-            SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Location = new Point(312, 155);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // MenuUtama
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Name = "MenuUtama";
-            Text = "Form1";
-=======
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuUtama));
             customButton1 = new ManajemenPerpus.GUI.CustomControl.CustomButton();
             panel1 = new Panel();
             panel3 = new Panel();
-            customButton3 = new ManajemenPerpus.GUI.CustomControl.CustomButton();
             LogoutButton = new ManajemenPerpus.GUI.CustomControl.CustomButton();
             customButton2 = new ManajemenPerpus.GUI.CustomControl.CustomButton();
             panel2 = new Panel();
             label1 = new Label();
             panel4 = new Panel();
-            label3 = new Label();
+            customButton3 = new ManajemenPerpus.GUI.CustomControl.CustomButton();
             label2 = new Label();
+            label3 = new Label();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -113,26 +90,6 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(1055, 124);
             panel3.TabIndex = 1;
-            // 
-            // customButton3
-            // 
-            customButton3.BackColor = Color.RoyalBlue;
-            customButton3.BackgroundColor = Color.RoyalBlue;
-            customButton3.BorderColor = Color.PaleVioletRed;
-            customButton3.BorderRadius = 0;
-            customButton3.BorderSize = 0;
-            customButton3.Dock = DockStyle.Left;
-            customButton3.FlatAppearance.BorderSize = 0;
-            customButton3.FlatStyle = FlatStyle.Flat;
-            customButton3.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            customButton3.ForeColor = Color.White;
-            customButton3.Location = new Point(600, 0);
-            customButton3.Name = "customButton3";
-            customButton3.Size = new Size(300, 124);
-            customButton3.TabIndex = 4;
-            customButton3.Text = "Ulasan";
-            customButton3.TextColor = Color.White;
-            customButton3.UseVisualStyleBackColor = false;
             // 
             // LogoutButton
             // 
@@ -206,30 +163,49 @@
             panel4.Size = new Size(1771, 967);
             panel4.TabIndex = 4;
             // 
-            // label3
+            // customButton3
             // 
-            label3.AutoSize = true;
-            label3.Dock = DockStyle.Top;
-            label3.Font = new Font("Segoe UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.ControlDark;
-            label3.Location = new Point(24, 152);
-            label3.Name = "label3";
-            label3.Size = new Size(893, 71);
-            label3.TabIndex = 1;
-            label3.Text = "Di Aplikasi Manajemen Perpustakaan";
+            customButton3.BackColor = Color.RoyalBlue;
+            customButton3.BackgroundColor = Color.RoyalBlue;
+            customButton3.BorderColor = Color.PaleVioletRed;
+            customButton3.BorderRadius = 0;
+            customButton3.BorderSize = 0;
+            customButton3.Dock = DockStyle.Left;
+            customButton3.FlatAppearance.BorderSize = 0;
+            customButton3.FlatStyle = FlatStyle.Flat;
+            customButton3.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            customButton3.ForeColor = Color.White;
+            customButton3.Location = new Point(600, 0);
+            customButton3.Name = "customButton3";
+            customButton3.Size = new Size(300, 124);
+            customButton3.TabIndex = 4;
+            customButton3.Text = "Ulasan";
+            customButton3.TextColor = Color.White;
+            customButton3.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
-            label2.Dock = DockStyle.Top;
             label2.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.RoyalBlue;
-            label2.Location = new Point(24, 24);
+            label2.Location = new Point(500, 204);
             label2.Name = "label2";
             label2.Size = new Size(771, 128);
             label2.TabIndex = 0;
             label2.Text = "Selamat Datang";
             label2.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.ControlDark;
+            label3.Location = new Point(423, 355);
+            label3.Name = "label3";
+            label3.Size = new Size(893, 71);
+            label3.TabIndex = 1;
+            label3.Text = "Di Aplikasi Manajemen Perpustakaan";
             // 
             // MenuUtama
             // 
@@ -251,15 +227,10 @@
             panel2.PerformLayout();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
->>>>>>> main
             ResumeLayout(false);
         }
 
         #endregion
-<<<<<<< HEAD
-
-        private Button button1;
-=======
         private CustomControl.CustomButton customButton1;
         private Panel panel1;
         private Panel panel3;
@@ -271,6 +242,5 @@
         private CustomControl.CustomButton customButton3;
         private Label label2;
         private Label label3;
->>>>>>> main
     }
 }

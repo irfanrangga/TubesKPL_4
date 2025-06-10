@@ -59,8 +59,6 @@ namespace ManajemenPerpus.GUI.Properties {
                 resourceCulture = value;
             }
         }
-<<<<<<< HEAD
-=======
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -71,6 +69,5 @@ namespace ManajemenPerpus.GUI.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
->>>>>>> main
     }
 }
