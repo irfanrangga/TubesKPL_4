@@ -75,10 +75,15 @@ namespace ManajemenPerpus.CLI.Service
             pinjamanList.Add(pinjaman);
             SaveData();
 
+<<<<<<< HEAD
             // Ubah status buku menjadi dipinjam
             buku.Status = Buku.STATUSBUKU.DIPINJAM;
             bukuService.UpdateBuku(buku);
 
+=======
+            buku.Status = BukuDeprecated.STATUSBUKU.DIPINJAM;
+            _bukuService.UpdateBuku(buku); // Make sure to call UpdateBuku to save the status change
+>>>>>>> main
             Console.WriteLine("Pinjaman berhasil ditambahkan.");
         }
 
@@ -101,7 +106,18 @@ namespace ManajemenPerpus.CLI.Service
         public bool HapusPinjaman(string id)
         {
             var pinjaman = GetPinjamanById(id);
+<<<<<<< HEAD
             if (pinjaman == null) return false;
+=======
+            if (pinjaman != null)
+            {
+                var buku = _bukuService.GetBukuById(pinjaman.IdBuku);
+                if (buku != null)
+                {
+                    buku.Status = BukuDeprecated.STATUSBUKU.TERSEDIA;
+                    _bukuService.UpdateBuku(buku); // Make sure to call UpdateBuku to save the status change
+                }
+>>>>>>> main
 
             var buku = bukuService.GetBukuById(pinjaman.IdBuku);
             if (buku != null)
@@ -121,9 +137,14 @@ namespace ManajemenPerpus.CLI.Service
             Console.Clear();
             Console.WriteLine("=== PROSES PEMINJAMAN ===");
 
+<<<<<<< HEAD
             // Ambil daftar buku tersedia
             var bukuTersedia = bukuService.GetAllBuku()
                 .Where(b => b.Status == Buku.STATUSBUKU.TERSEDIA)
+=======
+            var bukuTersedia = _bukuService.GetAllBuku()
+                .Where(b => b.Status == BukuDeprecated.STATUSBUKU.TERSEDIA)
+>>>>>>> main
                 .ToList();
 
             if (!bukuTersedia.Any())

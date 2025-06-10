@@ -13,6 +13,7 @@ namespace ManajemenPerpus.Core.Models
         public string IdBuku { get; set; }
         public string IdAnggota { get; set; }
         public DateTime BatasPengembalian { get; set; }
+        public DateTime TanggalPinjam { get; set; }
 
         public Pinjaman(string idPinjaman, string idBuku, string idAnggota, DateTime batasPengembalian)
         {

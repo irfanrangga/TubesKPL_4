@@ -1,22 +1,39 @@
 [
   {
     "IdBuku": "B001",
-    "Judul": "How to win friends \u0026 influence people",
-    "Penulis": "Dale Carnegie",
+    "Judul": "Atomic Habits",
+    "Penulis": "James Clear",
     "Penerbit": "Gramedia",
+<<<<<<< HEAD
     "Kategori": 2,
     "Sinopsis": "abcd",
     "Status": "TERSEDIA",
     "TanggalMasuk": "2025-05-05T23:25:38.2040242+07:00"
+=======
+    "Kategori": "non fiksi",
+    "Sinopsis": "-",
+    "Status":  "Tersedia",
+    "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
+>>>>>>> main
   },
   {
     "IdBuku": "B002",
-    "Judul": "Buku A",
-    "Penulis": "Rija",
+    "Judul": "The Power of Habit",
+    "Penulis": "Charles Duhigg",
     "Penerbit": "Gramedia",
-    "Kategori": "NONFIKSI",
-    "Sinopsis": "AAbcas",
-    "Status": "TERSEDIA",
-    "TanggalMasuk": "2025-05-05T23:33:31.5114606+07:00"
+    "Kategori": "non fiksi",
+    "Sinopsis": "-",
+    "Status": "Tersedia",
+    "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
+  },
+  {
+    "IdBuku": "B003",
+    "Judul": "The Subtle Art of Not Giving a F*ck",
+    "Penulis": "Mark Manson",
+    "Penerbit": "Gramedia",
+    "Kategori": "non fiksi",
+    "Sinopsis": "In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be positive all the time so that we can truly become better, happier people.",
+    "Status": "Tersedia",
+    "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
   }
 ]

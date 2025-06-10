@@ -9,6 +9,7 @@ namespace ManajemenPerpus.CLI.Fitur
     public class FiturManajemenKoleksi
     {
         private readonly BukuService _bukuService;
+        private readonly BukuServiceNew _bukuServiceNew = new BukuServiceNew();
 
         public FiturManajemenKoleksi()
         {
@@ -85,10 +86,10 @@ namespace ManajemenPerpus.CLI.Fitur
                 string penerbit = Console.ReadLine();
 
                 Console.WriteLine("Kategori (1-Fiksi, 2-Non Fiksi, 3-Sains, 4-Sejarah): ");
-                if (!Enum.TryParse(Console.ReadLine(), out Buku.KATEGORIBUKU kategori))
+                if (!Enum.TryParse(Console.ReadLine(), out BukuDeprecated.KATEGORIBUKU kategori))
                 {
                     Console.WriteLine("Kategori tidak valid. Menggunakan default Fiksi.");
-                    kategori = Buku.KATEGORIBUKU.FIKSI;
+                    kategori = BukuDeprecated.KATEGORIBUKU.FIKSI;
                 }
 
                 Console.Write("Sinopsis: ");
@@ -185,10 +186,10 @@ namespace ManajemenPerpus.CLI.Fitur
 
                     Console.Write("Kategori baru (1-Fiksi, 2-Non Fiksi, 3-Sains, 4-Sejarah, kosongkan jika tidak diubah): ");
                     string kategoriInput = Console.ReadLine();
-                    Buku.KATEGORIBUKU? kategori = null;
+                    BukuDeprecated.KATEGORIBUKU? kategori = null;
                     if (!string.IsNullOrEmpty(kategoriInput))
                     {
-                        if (Enum.TryParse(kategoriInput, out Buku.KATEGORIBUKU parsedKategori))
+                        if (Enum.TryParse(kategoriInput, out BukuDeprecated.KATEGORIBUKU parsedKategori))
                         {
                             kategori = parsedKategori;
                         }
@@ -197,7 +198,7 @@ namespace ManajemenPerpus.CLI.Fitur
                     Console.Write("Sinopsis baru: ");
                     string sinopsis = Console.ReadLine();
 
-                    var updatedBuku = new Buku(
+                    var updatedBuku = new BukuDeprecated(
                         buku.IdBuku,
                         !string.IsNullOrEmpty(judul) ? judul : buku.Judul,
                         !string.IsNullOrEmpty(penulis) ? penulis : buku.Penulis,
@@ -244,7 +245,7 @@ namespace ManajemenPerpus.CLI.Fitur
                 string keyword = Console.ReadLine().ToLower();
 
                 var semuaBuku = _bukuService.GetAllBuku();
-                List<Buku> hasilPencarian = new List<Buku>();
+                List<BukuDeprecated> hasilPencarian = new List<BukuDeprecated>();
 
                 switch (metode)
                 {
@@ -258,7 +259,7 @@ namespace ManajemenPerpus.CLI.Fitur
                         hasilPencarian = semuaBuku.Where(b => b.Penerbit.ToLower().Contains(keyword)).ToList();
                         break;
                     case 4:
-                        if (Enum.TryParse(keyword, true, out Buku.KATEGORIBUKU kategori))
+                        if (Enum.TryParse(keyword, true, out BukuDeprecated.KATEGORIBUKU kategori))
                         {
                             hasilPencarian = semuaBuku.Where(b => b.Kategori == kategori).ToList();
                         }

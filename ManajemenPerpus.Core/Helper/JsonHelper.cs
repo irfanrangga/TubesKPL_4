@@ -9,7 +9,7 @@ namespace ManajemenPerpus.Core.Helper
 {
     public static class JsonHelper
     {
-        public static void WriteJson<T>(string filePath, T data)
+        public static void WriteJson<T>(string filePath, List<T> data)
         {
             var options = new JsonSerializerOptions
             {
@@ -19,16 +19,25 @@ namespace ManajemenPerpus.Core.Helper
             File.WriteAllText(filePath, jsonString);
         }
 
-        public static T ReadJson<T>(string filePath)
+        public static List<T> ReadJson<T>(string filePath)
         {
-            if (File.Exists(filePath))
-            {
-                string jsonString = File.ReadAllText(filePath);
-                return JsonSerializer.Deserialize<T>(jsonString);
-            }
-            else
+
+            if (!File.Exists(filePath))
             {
                 throw new FileNotFoundException($"File not found: {filePath}");
+            }
+            try
+            {
+                string jsonString = File.ReadAllText(filePath);
+                var options = new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                };
+                return JsonSerializer.Deserialize<List<T>>(jsonString, options) ?? new List<T>();
+            }
+            catch(JsonException ex)
+            {
+                throw new InvalidOperationException($"Error deserializing JSON from file: {filePath}", ex);
             }
         }
     }

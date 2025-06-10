@@ -8,12 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="View\**" />
+    <EmbeddedResource Remove="View\**" />
+    <None Remove="View\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ManajemenPerpus.Core\ManajemenPerpus.Core.csproj" />
     <ProjectReference Include="..\RestAPI\ManajemenPerpus.API.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="View\" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.3.0" />
   </ItemGroup>
 
 </Project>

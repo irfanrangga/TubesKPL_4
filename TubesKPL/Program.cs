@@ -2,6 +2,7 @@
 using ManajemenPerpus.CLI.Fitur;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
 using ManajemenPerpus.Core.Models;
+using ManajemenPerpus.CLI.Service;
 
 namespace ManajemenPerpus.CLI
 {
@@ -10,6 +11,7 @@ namespace ManajemenPerpus.CLI
         StateMenuUtama,
         StateManajemenPengguna,
         StateManajemenKoleksi,
+        StateManajemenBuku,
         StateSirkulasiBuku,
         StateUlasanRekomendasi,
         StateLaporanStatistik,
@@ -19,24 +21,21 @@ namespace ManajemenPerpus.CLI
 
     class Program
     {
-        private List<Pengguna> pengguna = new List<Pengguna>();
-        private List<Buku> buku = new List<Buku>();
-        private List<Pinjaman> pinjaman = new List<Pinjaman>();
-        private List<Ulasan> ulasan = new List<Ulasan>();
-        private List<Notifikasi> notifikasi = new List<Notifikasi>();
-        private List<Denda> denda = new List<Denda>();
-
-
 
         static ProgramState currentState = ProgramState.StateMenuUtama;
 
         static void Main(string[] args)
         {
+            var bukuService = new BukuService();
+            var pinjamanService = new PinjamanService();
+            var dendaService = new DendaService();
+            var penggunaService = new PenggunaService();
+
             var fiturManajemenPengguna = new FiturManajemenPengguna();
-            var fiturManajemenKoleksi = new FiturManajemenKoleksi();
+            var fiturManajemenBuku = new FiturManajemenBuku();
             var fiturSirkulasiBuku = new FiturSirkulasiBuku();
             var fiturUlasanRekomendasi = new FiturUlasanRekomendasi();
-            //var fiturLaporanStatistik = new FiturLaporanStatistik();
+            var fiturLaporanStatistik = new FiturLaporanStatistik(bukuService, pinjamanService, dendaService, penggunaService);
             var fiturNotifikasiOtomatis = new FiturNotifikasiOtomatis();
 
             while (currentState != ProgramState.StateKeluar)
@@ -49,8 +48,8 @@ namespace ManajemenPerpus.CLI
                     case ProgramState.StateManajemenPengguna:
                         currentState = fiturManajemenPengguna.MenuManajemenPengguna();
                         break;
-                    case ProgramState.StateManajemenKoleksi:
-                        currentState = fiturManajemenKoleksi.MenuManajemenKoleksi();
+                    case ProgramState.StateManajemenBuku:
+                        currentState = fiturManajemenBuku.MenuManajemenBuku();
                         break;
                     case ProgramState.StateSirkulasiBuku:
                         currentState = fiturSirkulasiBuku.MenuSirkulasiBuku();
@@ -59,7 +58,7 @@ namespace ManajemenPerpus.CLI
                         currentState = fiturUlasanRekomendasi.MenuUlasanRekomendasi();
                         break;
                     case ProgramState.StateLaporanStatistik:
-                        //currentState = fiturLaporanStatistik.MenuLaporanStatistik();
+                        currentState = fiturLaporanStatistik.MenuLaporanStatistik();
                         break;
                     case ProgramState.StateNotifikasiOtomatis:
                         currentState = fiturNotifikasiOtomatis.MenuNotifikasiOtomatis();
@@ -69,4 +68,3 @@ namespace ManajemenPerpus.CLI
         }
     }
 }
-

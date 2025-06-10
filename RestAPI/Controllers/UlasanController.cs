@@ -9,7 +9,7 @@ namespace ManajemenPerpus.API.Controllers
     [ApiController]
     public class UlasanController : ControllerBase
     {
-        public static List<Ulasan> ulasanList;
+        public static List<Ulasan> ulasanList = new List<Ulasan>();
         private string filePath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).FullName, "SharedData", "DataJson", "DataUlasan.json");
 
         [HttpGet]
@@ -37,6 +37,7 @@ namespace ManajemenPerpus.API.Controllers
         [HttpGet("{id}")]
         public ActionResult<Ulasan> GetUlasanById(string id)
         {
+
             var ulasan = ulasanList.FirstOrDefault(u => u.ulasanId == id);
             if (ulasan == null)
             {
