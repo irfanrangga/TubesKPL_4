@@ -3,102 +3,133 @@
     "IdPinjaman": "PJ003",
     "IdBuku": "B001",
     "IdAnggota": "P001",
-    "BatasPengembalian": "2025-06-12T00:30:32.0593628+07:00"
+    "BatasPengembalian": "2025-06-12T00:30:32.0593628+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
   },
   {
     "IdPinjaman": "PJ002",
     "IdBuku": "B001",
     "IdAnggota": "P001",
-    "BatasPengembalian": "2025-06-26T00:20:29.1782142+07:00"
+    "BatasPengembalian": "2025-06-26T00:20:29.1782142+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
   },
   {
     "IdPinjaman": "PJ003",
     "IdBuku": "B002",
     "IdAnggota": "P001",
-    "BatasPengembalian": "2025-06-12T11:21:26.1714016+07:00"
+    "BatasPengembalian": "2025-06-12T11:21:26.1714016+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
   },
   {
     "IdPinjaman": "PJ004",
     "IdBuku": "B002",
     "IdAnggota": "P001",
-    "BatasPengembalian": "2025-06-12T11:21:29.932572+07:00"
+    "BatasPengembalian": "2025-06-12T11:21:29.932572+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
   },
   {
     "IdPinjaman": "PJ005",
     "IdBuku": "B002",
     "IdAnggota": "P001",
-    "BatasPengembalian": "2025-06-12T11:21:54.2781292+07:00"
+    "BatasPengembalian": "2025-06-12T11:21:54.2781292+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
   },
   {
     "IdPinjaman": "PJ007",
     "IdBuku": "B002",
     "IdAnggota": "P001",
-    "BatasPengembalian": "2025-06-12T11:26:12.5218606+07:00"
+    "BatasPengembalian": "2025-06-12T11:26:12.5218606+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
   },
   {
     "IdPinjaman": "PJ008",
     "IdBuku": "B002",
     "IdAnggota": "P001",
-    "BatasPengembalian": "2025-06-12T12:09:40.116918+07:00"
+    "BatasPengembalian": "2025-06-12T12:09:40.116918+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
   },
   {
     "IdPinjaman": "PJ009",
     "IdBuku": "B002",
     "IdAnggota": "P001",
-    "BatasPengembalian": "2025-06-12T12:17:18.7606517+07:00"
+    "BatasPengembalian": "2025-06-12T12:17:18.7606517+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
   },
   {
     "IdPinjaman": "PJ010",
     "IdBuku": "B001",
     "IdAnggota": "P001",
-    "BatasPengembalian": "2025-06-12T12:17:33.3625291+07:00"
+    "BatasPengembalian": "2025-06-12T12:17:33.3625291+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
   },
   {
     "IdPinjaman": "PJ011",
     "IdBuku": "B002",
     "IdAnggota": "P001",
-    "BatasPengembalian": "2025-06-12T12:21:08.0239713+07:00"
+    "BatasPengembalian": "2025-06-12T12:21:08.0239713+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
   },
   {
     "IdPinjaman": "PJ012",
     "IdBuku": "B001",
     "IdAnggota": "P001",
-    "BatasPengembalian": "2025-06-12T12:21:26.5695753+07:00"
+    "BatasPengembalian": "2025-06-12T12:21:26.5695753+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
   },
   {
     "IdPinjaman": "PJ013",
     "IdBuku": "B002",
     "IdAnggota": "P001",
-    "BatasPengembalian": "2025-06-12T12:22:09.3662714+07:00"
+    "BatasPengembalian": "2025-06-12T12:22:09.3662714+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
   },
   {
     "IdPinjaman": "PJ014",
     "IdBuku": "B001",
     "IdAnggota": "P001",
-    "BatasPengembalian": "2025-06-12T12:22:40.1993846+07:00"
+    "BatasPengembalian": "2025-06-12T12:22:40.1993846+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
   },
   {
     "IdPinjaman": "PJ015",
     "IdBuku": "B001",
     "IdAnggota": "P001",
-    "BatasPengembalian": "2025-06-12T12:24:31.7971088+07:00"
+    "BatasPengembalian": "2025-06-12T12:24:31.7971088+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
   },
   {
     "IdPinjaman": "PJ016",
     "IdBuku": "B001",
     "IdAnggota": "P001",
-    "BatasPengembalian": "2025-06-12T12:28:37.498432+07:00"
+    "BatasPengembalian": "2025-06-12T12:28:37.498432+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
   },
   {
     "IdPinjaman": "PJ017",
     "IdBuku": "B001",
     "IdAnggota": "P001",
-    "BatasPengembalian": "2025-06-16T20:28:46.4695586+07:00"
+    "BatasPengembalian": "2025-06-16T20:28:46.4695586+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
   },
   {
     "IdPinjaman": "PJ017",
     "IdBuku": "B002",
     "IdAnggota": "P001",
-    "BatasPengembalian": "2025-06-16T20:41:51.1536712+07:00"
+    "BatasPengembalian": "2025-06-16T20:41:51.1536712+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
+  },
+  {
+    "IdPinjaman": "PJ018",
+    "IdBuku": "B002",
+    "IdAnggota": "P001",
+    "BatasPengembalian": "2025-06-17T21:58:08.4104412+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
+  },
+  {
+    "IdPinjaman": "PJ019",
+    "IdBuku": "B003",
+    "IdAnggota": "P001",
+    "BatasPengembalian": "2025-06-17T21:58:11.497929+07:00",
+    "TanggalPinjam": "0001-01-01T00:00:00"
   }
 ]

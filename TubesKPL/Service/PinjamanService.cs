@@ -50,34 +50,67 @@ namespace ManajemenPerpus.CLI.Service
             File.WriteAllText(_jsonFilePath, jsonData);
         }
 
-        // untuk tambah pinjaman baru
         public void TambahPinjaman(string idBuku, string idAnggota, DateTime batasPengembalian)
         {
-            var buku = bukuService.GetBukuById(idBuku);
-            var anggota = penggunaService.GetPenggunaById(idAnggota);
-
-            if (buku == null)
+            try
             {
-                Console.WriteLine("Buku tidak ditemukan.");
-                return;
-            }
+                // untuk validasi ID Buku
+                if (string.IsNullOrWhiteSpace(idBuku))
+                {
+                    Console.WriteLine("ID Buku tidak boleh kosong.");
+                    return;
+                }
 
-            if (anggota == null || anggota.Role != Pengguna.ROLEPENGGUNA.anggota)
+                if (idBuku.Length > 20 || !idBuku.All(char.IsLetterOrDigit))
+                {
+                    Console.WriteLine("ID Buku tidak valid. Hanya karakter alfanumerik maksimal 20 karakter.");
+                    return;
+                }
+
+                // untuk validasi ID Anggota
+                if (string.IsNullOrWhiteSpace(idAnggota))
+                {
+                    Console.WriteLine("ID Anggota tidak boleh kosong.");
+                    return;
+                }
+
+                if (idAnggota.Length > 20 || !idAnggota.All(char.IsLetterOrDigit))
+                {
+                    Console.WriteLine("ID Anggota tidak valid. Hanya karakter alfanumerik maksimal 20 karakter.");
+                    return;
+                }
+
+                var buku = bukuService.GetBukuById(idBuku);
+                var anggota = penggunaService.GetPenggunaById(idAnggota);
+
+                if (buku == null)
+                {
+                    Console.WriteLine("Buku tidak ditemukan.");
+                    return;
+                }
+
+                if (anggota == null || anggota.Role != Pengguna.ROLEPENGGUNA.anggota)
+                {
+                    Console.WriteLine("Anggota tidak valid.");
+                    return;
+                }
+
+                string idPinjaman = GeneratePinjamanId();
+                var pinjaman = new Pinjaman(idPinjaman, idBuku, idAnggota, batasPengembalian);
+                pinjamanList.Add(pinjaman);
+                SaveData();
+
+                buku.Status = BukuDeprecated.STATUSBUKU.DIPINJAM;
+                bukuService.UpdateBuku(buku);
+
+                Console.WriteLine("Pinjaman berhasil ditambahkan.");
+            }
+            catch (Exception ex)
             {
-                Console.WriteLine("Anggota tidak valid.");
-                return;
+                Console.WriteLine($"Terjadi kesalahan saat menambahkan pinjaman: {ex.Message}");
             }
-
-            string idPinjaman = GeneratePinjamanId();
-            var pinjaman = new Pinjaman(idPinjaman, idBuku, idAnggota, batasPengembalian);
-            pinjamanList.Add(pinjaman);
-            SaveData();
-
-            buku.Status = BukuDeprecated.STATUSBUKU.DIPINJAM;
-            bukuService.UpdateBuku(buku);
-
-            Console.WriteLine("Pinjaman berhasil ditambahkan.");
         }
+
 
         // untuk buat ID pinjaman berurutan
         public string GeneratePinjamanId()
