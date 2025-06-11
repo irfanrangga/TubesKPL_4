@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\user\\TubesKPL_4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D2E5533E-3F57-7BBF-D386-0ECE44B4BF40}|ManajemenPerpus.GUI\\ManajemenPerpus.GUI.csproj|c:\\users\\user\\tubeskpl_4\\manajemenperpus.gui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2E5533E-3F57-7BBF-D386-0ECE44B4BF40}|ManajemenPerpus.GUI\\ManajemenPerpus.GUI.csproj|solutionrelative:manajemenperpus.gui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D2E5533E-3F57-7BBF-D386-0ECE44B4BF40}|ManajemenPerpus.GUI\\ManajemenPerpus.GUI.csproj|C:\\Users\\user\\TubesKPL_4\\manajemenperpus.gui\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D2E5533E-3F57-7BBF-D386-0ECE44B4BF40}|ManajemenPerpus.GUI\\ManajemenPerpus.GUI.csproj|solutionrelative:manajemenperpus.gui\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D2E5533E-3F57-7BBF-D386-0ECE44B4BF40}|ManajemenPerpus.GUI\\ManajemenPerpus.GUI.csproj|C:\\Users\\user\\TubesKPL_4\\manajemenperpus.gui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D2E5533E-3F57-7BBF-D386-0ECE44B4BF40}|ManajemenPerpus.GUI\\ManajemenPerpus.GUI.csproj|solutionrelative:manajemenperpus.gui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2E5533E-3F57-7BBF-D386-0ECE44B4BF40}|ManajemenPerpus.GUI\\ManajemenPerpus.GUI.csproj|C:\\Users\\user\\TubesKPL_4\\manajemenperpus.gui\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D2E5533E-3F57-7BBF-D386-0ECE44B4BF40}|ManajemenPerpus.GUI\\ManajemenPerpus.GUI.csproj|solutionrelative:manajemenperpus.gui\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D2E5533E-3F57-7BBF-D386-0ECE44B4BF40}|ManajemenPerpus.GUI\\ManajemenPerpus.GUI.csproj|c:\\users\\user\\tubeskpl_4\\manajemenperpus.gui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2E5533E-3F57-7BBF-D386-0ECE44B4BF40}|ManajemenPerpus.GUI\\ManajemenPerpus.GUI.csproj|solutionrelative:manajemenperpus.gui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D2E5533E-3F57-7BBF-D386-0ECE44B4BF40}|ManajemenPerpus.GUI\\ManajemenPerpus.GUI.csproj|c:\\users\\user\\tubeskpl_4\\manajemenperpus.gui\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -188,7 +188,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 344,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -208,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "RegisterForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\user\\TubesKPL_4\\ManajemenPerpus.GUI\\RegisterForm.cs",
               "RelativeDocumentMoniker": "ManajemenPerpus.GUI\\RegisterForm.cs",
@@ -224,20 +224,20 @@
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\user\\TubesKPL_4\\ManajemenPerpus.GUI\\LoginForm.cs",
               "RelativeDocumentMoniker": "ManajemenPerpus.GUI\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\user\\TubesKPL_4\\ManajemenPerpus.GUI\\LoginForm.cs [Design]",
-              "RelativeToolTip": "ManajemenPerpus.GUI\\LoginForm.cs [Design]",
+              "ToolTip": "C:\\Users\\user\\TubesKPL_4\\ManajemenPerpus.GUI\\LoginForm.cs [Design]*",
+              "RelativeToolTip": "ManajemenPerpus.GUI\\LoginForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T12:58:12.926Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "C:\\Users\\user\\TubesKPL_4\\ManajemenPerpus.GUI\\LoginForm.cs",
               "RelativeDocumentMoniker": "ManajemenPerpus.GUI\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\user\\TubesKPL_4\\ManajemenPerpus.GUI\\LoginForm.cs",
-              "RelativeToolTip": "ManajemenPerpus.GUI\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\user\\TubesKPL_4\\ManajemenPerpus.GUI\\LoginForm.cs*",
+              "RelativeToolTip": "ManajemenPerpus.GUI\\LoginForm.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T13:16:20.701Z",
@@ -253,8 +253,7 @@
               "RelativeToolTip": "ManajemenPerpus.GUI\\Properties\\Resources.resx",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAHoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-06-10T12:56:48.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T12:56:48.811Z"
             },
             {
               "$type": "Document",
@@ -278,8 +277,7 @@
               "ToolTip": "C:\\Users\\user\\TubesKPL_4\\ManajemenPerpus.GUI\\MenuUtama.cs [Design]",
               "RelativeToolTip": "ManajemenPerpus.GUI\\MenuUtama.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T12:56:48.815Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-10T12:56:48.815Z"
             },
             {
               "$type": "Document",
@@ -290,8 +288,7 @@
               "ToolTip": "C:\\Users\\user\\TubesKPL_4\\ManajemenPerpus.GUI\\Sirkulasi.cs [Design]",
               "RelativeToolTip": "ManajemenPerpus.GUI\\Sirkulasi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T12:56:50.175Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-10T12:56:50.175Z"
             },
             {
               "$type": "Document",
@@ -314,8 +311,7 @@
               "RelativeToolTip": "ManajemenPerpus.GUI\\MenuUtama.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T12:56:50.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T12:56:50.196Z"
             },
             {
               "$type": "Document",
@@ -327,8 +323,7 @@
               "RelativeToolTip": "ManajemenPerpus.GUI\\RegisterForm.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAQwDsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T13:22:36.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-11T13:22:36.765Z"
             },
             {
               "$type": "Document",
@@ -340,8 +335,7 @@
               "RelativeToolTip": "TubesKPL\\Fitur\\FiturManajemenPengguna.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAwwBcAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T12:56:50.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T12:56:50.202Z"
             },
             {
               "$type": "Document",
@@ -364,8 +358,7 @@
               "ToolTip": "C:\\Users\\user\\TubesKPL_4\\ManajemenPerpus.GUI\\MenuUtama.resx",
               "RelativeToolTip": "ManajemenPerpus.GUI\\MenuUtama.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-06-10T12:56:50.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T12:56:50.181Z"
             },
             {
               "$type": "Document",
@@ -413,8 +406,7 @@
               "RelativeToolTip": "ManajemenPerpus.GUI\\Sirkulasi.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T12:56:50.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T12:56:50.187Z"
             },
             {
               "$type": "Document",
@@ -678,8 +670,7 @@
               "RelativeToolTip": "ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-10T12:56:50.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T12:56:50.222Z"
             },
             {
               "$type": "Document",
@@ -726,8 +717,7 @@
               "RelativeToolTip": "TubesKPL\\ManajemenPerpus.CLI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-10T12:56:50.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T12:56:50.32Z"
             },
             {
               "$type": "Document",
@@ -739,8 +729,7 @@
               "RelativeToolTip": "RestAPI\\ManajemenPerpus.API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-10T12:56:50.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T12:56:50.323Z"
             },
             {
               "$type": "Document",
