@@ -32,14 +32,14 @@
             customButton1 = new ManajemenPerpus.GUI.CustomControl.CustomButton();
             panel1 = new Panel();
             panel3 = new Panel();
+            customButton3 = new ManajemenPerpus.GUI.CustomControl.CustomButton();
             LogoutButton = new ManajemenPerpus.GUI.CustomControl.CustomButton();
             customButton2 = new ManajemenPerpus.GUI.CustomControl.CustomButton();
             panel2 = new Panel();
             label1 = new Label();
             panel4 = new Panel();
-            customButton3 = new ManajemenPerpus.GUI.CustomControl.CustomButton();
-            label2 = new Label();
             label3 = new Label();
+            label2 = new Label();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -59,8 +59,9 @@
             customButton1.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             customButton1.ForeColor = Color.White;
             customButton1.Location = new Point(0, 0);
+            customButton1.Margin = new Padding(2, 2, 2, 2);
             customButton1.Name = "customButton1";
-            customButton1.Size = new Size(300, 124);
+            customButton1.Size = new Size(185, 78);
             customButton1.TabIndex = 2;
             customButton1.Text = "Koleksi Buku";
             customButton1.TextColor = Color.White;
@@ -74,8 +75,9 @@
             panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(2, 2, 2, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1771, 124);
+            panel1.Size = new Size(1090, 78);
             panel1.TabIndex = 3;
             // 
             // panel3
@@ -86,10 +88,32 @@
             panel3.Controls.Add(customButton2);
             panel3.Controls.Add(customButton1);
             panel3.Dock = DockStyle.Right;
-            panel3.Location = new Point(716, 0);
+            panel3.Location = new Point(440, 0);
+            panel3.Margin = new Padding(2, 2, 2, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1055, 124);
+            panel3.Size = new Size(650, 78);
             panel3.TabIndex = 1;
+            // 
+            // customButton3
+            // 
+            customButton3.BackColor = Color.RoyalBlue;
+            customButton3.BackgroundColor = Color.RoyalBlue;
+            customButton3.BorderColor = Color.PaleVioletRed;
+            customButton3.BorderRadius = 0;
+            customButton3.BorderSize = 0;
+            customButton3.Dock = DockStyle.Left;
+            customButton3.FlatAppearance.BorderSize = 0;
+            customButton3.FlatStyle = FlatStyle.Flat;
+            customButton3.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            customButton3.ForeColor = Color.White;
+            customButton3.Location = new Point(370, 0);
+            customButton3.Margin = new Padding(2, 2, 2, 2);
+            customButton3.Name = "customButton3";
+            customButton3.Size = new Size(185, 78);
+            customButton3.TabIndex = 4;
+            customButton3.Text = "Ulasan";
+            customButton3.TextColor = Color.White;
+            customButton3.UseVisualStyleBackColor = false;
             // 
             // LogoutButton
             // 
@@ -103,9 +127,10 @@
             LogoutButton.FlatStyle = FlatStyle.Flat;
             LogoutButton.ForeColor = Color.White;
             LogoutButton.Image = (Image)resources.GetObject("LogoutButton.Image");
-            LogoutButton.Location = new Point(900, 0);
+            LogoutButton.Location = new Point(555, 0);
+            LogoutButton.Margin = new Padding(2, 2, 2, 2);
             LogoutButton.Name = "LogoutButton";
-            LogoutButton.Size = new Size(155, 124);
+            LogoutButton.Size = new Size(95, 78);
             LogoutButton.TabIndex = 3;
             LogoutButton.TextColor = Color.White;
             LogoutButton.UseVisualStyleBackColor = false;
@@ -123,13 +148,15 @@
             customButton2.FlatStyle = FlatStyle.Flat;
             customButton2.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
             customButton2.ForeColor = Color.White;
-            customButton2.Location = new Point(300, 0);
+            customButton2.Location = new Point(185, 0);
+            customButton2.Margin = new Padding(2, 2, 2, 2);
             customButton2.Name = "customButton2";
-            customButton2.Size = new Size(300, 124);
+            customButton2.Size = new Size(185, 78);
             customButton2.TabIndex = 3;
             customButton2.Text = "Peminjaman";
             customButton2.TextColor = Color.White;
             customButton2.UseVisualStyleBackColor = false;
+            customButton2.Click += customButton2_Click;
             // 
             // panel2
             // 
@@ -137,17 +164,19 @@
             panel2.Dock = DockStyle.Left;
             panel2.ForeColor = SystemColors.Control;
             panel2.Location = new Point(0, 0);
+            panel2.Margin = new Padding(2, 2, 2, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(524, 124);
+            panel2.Size = new Size(322, 78);
             panel2.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(32, 34);
+            label1.Location = new Point(20, 21);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(471, 50);
+            label1.Size = new Size(309, 32);
             label1.TabIndex = 0;
             label1.Text = "Manajemen Perpustakaan";
             // 
@@ -157,31 +186,24 @@
             panel4.Controls.Add(label3);
             panel4.Controls.Add(label2);
             panel4.Dock = DockStyle.Fill;
-            panel4.Location = new Point(0, 124);
+            panel4.Location = new Point(0, 78);
+            panel4.Margin = new Padding(2, 2, 2, 2);
             panel4.Name = "panel4";
-            panel4.Padding = new Padding(24);
-            panel4.Size = new Size(1771, 967);
+            panel4.Padding = new Padding(15, 15, 15, 15);
+            panel4.Size = new Size(1090, 581);
             panel4.TabIndex = 4;
             // 
-            // customButton3
+            // label3
             // 
-            customButton3.BackColor = Color.RoyalBlue;
-            customButton3.BackgroundColor = Color.RoyalBlue;
-            customButton3.BorderColor = Color.PaleVioletRed;
-            customButton3.BorderRadius = 0;
-            customButton3.BorderSize = 0;
-            customButton3.Dock = DockStyle.Left;
-            customButton3.FlatAppearance.BorderSize = 0;
-            customButton3.FlatStyle = FlatStyle.Flat;
-            customButton3.Font = new Font("Segoe UI Semibold", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            customButton3.ForeColor = Color.White;
-            customButton3.Location = new Point(600, 0);
-            customButton3.Name = "customButton3";
-            customButton3.Size = new Size(300, 124);
-            customButton3.TabIndex = 4;
-            customButton3.Text = "Ulasan";
-            customButton3.TextColor = Color.White;
-            customButton3.UseVisualStyleBackColor = false;
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.ControlDark;
+            label3.Location = new Point(260, 222);
+            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(569, 46);
+            label3.TabIndex = 1;
+            label3.Text = "Di Aplikasi Manajemen Perpustakaan";
             // 
             // label2
             // 
@@ -189,33 +211,24 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.RoyalBlue;
-            label2.Location = new Point(500, 204);
+            label2.Location = new Point(308, 116);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(771, 128);
+            label2.Size = new Size(481, 81);
             label2.TabIndex = 0;
             label2.Text = "Selamat Datang";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.ControlDark;
-            label3.Location = new Point(423, 355);
-            label3.Name = "label3";
-            label3.Size = new Size(893, 71);
-            label3.TabIndex = 1;
-            label3.Text = "Di Aplikasi Manajemen Perpustakaan";
-            // 
             // MenuUtama
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(1771, 1091);
+            ClientSize = new Size(1090, 659);
             Controls.Add(panel4);
             Controls.Add(panel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(2, 2, 2, 2);
             Name = "MenuUtama";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Aplikasi Manajemen Perpustakaan";
