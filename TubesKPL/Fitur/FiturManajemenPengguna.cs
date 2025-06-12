@@ -142,7 +142,7 @@ namespace ManajemenPerpus.CLI.Fitur
 
             Console.ReadKey();
         }
-
+        //Menghapus anggota yang telah diinputkan
         private void HapusAnggota()
         {
             Console.Clear();
@@ -154,7 +154,7 @@ namespace ManajemenPerpus.CLI.Fitur
             Console.WriteLine(sukses ? "Pengguna berhasil dihapus." : "Pengguna tidak ditemukan.");
             Console.ReadKey();
         }
-
+        //Menampilkan semua pengguna yang telah register
         private void TampilkanSemuaPengguna()
         {
             Console.Clear();
