@@ -10,9 +10,7 @@ namespace ManajemenPerpus.GUI
         {
             try
             {
-                Application.EnableVisualStyles();
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new Sirkulasi());
+                Application.Run(new MenuUtama());
             }
             catch (Exception ex)
             {

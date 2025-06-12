@@ -118,17 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="LogoutBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="customButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        qAAAAKgBefSzxgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGZSURBVEhLrZIx
-        S8NAGIaD+Df8HzooCKK0tDVNWpI2LeQitdwFBB2cAy46aGdXBWfR2d2hRXFzUidxcOt9V1oxktimyWly
-        bdMH3um973uSSyRJkiQwbR0Q6QAiDBBxY8IYwsg7PxUUkeY/y+Jyxc8LAYs8jxfgW0DkBCz7mA9F+AgQ
-        WeLnhQAiX0PBDd/NheDpTdziOxFg4gNA9h1Y9grfBYTu94zvRACy34azXbZjr/G9TxoBNUkDEPlOlKQR
-        eFAL74YklFlkPXIgrcAjUTIPgUesJE7gOs6C93f0LLwxaRgiT6F9XWbi1VgBWPZpqJs1LxJsyq6fQqUd
-        EWzr7aCbNRl1ECtwHWeRqfUGKMbhpGHZEhvto1tFt1c07FjBtIBcuYwsV6v7v8UcBLHL/TKlIHG5fyCF
-        AOTqRfTO63v8mVQCllEHics9xgKtw3ciQNavIVf+pEqtyXcBIwHLa+98NxcgU+oHb5Erf0Bee4SC9sCH
-        FvT7vmIs8/NCwn+BMHntlZ+fCFCMFsuWut7H+rN0GK9jSu2cnxXxA/ddaWgRgb4fAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACESURBVEhL7dSx
+        CUIxFAXQv4G1aGnrAm7gAk7gAjqKNn8rsbKzEnGLI4IBedjlxcac8t4ikOS9Yei6b7DCKeYpsMQD69hV
+        wwI3bGJXDXNcsY1dNUxwwT52KTDiGPM0uGMa8zS/OOB1RYeYp/l45F3s0mDW7JsWTQetaLoqiveyO8e8
+        +1NPa3V83jGsmaIAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

@@ -23,5 +23,60 @@
     "ulasanId": "ULS005",
     "bukuId": "B002",
     "isiUlasan": "baguss"
+  },
+  {
+    "ulasanId": "ULS006",
+    "bukuId": "B002",
+    "isiUlasan": "Bagus sekali, sangat membantu"
+  },
+  {
+    "ulasanId": "ULS007",
+    "bukuId": "B002",
+    "isiUlasan": "Buku ini sangat informatif dan mudah dipahami."
+  },
+  {
+    "ulasanId": "ULS008",
+    "bukuId": "B001",
+    "isiUlasan": "Sangat menarik, saya suka dengan cara penulis menjelaskan konsep-konsepnya."
+  },
+  {
+    "ulasanId": "ULS009",
+    "bukuId": "B002",
+    "isiUlasan": "Buku ini sangat cocok untuk pemula yang ingin belajar lebih dalam."
+  },
+  {
+    "ulasanId": "ULS010",
+    "bukuId": "B002",
+    "isiUlasan": "Buku ini sangat membantu saya dalam memahami konsep-konsep yang sulit."
+  },
+  {
+    "ulasanId": "ULS011",
+    "bukuId": "B001",
+    "isiUlasan": "Buku ini sangat menarik dan mudah dipahami."
+  },
+  {
+    "ulasanId": "ULS012",
+    "bukuId": "B003",
+    "isiUlasan": "Sangat bagus, saya suka dengan cara penulis menjelaskan konsep-konsepnya."
+  },
+  {
+    "ulasanId": "ULS013",
+    "bukuId": "B001",
+    "isiUlasan": "Buku ini sangat cocok untuk pemula yang ingin belajar lebih dalam."
+  },
+  {
+    "ulasanId": "ULS014",
+    "bukuId": "B005",
+    "isiUlasan": "keren bukunyaa"
+  },
+  {
+    "ulasanId": "ULS015",
+    "bukuId": "B006",
+    "isiUlasan": "bukunya sangat menginspirasi"
+  },
+  {
+    "ulasanId": "ULS016",
+    "bukuId": "B007",
+    "isiUlasan": "cerita dikemas dengan menarik"
   }
 ]

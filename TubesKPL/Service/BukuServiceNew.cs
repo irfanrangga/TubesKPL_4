@@ -24,6 +24,7 @@ namespace ManajemenPerpus.CLI.Service
             _httpClient = new HttpClient();
         }
 
+        // Mengambil daftar buku dari API
         public async Task<List<FactoryBuku>> GetBukuFromApi()
         {
             try
@@ -35,6 +36,7 @@ namespace ManajemenPerpus.CLI.Service
                 var jsonList = JsonSerializer.Deserialize<List<JsonElement>>(jsonResponse);
                 var bukuList = new List<FactoryBuku>();
 
+                // Parsing JSON dan membuat objek FactoryBuku
                 foreach (var item in jsonList)
                 {
                     string idBuku = item.GetProperty("idBuku").GetString();
@@ -68,6 +70,7 @@ namespace ManajemenPerpus.CLI.Service
             }
         }
 
+        // Menampilkan semua buku yang ada
         public async Task ShowAllBuku()
         {
             var listBuku = await GetBukuFromApi();
@@ -87,6 +90,7 @@ namespace ManajemenPerpus.CLI.Service
             Console.ReadKey();
         }
 
+        // menambahkan buku baru
         public void AddBuku()
         {
             Console.WriteLine("=== Tambah Buku Baru ===");

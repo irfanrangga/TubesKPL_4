@@ -12,7 +12,7 @@ namespace ManajemenPerpus.CLI.Service
     {
         private readonly HttpClient _httpClient;
         private readonly string _apiUrl = "https://localhost:7143/api/Ulasan";
-        private readonly string filePath;
+        private readonly string _filePath;
 
         private List<FactoryBuku> _listBuku;
         public BukuServiceNew bukuService = new BukuServiceNew();
@@ -20,10 +20,11 @@ namespace ManajemenPerpus.CLI.Service
         public UlasanService()
         {
             var root = Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName;
-            filePath = Path.Combine(root, "SharedData", "DataJson", "DataUlasan.json");
+            _filePath = Path.Combine(root, "SharedData", "DataJson", "DataUlasan.json");
             _httpClient = new HttpClient();
         }
 
+        // Mengambil semua ulasan dari API
         public async Task<List<Ulasan>> GetUlasanFromApi()
         {
             try
@@ -41,6 +42,7 @@ namespace ManajemenPerpus.CLI.Service
             }
         }
 
+        // Menampilkan semua ulasan yang ada
         public async Task ShowAllUlasan()
         {
             var listUlasan = await GetUlasanFromApi();
@@ -62,8 +64,10 @@ namespace ManajemenPerpus.CLI.Service
             Console.Clear();
         }
 
+        // Menampilkan semua ulasan berdasarkan ID buku
         public async Task ShowAllUlasanByBookId()
         {
+            // Mengambil semua ulasan dari API
             var listUlasan = await GetUlasanFromApi();
             Console.WriteLine("Masukkan ID Buku untuk melihat ulasan: ");
             string bukuId = Console.ReadLine();
@@ -85,37 +89,95 @@ namespace ManajemenPerpus.CLI.Service
             Console.Clear();
         }
 
-         public void AddUlasan()
+        public string AddUlasanGUI(string isiUlasan)
         {
-            var _listUlasan = JsonHelper.ReadJson<Ulasan>(filePath) ?? new List<Ulasan>();
+            var _listUlasan = JsonHelper.ReadJson<Ulasan>(_filePath) ?? new List<Ulasan>();
+            var bukuId = Console.ReadLine();
+
+            if (string.IsNullOrWhiteSpace(bukuId))
+                return "ID Buku tidak boleh kosong.";
+
+            if (bukuId.Length > 10 || !bukuId.All(char.IsLetterOrDigit))
+                return "ID Buku tidak valid. Hanya karakter alfanumerik max 10.";
+
+            var _listBuku = bukuService.GetBukuFromApi().GetAwaiter().GetResult();
+            var buku = _listBuku.FirstOrDefault(b => b.IdBuku == bukuId);
+            if (buku == null)
+                return "Buku dengan ID tersebut tidak ditemukan.";
+
+            if (string.IsNullOrWhiteSpace(isiUlasan))
+                return "Isi ulasan tidak boleh kosong.";
+
+            if (isiUlasan.Length > 500)
+                return "Isi ulasan terlalu panjang. Maksimal 500 karakter.";
+
+            isiUlasan = new string(isiUlasan.Where(c => !char.IsControl(c) || c == '\n' || c == '\r').ToArray());
+
+            var ulasan = new Ulasan(GenerateUlasanId(), bukuId, isiUlasan);
+            _listUlasan.Add(ulasan);
+            JsonHelper.WriteJson(_filePath, _listUlasan);
+
+            return "success";
+        }
+
+
+        // Menambahkan ulasan baru
+        public void AddUlasan()
+        {
+            var _listUlasan = JsonHelper.ReadJson<Ulasan>(_filePath) ?? new List<Ulasan>();
             try
             {
                 Console.WriteLine("Masukan ID Buku: ");
-                string bukuId = Console.ReadLine();
-                _listBuku = bukuService.GetBukuFromApi().GetAwaiter().GetResult();
-                foreach (var buku in _listBuku)
+                string bukuId = Console.ReadLine()?.Trim();
+                if (string.IsNullOrWhiteSpace(bukuId))
                 {
-                    if (buku.IdBuku == bukuId)
-                    {
-                        Console.WriteLine("Masukan Ulasan: ");
-                        string isiUlasan = Console.ReadLine();
-                        Ulasan ulasan = new Ulasan(GenerateUlasanId(), bukuId, isiUlasan);
-                        _listUlasan.Add(ulasan);
-                        Console.WriteLine("Ulasan berhasil ditambahkan.");
-                        break;
-                    }
+                    Console.WriteLine("ID Buku tidak boleh kosong.");
+                    return;
                 }
-                JsonHelper.WriteJson(filePath, _listUlasan);
+                // validasi bukuId agar hanya alfanumerik dan panjang maksimal 10 karakter
+                if (bukuId.Length > 10 || !bukuId.All(char.IsLetterOrDigit))
+                {
+                    Console.WriteLine("ID Buku tidak valid. Hanya karakter alfanumerik dengan panjang maksimal 20.");
+                    return;
+                }
+                _listBuku = bukuService.GetBukuFromApi().GetAwaiter().GetResult();
+                var buku = _listBuku.FirstOrDefault(b => b.IdBuku == bukuId);
+                if (buku == null)
+                {
+                    Console.WriteLine("Buku dengan ID tersebut tidak ditemukan.");
+                    return;
+                }
+                Console.WriteLine("Masukan Ulasan: ");
+                string isiUlasan = Console.ReadLine()?.Trim();
+                // validasi isi ulasan agar tidak kosong
+                if (string.IsNullOrWhiteSpace(isiUlasan))
+                {
+                    Console.WriteLine("Isi ulasan tidak boleh kosong.");
+                    return;
+                }
+                // Limitasi isi ulasan
+                if (isiUlasan.Length > 500)
+                {
+                    Console.WriteLine("Isi ulasan terlalu panjang. Maksimal 500 karakter.");
+                    return;
+                }
+                // Basic sanitization: remove control characters
+                isiUlasan = new string(isiUlasan.Where(c => !char.IsControl(c) || c == '\n' || c == '\r').ToArray());
+                Ulasan ulasan = new Ulasan(GenerateUlasanId(), bukuId, isiUlasan);
+                _listUlasan.Add(ulasan);
+                JsonHelper.WriteJson(_filePath, _listUlasan);
+                Console.WriteLine("Ulasan berhasil ditambahkan.");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error adding ulasan: {ex.Message}");
+                Console.WriteLine("Terjadi kesalahan saat menambahkan ulasan.");
             }
         }
 
+        // Menghasilkan ID unik untuk ulasan baru
         public string GenerateUlasanId()
         {
-            var listUlasan = JsonHelper.ReadJson<Ulasan>(filePath);
+            var listUlasan = JsonHelper.ReadJson<Ulasan>(_filePath);
 
             string id = "ULS" + (listUlasan.Count + 1).ToString("D3");
             return id;

@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace ManajemenPerpus.GUI
 {
-    public partial class UlasanGui : Form
+    public partial class KoleksiBuku : Form
     {
         private BukuServiceNew _bukuService = new BukuServiceNew();
-        public UlasanGui()
+        public KoleksiBuku()
         {
             InitializeComponent();
             flowLayoutPanel1.Dock = DockStyle.Fill;
@@ -24,7 +24,7 @@ namespace ManajemenPerpus.GUI
             flowLayoutPanel1.AutoScroll = true;
         }
 
-        private async void UlasanGui_Load(object sender, EventArgs e)
+        private async void KoleksiBuku_Load(object sender, EventArgs e)
         {
             await PopulateItems();
         }
@@ -44,9 +44,11 @@ namespace ManajemenPerpus.GUI
                         Penerbit = buku.Penerbit,
                         Kategori = buku.Kategori,
                         TanggalMasuk = buku.TanggalMasuk.ToString("dd/MM/yyyy") ?? "-",
-                        Padding = new Padding(10)
+                        Padding = new Padding(10),
+                        Tag = buku.IdBuku // Menyimpan ID Buku pada Tag untuk referensi
                     };
-
+                    
+                    item.Click += ItemClicked; // Menambahkan event handler untuk klik pada item
                     flowLayoutPanel1.Controls.Add(item);
                 }
             }
@@ -57,9 +59,19 @@ namespace ManajemenPerpus.GUI
 
         }
 
+        private void ItemClicked(object sender, EventArgs e)
+        {
+            if(sender is ItemList item && item.Tag is string idBuku)
+            {
+                UlasanPage ulasanPage = new UlasanPage(idBuku);
+                ulasanPage.Show();
+                this.Hide(); // Sembunyikan form KoleksiBuku saat membuka UlasanPage
+            }
+        }
+
         private async void Searchbar_TextChanged(object sender, EventArgs e)
         {
-            string searchText = Searchbar.Text.Trim().ToLower();
+            string searchText = Searchbox.Text.ToLower().Trim();
             flowLayoutPanel1.Controls.Clear();
 
             try
@@ -95,6 +107,27 @@ namespace ManajemenPerpus.GUI
             {
                 MessageBox.Show("Error searching items: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void LogoBtn_Clicked(object sender, EventArgs e)
+        {
+            MenuUtama menuUtama = new MenuUtama();
+            menuUtama.Show();
+            this.Hide();
+        }
+
+        private void PeminjamanBtn_Click(object sender, EventArgs e)
+        {
+            Sirkulasi peminjaman = new Sirkulasi();
+            peminjaman.Show();
+            this.Hide();
+        }
+
+        private void customButton1_Click(object sender, EventArgs e)
+        {
+            MenuUtama menu = new MenuUtama();
+            menu.Show();
+            this.Hide();
         }
     }
 }
