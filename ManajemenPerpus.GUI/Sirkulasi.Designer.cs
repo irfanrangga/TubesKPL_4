@@ -53,18 +53,16 @@ namespace ManajemenPerpus.GUI
             panelHeader.BorderStyle = BorderStyle.FixedSingle;
             panelHeader.Controls.Add(buttonBack);
             panelHeader.Controls.Add(labelTitle);
-            panelHeader.Location = new Point(14, 16);
-            panelHeader.Margin = new Padding(3, 4, 3, 4);
+            panelHeader.Location = new Point(12, 12);
             panelHeader.Name = "panelHeader";
-            panelHeader.Size = new Size(868, 66);
+            panelHeader.Size = new Size(760, 50);
             panelHeader.TabIndex = 0;
             // 
             // buttonBack
             // 
-            buttonBack.Location = new Point(11, 17);
-            buttonBack.Margin = new Padding(3, 4, 3, 4);
+            buttonBack.Location = new Point(10, 13);
             buttonBack.Name = "buttonBack";
-            buttonBack.Size = new Size(86, 33);
+            buttonBack.Size = new Size(75, 25);
             buttonBack.TabIndex = 0;
             buttonBack.Text = "Kembali";
             buttonBack.UseVisualStyleBackColor = true;
@@ -74,9 +72,9 @@ namespace ManajemenPerpus.GUI
             // 
             labelTitle.AutoSize = true;
             labelTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            labelTitle.Location = new Point(366, 20);
+            labelTitle.Location = new Point(320, 15);
             labelTitle.Name = "labelTitle";
-            labelTitle.Size = new Size(142, 28);
+            labelTitle.Size = new Size(114, 21);
             labelTitle.TabIndex = 1;
             labelTitle.Text = "Fitur Sirkulasi";
             // 
@@ -90,11 +88,9 @@ namespace ManajemenPerpus.GUI
             groupBoxPeminjaman.Controls.Add(labelTanggalKembali);
             groupBoxPeminjaman.Controls.Add(buttonPinjam);
             groupBoxPeminjaman.Controls.Add(buttonResetPeminjaman);
-            groupBoxPeminjaman.Location = new Point(14, 100);
-            groupBoxPeminjaman.Margin = new Padding(3, 4, 3, 4);
+            groupBoxPeminjaman.Location = new Point(12, 75);
             groupBoxPeminjaman.Name = "groupBoxPeminjaman";
-            groupBoxPeminjaman.Padding = new Padding(3, 4, 3, 4);
-            groupBoxPeminjaman.Size = new Size(423, 467);
+            groupBoxPeminjaman.Size = new Size(370, 350);
             groupBoxPeminjaman.TabIndex = 1;
             groupBoxPeminjaman.TabStop = false;
             groupBoxPeminjaman.Text = "Formulir Peminjaman";
@@ -102,26 +98,25 @@ namespace ManajemenPerpus.GUI
             // labelIdAnggota
             // 
             labelIdAnggota.AutoSize = true;
-            labelIdAnggota.Location = new Point(23, 53);
+            labelIdAnggota.Location = new Point(20, 40);
             labelIdAnggota.Name = "labelIdAnggota";
-            labelIdAnggota.Size = new Size(93, 20);
+            labelIdAnggota.Size = new Size(73, 15);
             labelIdAnggota.TabIndex = 0;
             labelIdAnggota.Text = "ID Anggota :";
             // 
             // textBoxIdAnggota
             // 
-            textBoxIdAnggota.Location = new Point(149, 49);
-            textBoxIdAnggota.Margin = new Padding(3, 4, 3, 4);
+            textBoxIdAnggota.Location = new Point(130, 37);
             textBoxIdAnggota.Name = "textBoxIdAnggota";
-            textBoxIdAnggota.Size = new Size(228, 27);
+            textBoxIdAnggota.Size = new Size(200, 23);
             textBoxIdAnggota.TabIndex = 1;
             // 
             // labelPilihBuku
             // 
             labelPilihBuku.AutoSize = true;
-            labelPilihBuku.Location = new Point(23, 113);
+            labelPilihBuku.Location = new Point(20, 85);
             labelPilihBuku.Name = "labelPilihBuku";
-            labelPilihBuku.Size = new Size(80, 20);
+            labelPilihBuku.Size = new Size(66, 15);
             labelPilihBuku.TabIndex = 2;
             labelPilihBuku.Text = "Pilih Buku :";
             // 
@@ -129,36 +124,34 @@ namespace ManajemenPerpus.GUI
             // 
             comboBoxBuku.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxBuku.FormattingEnabled = true;
-            comboBoxBuku.Location = new Point(149, 109);
-            comboBoxBuku.Margin = new Padding(3, 4, 3, 4);
+            comboBoxBuku.Location = new Point(130, 82);
             comboBoxBuku.Name = "comboBoxBuku";
-            comboBoxBuku.Size = new Size(228, 28);
+            comboBoxBuku.Size = new Size(200, 23);
             comboBoxBuku.TabIndex = 3;
             // 
             // labelBatasPengembalian
             // 
             labelBatasPengembalian.AutoSize = true;
-            labelBatasPengembalian.Location = new Point(23, 173);
+            labelBatasPengembalian.Location = new Point(20, 130);
             labelBatasPengembalian.Name = "labelBatasPengembalian";
-            labelBatasPengembalian.Size = new Size(150, 20);
+            labelBatasPengembalian.Size = new Size(120, 15);
             labelBatasPengembalian.TabIndex = 4;
             labelBatasPengembalian.Text = "Batas Pengembalian :";
             // 
             // labelTanggalKembali
             // 
             labelTanggalKembali.AutoSize = true;
-            labelTanggalKembali.Location = new Point(182, 173);
+            labelTanggalKembali.Location = new Point(159, 130);
             labelTanggalKembali.Name = "labelTanggalKembali";
-            labelTanggalKembali.Size = new Size(204, 20);
+            labelTanggalKembali.Size = new Size(164, 15);
             labelTanggalKembali.TabIndex = 5;
             labelTanggalKembali.Text = "menampilkan tanggal 7 hari...";
             // 
             // buttonPinjam
             // 
-            buttonPinjam.Location = new Point(57, 333);
-            buttonPinjam.Margin = new Padding(3, 4, 3, 4);
+            buttonPinjam.Location = new Point(50, 250);
             buttonPinjam.Name = "buttonPinjam";
-            buttonPinjam.Size = new Size(86, 40);
+            buttonPinjam.Size = new Size(75, 30);
             buttonPinjam.TabIndex = 6;
             buttonPinjam.Text = "Pinjam";
             buttonPinjam.UseVisualStyleBackColor = true;
@@ -166,10 +159,9 @@ namespace ManajemenPerpus.GUI
             // 
             // buttonResetPeminjaman
             // 
-            buttonResetPeminjaman.Location = new Point(251, 333);
-            buttonResetPeminjaman.Margin = new Padding(3, 4, 3, 4);
+            buttonResetPeminjaman.Location = new Point(220, 250);
             buttonResetPeminjaman.Name = "buttonResetPeminjaman";
-            buttonResetPeminjaman.Size = new Size(86, 40);
+            buttonResetPeminjaman.Size = new Size(75, 30);
             buttonResetPeminjaman.TabIndex = 7;
             buttonResetPeminjaman.Text = "Reset";
             buttonResetPeminjaman.UseVisualStyleBackColor = true;
@@ -192,40 +184,36 @@ namespace ManajemenPerpus.GUI
             groupBoxPengembalian.Controls.Add(labelDisplayStatus);
             groupBoxPengembalian.Controls.Add(buttonKembalikan);
             groupBoxPengembalian.Controls.Add(buttonResetPengembalian);
-            groupBoxPengembalian.Location = new Point(459, 100);
-            groupBoxPengembalian.Margin = new Padding(3, 4, 3, 4);
+            groupBoxPengembalian.Location = new Point(402, 75);
             groupBoxPengembalian.Name = "groupBoxPengembalian";
-            groupBoxPengembalian.Padding = new Padding(3, 4, 3, 4);
-            groupBoxPengembalian.Size = new Size(423, 467);
+            groupBoxPengembalian.Size = new Size(370, 350);
             groupBoxPengembalian.TabIndex = 2;
             groupBoxPengembalian.TabStop = false;
             groupBoxPengembalian.Text = "Formulir Pengembalian";
-
             // 
             // labelDisplayDenda
             // 
             labelDisplayDenda.AutoSize = true;
-            labelDisplayDenda.Location = new Point(160, 333);
+            labelDisplayDenda.Location = new Point(140, 250);
             labelDisplayDenda.Name = "labelDisplayDenda";
-            labelDisplayDenda.Size = new Size(51, 20);
+            labelDisplayDenda.Size = new Size(40, 15);
             labelDisplayDenda.TabIndex = 14;
             labelDisplayDenda.Text = "denda";
             // 
             // labelDenda
             // 
             labelDenda.AutoSize = true;
-            labelDenda.Location = new Point(23, 333);
+            labelDenda.Location = new Point(20, 250);
             labelDenda.Name = "labelDenda";
-            labelDenda.Size = new Size(60, 20);
+            labelDenda.Size = new Size(47, 15);
             labelDenda.TabIndex = 13;
             labelDenda.Text = "Denda: ";
             // 
             // buttonCek
             // 
-            buttonCek.Location = new Point(320, 49);
-            buttonCek.Margin = new Padding(3, 4, 3, 4);
+            buttonCek.Location = new Point(280, 37);
             buttonCek.Name = "buttonCek";
-            buttonCek.Size = new Size(86, 27);
+            buttonCek.Size = new Size(75, 20);
             buttonCek.TabIndex = 12;
             buttonCek.Text = "Cek";
             buttonCek.UseVisualStyleBackColor = true;
@@ -234,98 +222,96 @@ namespace ManajemenPerpus.GUI
             // labelIdPeminjaman
             // 
             labelIdPeminjaman.AutoSize = true;
-            labelIdPeminjaman.Location = new Point(23, 53);
+            labelIdPeminjaman.Location = new Point(20, 40);
             labelIdPeminjaman.Name = "labelIdPeminjaman";
-            labelIdPeminjaman.Size = new Size(116, 20);
+            labelIdPeminjaman.Size = new Size(94, 15);
             labelIdPeminjaman.TabIndex = 0;
             labelIdPeminjaman.Text = "ID Peminjaman :";
             // 
             // textBoxIdPeminjamanReturn
             // 
-            textBoxIdPeminjamanReturn.Location = new Point(160, 49);
-            textBoxIdPeminjamanReturn.Margin = new Padding(3, 4, 3, 4);
+            textBoxIdPeminjamanReturn.Location = new Point(140, 37);
             textBoxIdPeminjamanReturn.Name = "textBoxIdPeminjamanReturn";
-            textBoxIdPeminjamanReturn.Size = new Size(136, 27);
+            textBoxIdPeminjamanReturn.Size = new Size(120, 23);
             textBoxIdPeminjamanReturn.TabIndex = 1;
             // 
             // labelBukuReturn
             // 
             labelBukuReturn.AutoSize = true;
-            labelBukuReturn.Location = new Point(23, 107);
+            labelBukuReturn.Location = new Point(20, 80);
             labelBukuReturn.Name = "labelBukuReturn";
-            labelBukuReturn.Size = new Size(48, 20);
+            labelBukuReturn.Size = new Size(40, 15);
             labelBukuReturn.TabIndex = 2;
             labelBukuReturn.Text = "Buku :";
             // 
             // labelDisplayBukuReturn
             // 
             labelDisplayBukuReturn.AutoSize = true;
-            labelDisplayBukuReturn.Location = new Point(160, 107);
+            labelDisplayBukuReturn.Location = new Point(140, 80);
             labelDisplayBukuReturn.Name = "labelDisplayBukuReturn";
-            labelDisplayBukuReturn.Size = new Size(136, 20);
+            labelDisplayBukuReturn.Size = new Size(110, 15);
             labelDisplayBukuReturn.TabIndex = 3;
             labelDisplayBukuReturn.Text = "menampilkan judul";
             // 
             // labelIdAnggotaReturn
             // 
             labelIdAnggotaReturn.AutoSize = true;
-            labelIdAnggotaReturn.Location = new Point(23, 160);
+            labelIdAnggotaReturn.Location = new Point(20, 120);
             labelIdAnggotaReturn.Name = "labelIdAnggotaReturn";
-            labelIdAnggotaReturn.Size = new Size(74, 20);
+            labelIdAnggotaReturn.Size = new Size(59, 15);
             labelIdAnggotaReturn.TabIndex = 4;
             labelIdAnggotaReturn.Text = "Anggota :";
             // 
             // labelDisplayIdAnggotaReturn
             // 
             labelDisplayIdAnggotaReturn.AutoSize = true;
-            labelDisplayIdAnggotaReturn.Location = new Point(160, 160);
+            labelDisplayIdAnggotaReturn.Location = new Point(140, 120);
             labelDisplayIdAnggotaReturn.Name = "labelDisplayIdAnggotaReturn";
-            labelDisplayIdAnggotaReturn.Size = new Size(116, 20);
+            labelDisplayIdAnggotaReturn.Size = new Size(93, 15);
             labelDisplayIdAnggotaReturn.TabIndex = 5;
             labelDisplayIdAnggotaReturn.Text = "menampilkan id";
             // 
             // labelBatasPengembalianReturn
             // 
             labelBatasPengembalianReturn.AutoSize = true;
-            labelBatasPengembalianReturn.Location = new Point(23, 213);
+            labelBatasPengembalianReturn.Location = new Point(20, 160);
             labelBatasPengembalianReturn.Name = "labelBatasPengembalianReturn";
-            labelBatasPengembalianReturn.Size = new Size(150, 20);
+            labelBatasPengembalianReturn.Size = new Size(120, 15);
             labelBatasPengembalianReturn.TabIndex = 6;
             labelBatasPengembalianReturn.Text = "Batas Pengembalian :";
             // 
             // labelDisplayBatasPengembalian
             // 
             labelDisplayBatasPengembalian.AutoSize = true;
-            labelDisplayBatasPengembalian.Location = new Point(177, 213);
+            labelDisplayBatasPengembalian.Location = new Point(155, 160);
             labelDisplayBatasPengembalian.Name = "labelDisplayBatasPengembalian";
-            labelDisplayBatasPengembalian.Size = new Size(154, 20);
+            labelDisplayBatasPengembalian.Size = new Size(123, 15);
             labelDisplayBatasPengembalian.TabIndex = 7;
             labelDisplayBatasPengembalian.Text = "menampilkan tanggal";
             // 
             // labelStatus
             // 
             labelStatus.AutoSize = true;
-            labelStatus.Location = new Point(23, 267);
+            labelStatus.Location = new Point(20, 200);
             labelStatus.Name = "labelStatus";
-            labelStatus.Size = new Size(56, 20);
+            labelStatus.Size = new Size(45, 15);
             labelStatus.TabIndex = 8;
             labelStatus.Text = "Status :";
             // 
             // labelDisplayStatus
             // 
             labelDisplayStatus.AutoSize = true;
-            labelDisplayStatus.Location = new Point(160, 267);
+            labelDisplayStatus.Location = new Point(140, 200);
             labelDisplayStatus.Name = "labelDisplayStatus";
-            labelDisplayStatus.Size = new Size(109, 20);
+            labelDisplayStatus.Size = new Size(85, 15);
             labelDisplayStatus.TabIndex = 9;
             labelDisplayStatus.Text = "telat atau tidak";
             // 
             // buttonKembalikan
             // 
-            buttonKembalikan.Location = new Point(57, 394);
-            buttonKembalikan.Margin = new Padding(3, 4, 3, 4);
+            buttonKembalikan.Location = new Point(50, 296);
             buttonKembalikan.Name = "buttonKembalikan";
-            buttonKembalikan.Size = new Size(116, 40);
+            buttonKembalikan.Size = new Size(102, 30);
             buttonKembalikan.TabIndex = 10;
             buttonKembalikan.Text = "Kembalikan";
             buttonKembalikan.UseVisualStyleBackColor = true;
@@ -333,10 +319,9 @@ namespace ManajemenPerpus.GUI
             // 
             // buttonResetPengembalian
             // 
-            buttonResetPengembalian.Location = new Point(251, 394);
-            buttonResetPengembalian.Margin = new Padding(3, 4, 3, 4);
+            buttonResetPengembalian.Location = new Point(220, 296);
             buttonResetPengembalian.Name = "buttonResetPengembalian";
-            buttonResetPengembalian.Size = new Size(86, 40);
+            buttonResetPengembalian.Size = new Size(75, 30);
             buttonResetPengembalian.TabIndex = 11;
             buttonResetPengembalian.Text = "Reset";
             buttonResetPengembalian.UseVisualStyleBackColor = true;
@@ -344,14 +329,13 @@ namespace ManajemenPerpus.GUI
             // 
             // Sirkulasi
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(896, 588);
+            ClientSize = new Size(784, 441);
             Controls.Add(panelHeader);
             Controls.Add(groupBoxPeminjaman);
             Controls.Add(groupBoxPengembalian);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "Sirkulasi";
             StartPosition = FormStartPosition.CenterScreen;

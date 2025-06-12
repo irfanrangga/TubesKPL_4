@@ -15,6 +15,7 @@ namespace ManajemenPerpus.Core.Models
         RUSAK
     }
 
+    // Factory Method Pattern untuk Buku
     public abstract class FactoryBuku
     {
 

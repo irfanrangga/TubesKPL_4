@@ -1,29 +1,22 @@
 [
   {
     "IdBuku": "B001",
-    "Judul": "Atomic Habits",
+    "Judul": "Atomic Habits: An Easy \u0026 Proven Way to Build Good Habits \u0026 Break Bad Ones",
     "Penulis": "James Clear",
     "Penerbit": "Gramedia",
-<<<<<<< HEAD
-    "Kategori": 2,
-    "Sinopsis": "abcd",
+    "Kategori": "NONFIKSI",
+    "Sinopsis": "Atomic Habits is a guide to building good habits and breaking bad ones. It provides practical strategies for forming habits that stick, based on the latest scientific research in psychology and neuroscience.",
     "Status": "TERSEDIA",
-    "TanggalMasuk": "2025-05-05T23:25:38.2040242+07:00"
-=======
-    "Kategori": "non fiksi",
-    "Sinopsis": "-",
-    "Status":  "Tersedia",
     "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
->>>>>>> main
   },
   {
     "IdBuku": "B002",
     "Judul": "The Power of Habit",
     "Penulis": "Charles Duhigg",
     "Penerbit": "Gramedia",
-    "Kategori": "non fiksi",
+    "Kategori": "NONFIKSI",
     "Sinopsis": "-",
-    "Status": "Tersedia",
+    "Status": "TERSEDIA",
     "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
   },
   {
@@ -31,9 +24,49 @@
     "Judul": "The Subtle Art of Not Giving a F*ck",
     "Penulis": "Mark Manson",
     "Penerbit": "Gramedia",
-    "Kategori": "non fiksi",
+    "Kategori": "NONFIKSI",
     "Sinopsis": "In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be positive all the time so that we can truly become better, happier people.",
-    "Status": "Tersedia",
+    "Status": "TERSEDIA",
+    "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
+  },
+  {
+    "IdBuku": "B004",
+    "Judul": "Sapiens: A Brief History of Humankind",
+    "Penulis": "Yuval Noah Harari",
+    "Penerbit": "Gramedia",
+    "Kategori": "NONFIKSI",
+    "Sinopsis": "Sapiens explores the history of humankind from the Stone Age to the modern age, examining how biology and history have defined us and how we have shaped the world.",
+    "Status": "DIPINJAM",
+    "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
+  },
+  {
+    "IdBuku": "B005",
+    "Judul": "Bandit Bandit Berkelas",
+    "Penulis": "Tere Liye",
+    "Penerbit": "Gramedia",
+    "Kategori": "FIKSI",
+    "Sinopsis": "Bandit Bandit Berkelas is a thrilling novel that combines elements of action and drama, following the adventures of a group of elite bandits who operate with style and sophistication.",
+    "Status": "TERSEDIA",
+    "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
+  },
+  {
+    "IdBuku": "B006",
+    "Judul": "Laskar Pelangi",
+    "Penulis": "Andrea Hirata",
+    "Penerbit": "Gramedia",
+    "Kategori": "FIKSI",
+    "Sinopsis": "Laskar Pelangi is a heartwarming story about a group of children in a small village in Indonesia who overcome adversity through education and friendship.",
+    "Status": "DIPINJAM",
+    "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
+  },
+  {
+    "IdBuku": "B007",
+    "Judul": "Bumi Manusia",
+    "Penulis": "Pramoedya Ananta Toer",
+    "Penerbit": "Gramedia",
+    "Kategori": "FIKSI",
+    "Sinopsis": "Bumi Manusia is a historical novel set in the Dutch colonial period in Indonesia, focusing on the life of Minke, a young Javanese student who becomes involved in the nationalist movement.",
+    "Status": "TERSEDIA",
     "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
   }
 ]

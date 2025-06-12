@@ -45,7 +45,6 @@ namespace ManajemenPerpus.GUI.CustomControl
             SinopsisText.MaximumSize = new Size(this.Width - 40, 0);
         }
 
-
         private void panel1_MouseEnter(object sender, EventArgs e)
         {
             this.BackColor = Color.Azure;
@@ -54,6 +53,27 @@ namespace ManajemenPerpus.GUI.CustomControl
         private void panel1_MouseLeave(object sender, EventArgs e)
         {
             this.BackColor = Color.White;
+        }
+
+        private void PenerbitLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel_click(object sender, EventArgs e)
+        {
+            this.OnClick(e);
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            ItemList clickedItem = sender as ItemList;
+            if(clickedItem != null && clickedItem.Tag is string idBuku)
+            {
+                UlasanPage ulasanPage = new UlasanPage(idBuku);
+                ulasanPage.Show();
+                this.Hide(); // Sembunyikan form KoleksiBuku saat membuka UlasanPage
+            }
         }
 
         [Category("Custom Properties")]
@@ -67,11 +87,14 @@ namespace ManajemenPerpus.GUI.CustomControl
         public string Sinopsis
         {
             get { return _sinopsis; }
-            set { _sinopsis = value;
+            set
+            {
+                _sinopsis = value;
                 SinopsisText.AutoSize = true;
                 SinopsisText.MaximumSize = new Size(this.Width - 40, 0); // supaya wrap teks
                 SinopsisText.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-                SinopsisText.Text = value; }
+                SinopsisText.Text = value;
+            }
         }
 
         [Category("Custom Properties")]

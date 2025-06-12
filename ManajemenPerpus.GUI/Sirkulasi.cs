@@ -52,7 +52,9 @@ namespace ManajemenPerpus.GUI
         // Tutup form saat tombol kembali diklik
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            this.Close();
+            MenuUtama menuUtama = new MenuUtama();
+            menuUtama.Show();
+            this.Hide();
         }
 
         // Proses klik pinjam: validasi input, tampilkan info, simpan pinjaman

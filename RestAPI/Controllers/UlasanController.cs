@@ -34,6 +34,7 @@ namespace ManajemenPerpus.API.Controllers
             }
             return Ok(ulasanList);
         }
+
         [HttpGet("{id}")]
         public ActionResult<Ulasan> GetUlasanById(string id)
         {

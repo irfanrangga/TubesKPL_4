@@ -12,39 +12,30 @@ namespace ManajemenPerpus.GUI
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void customButton1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            KoleksiBuku ulasanGui = new KoleksiBuku();
+            ulasanGui.Show();
+            this.Hide();
         }
 
         private void LogoutButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void customButton3_Click(object sender, EventArgs e)
+        {
+            KoleksiBuku ulasanGui = new KoleksiBuku();
+            ulasanGui.Show();
+            this.Hide();
+        }
+
+        private void customButton2_Click(object sender, EventArgs e)
+        {
+            Sirkulasi sirkulasi = new Sirkulasi();
+            sirkulasi.Show();
+            this.Hide();
         }
     }
 }
