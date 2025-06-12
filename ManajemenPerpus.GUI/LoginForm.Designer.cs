@@ -42,9 +42,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(324, 35);
+            label1.Location = new Point(284, 26);
             label1.Name = "label1";
-            label1.Size = new Size(122, 54);
+            label1.Size = new Size(99, 45);
             label1.TabIndex = 0;
             label1.Text = "Login";
             label1.Click += label1_Click;
@@ -53,34 +53,36 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(207, 145);
+            label2.Location = new Point(181, 109);
             label2.Name = "label2";
-            label2.Size = new Size(99, 28);
+            label2.Size = new Size(81, 21);
             label2.TabIndex = 1;
             label2.Text = "Username";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(312, 149);
+            textBox1.Location = new Point(273, 112);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(246, 27);
+            textBox1.Size = new Size(216, 23);
             textBox1.TabIndex = 2;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(312, 221);
+            textBox2.Location = new Point(273, 166);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(246, 27);
+            textBox2.Size = new Size(216, 23);
             textBox2.TabIndex = 3;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(207, 217);
+            label3.Location = new Point(181, 163);
             label3.Name = "label3";
-            label3.Size = new Size(93, 28);
+            label3.Size = new Size(76, 21);
             label3.TabIndex = 4;
             label3.Text = "Password";
             // 
@@ -89,9 +91,10 @@
             button1.BackColor = SystemColors.Highlight;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.HighlightText;
-            button1.Location = new Point(280, 294);
+            button1.Location = new Point(245, 220);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(215, 42);
+            button1.Size = new Size(188, 32);
             button1.TabIndex = 5;
             button1.Text = "Login";
             button1.UseVisualStyleBackColor = false;
@@ -100,18 +103,18 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(254, 355);
+            label4.Location = new Point(222, 266);
             label4.Name = "label4";
-            label4.Size = new Size(181, 20);
+            label4.Size = new Size(147, 15);
             label4.TabIndex = 6;
             label4.Text = "Belum Mempunyai Akun? ";
             // 
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(428, 355);
+            linkLabel1.Location = new Point(374, 266);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(63, 20);
+            linkLabel1.Size = new Size(49, 15);
             linkLabel1.TabIndex = 7;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Register";
@@ -119,9 +122,9 @@
             // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(linkLabel1);
             Controls.Add(label4);
             Controls.Add(button1);
@@ -130,7 +133,9 @@
             Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "LoginForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginForm";
             Load += LoginForm_Load;
             ResumeLayout(false);
