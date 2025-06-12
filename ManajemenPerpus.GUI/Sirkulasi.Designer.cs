@@ -50,6 +50,7 @@ namespace ManajemenPerpus.GUI
             // 
             // panelHeader
             // 
+            panelHeader.BackColor = Color.RoyalBlue;
             panelHeader.BorderStyle = BorderStyle.FixedSingle;
             panelHeader.Controls.Add(buttonBack);
             panelHeader.Controls.Add(labelTitle);

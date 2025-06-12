@@ -13,18 +13,16 @@ namespace ManajemenPerpus.GUI
         public Sirkulasi()
         {
             InitializeComponent();
-            // Inisialisasi layanan dan komponen form
             pinjamanService = new PinjamanService();
             LoadComboBoxBuku();
             SetDefaultTanggalKembali();
 
-            // Reset form peminjaman dan pengembalian
             textBoxIdPeminjamanReturn.Text = string.Empty;
             buttonResetPeminjaman_Click(null, null);
             buttonResetPengembalian_Click(null, null);
         }
 
-        // Muat daftar buku tersedia ke combobox
+        // untuk muat daftar buku tersedia ke combobox
         private void LoadComboBoxBuku()
         {
             var bukuTersedia = pinjamanService.bukuService.GetAllBuku()
@@ -42,14 +40,14 @@ namespace ManajemenPerpus.GUI
             comboBoxBuku.SelectedIndex = 0;
         }
 
-        // Atur tanggal kembali default (7 hari dari hari ini)
+        // untuk mengatur tanggal kembali default (7 hari dari hari ini)
         private void SetDefaultTanggalKembali()
         {
             DateTime tanggalBatas = DateTime.Today.AddDays(7);
             labelTanggalKembali.Text = tanggalBatas.ToString("dd/MM/yyyy");
         }
 
-        // Tutup form saat tombol kembali diklik
+        // untuk tutup form saat tombol kembali diklik
         private void buttonBack_Click(object sender, EventArgs e)
         {
             MenuUtama menuUtama = new MenuUtama();
@@ -57,13 +55,12 @@ namespace ManajemenPerpus.GUI
             this.Hide();
         }
 
-        // Proses klik pinjam: validasi input, tampilkan info, simpan pinjaman
+        // untuk proses klik pinjam validasi input tampilkan info simpan pinjaman
         private void buttonPinjam_Click(object sender, EventArgs e)
         {
             string idAnggota = textBoxIdAnggota.Text.Trim();
             string judulBuku = comboBoxBuku.SelectedItem.ToString();
 
-            // Validasi ID anggota
             if (string.IsNullOrEmpty(idAnggota))
             {
                 MessageBox.Show("ID Anggota harus diisi.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -77,27 +74,22 @@ namespace ManajemenPerpus.GUI
                 return;
             }
 
-            // Tentukan buku dan batas pengembalian
             var bukuDipinjam = pinjamanService.bukuService.GetAllBuku()
                 .FirstOrDefault(b => b.Judul == judulBuku);
             DateTime batasPengembalian = DateTime.Now.AddDays(7);
 
-            // Generate ID pinjaman baru
             string idPeminjamanBaru = pinjamanService.GeneratePinjamanId();
 
-            // Tampilkan info sukses
             MessageBox.Show("Peminjaman berhasil:\nID Peminjaman: " + idPeminjamanBaru + "\nBatas Kembali: " + labelTanggalKembali.Text,
                 "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            // Simpan pinjaman dan muat ulang data
             pinjamanService.TambahPinjaman(bukuDipinjam.IdBuku, idAnggota, batasPengembalian);
             pinjamanService.LoadData();
 
-            // Muat ulang daftar buku untuk form berikutnya
             LoadComboBoxBuku();
         }
 
-        // Reset form peminjaman
+        // untuk mereset form peminjaman
         private void buttonResetPeminjaman_Click(object sender, EventArgs e)
         {
             textBoxIdAnggota.Clear();
@@ -105,7 +97,7 @@ namespace ManajemenPerpus.GUI
             SetDefaultTanggalKembali();
         }
 
-        // Proses klik kembalikan: validasi, cek denda, hapus pinjaman, update form
+        // untuk proses klik kembalikan
         private void buttonKembalikan_Click(object sender, EventArgs e)
         {
             string idPeminjamanInput = textBoxIdPeminjamanReturn.Text.Trim();
@@ -119,7 +111,6 @@ namespace ManajemenPerpus.GUI
             DateTime tanggalSekarang = DateTime.Today;
             DateTime tanggalBatas = DateTime.Parse(labelDisplayBatasPengembalian.Text);
 
-            // Hitung dan simpan denda jika terlambat
             if (tanggalSekarang > tanggalBatas)
             {
                 TimeSpan terlambat = tanggalSekarang - tanggalBatas;
@@ -140,7 +131,6 @@ namespace ManajemenPerpus.GUI
                 MessageBox.Show($"Proses pengembalian selesai.\nStatus: {labelDisplayStatus.Text}", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-            // Hapus pinjaman dan update form
             if (pinjamanService.HapusPinjaman(idPeminjamanInput))
             {
                 LoadComboBoxBuku();
@@ -152,7 +142,7 @@ namespace ManajemenPerpus.GUI
             }
         }
 
-        // Reset form pengembalian
+        // untuk mereset form pengembalian
         private void buttonResetPengembalian_Click(object sender, EventArgs e)
         {
             textBoxIdPeminjamanReturn.Clear();
@@ -163,7 +153,7 @@ namespace ManajemenPerpus.GUI
             labelDisplayDenda.Text = "-";
         }
 
-        // Cek status pinjaman: tampil detail buku, anggota, batas dan denda jika terlambat
+        // untuk cek status pinjaman
         private void buttonCek_Click(object sender, EventArgs e)
         {
             var pinjaman = pinjamanService.GetPinjamanById(textBoxIdPeminjamanReturn.Text.Trim());
@@ -173,7 +163,6 @@ namespace ManajemenPerpus.GUI
                 return;
             }
 
-            // Tentukan status terlambat atau tepat waktu
             if (DateTime.Now > pinjaman.BatasPengembalian)
             {
                 TimeSpan keterlambatan = DateTime.Now - pinjaman.BatasPengembalian;
@@ -185,7 +174,6 @@ namespace ManajemenPerpus.GUI
                 labelDisplayStatus.Text = "Tepat waktu";
             }
 
-            // Tampilkan detail peminjaman
             labelDisplayBukuReturn.Text = pinjamanService.bukuService.GetBukuById(pinjaman.IdBuku).Judul;
             labelDisplayIdAnggotaReturn.Text = pinjamanService.penggunaService.GetPenggunaById(pinjaman.IdAnggota).Username;
             labelDisplayBatasPengembalian.Text = pinjaman.BatasPengembalian.ToString("dd/MM/yyyy");
