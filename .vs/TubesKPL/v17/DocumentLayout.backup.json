@@ -1,18 +1,126 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "D:\\Dev\\Konstruksi PL\\TubesKPL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D2E5533E-3F57-7BBF-D386-0ECE44B4BF40}|ManajemenPerpus.GUI\\ManajemenPerpus.GUI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\manajemenperpus.gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2E5533E-3F57-7BBF-D386-0ECE44B4BF40}|ManajemenPerpus.GUI\\ManajemenPerpus.GUI.csproj|solutionrelative:manajemenperpus.gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.GUI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ManajemenPerpus.GUI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\shareddata\\datajson\\databuku.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|solutionrelative:shareddata\\datajson\\databuku.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|d:\\dev\\konstruksi pl\\tubeskpl\\tubeskpl\\service\\ulasanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\service\\ulasanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Service\\UlasanService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TubesKPL\\Service\\UlasanService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\abdie\\Tubes KPL NEW\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|C:\\Users\\abdie\\Tubes KPL NEW\\manajemenadmingui\\forms\\menuadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\forms\\menuadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|c:\\users\\abdie\\tubes kpl new\\manajemenadmingui\\forms\\formhapusbuku.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\forms\\formhapusbuku.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|C:\\Users\\abdie\\Tubes KPL NEW\\manajemenadmingui\\forms\\formhapusbuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\forms\\formhapusbuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|c:\\users\\abdie\\tubes kpl new\\manajemenadmingui\\forms\\formhapusbuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\forms\\formhapusbuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\abdie\\tubes kpl new\\tubeskpl\\service\\bukuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\service\\bukuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|C:\\Users\\abdie\\Tubes KPL NEW\\manajemenadmingui\\forms\\formeditbuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\forms\\formeditbuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|C:\\Users\\abdie\\Tubes KPL NEW\\manajemenadmingui\\forms\\formdaftarbuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\forms\\formdaftarbuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|c:\\users\\abdie\\tubes kpl new\\shareddata\\datajson\\databuku.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4753851E-659B-46C1-A297-BC4AD04D33BB}|SharedData\\SharedData.csproj|solutionrelative:shareddata\\datajson\\databuku.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|c:\\users\\abdie\\tubes kpl new\\manajemenadmingui\\forms\\menuadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\forms\\menuadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|c:\\users\\abdie\\tubes kpl new\\manajemenadmingui\\forms\\menuadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\forms\\menuadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|c:\\users\\abdie\\tubes kpl new\\manajemenadmingui\\forms\\formhapusbuku.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\forms\\formhapusbuku.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\abdie\\tubes kpl new\\tubeskpl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|c:\\users\\abdie\\tubes kpl new\\manajemenperpus.core\\models\\buku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEB98E74-6573-4E67-A0E4-A49910227479}|ManajemenPerpus.Core\\ManajemenPerpus.Core.csproj|solutionrelative:manajemenperpus.core\\models\\buku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|c:\\users\\abdie\\tubes kpl new\\manajemenadmingui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|c:\\users\\abdie\\tubes kpl new\\manajemenadmingui\\forms\\formdaftarbuku.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\forms\\formdaftarbuku.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|c:\\users\\abdie\\tubes kpl new\\manajemenadmingui\\forms\\formdaftarbuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\forms\\formdaftarbuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|c:\\users\\abdie\\tubes kpl new\\manajemenadmingui\\forms\\formtambahbuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\forms\\formtambahbuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|C:\\Users\\abdie\\Tubes KPL NEW\\manajemenadmingui\\forms\\formtambahbuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\forms\\formtambahbuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|c:\\users\\abdie\\tubes kpl new\\manajemenadmingui\\forms\\formeditbuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\forms\\formeditbuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|c:\\users\\abdie\\tubes kpl new\\manajemenadmingui\\forms\\formeditbuku.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\forms\\formeditbuku.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|c:\\users\\abdie\\tubes kpl new\\manajemenadmingui\\forms\\formtambahbuku.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\forms\\formtambahbuku.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|c:\\users\\abdie\\tubes kpl new\\restapi\\controllers\\bukucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|solutionrelative:restapi\\controllers\\bukucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\abdie\\tubes kpl new\\tubeskpl\\fitur\\fitursirkulasibuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fitursirkulasibuku.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|c:\\users\\abdie\\tubes kpl new\\tubeskpl\\fitur\\fiturmanajemenkoleksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F91B1189-53BF-42C3-8E4B-0419DACA7F9F}|TubesKPL\\ManajemenPerpus.CLI.csproj|solutionrelative:tubeskpl\\fitur\\fiturmanajemenkoleksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|c:\\users\\abdie\\tubes kpl new\\restapi\\controllers\\penggunacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F80173E0-9ADD-472E-B571-86F8F0EDFD2F}|RestAPI\\ManajemenPerpus.API.csproj|solutionrelative:restapi\\controllers\\penggunacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|c:\\users\\abdie\\tubes kpl new\\manajemenadmingui\\manajemenadmingui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BD51C5FF-7665-4373-AADF-10FC43CFDA8F}|ManajemenAdminGUI\\ManajemenAdminGUI.csproj|solutionrelative:manajemenadmingui\\manajemenadmingui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+>>>>>>> c0003de7795df4280e46bf62c5ad43119813b4f4
     }
   ],
   "DocumentGroupContainers": [
@@ -21,8 +129,13 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
+<<<<<<< HEAD
           "DockedWidth": 344,
           "SelectedChildIndex": 4,
+=======
+          "DockedWidth": 200,
+          "SelectedChildIndex": 23,
+>>>>>>> c0003de7795df4280e46bf62c5ad43119813b4f4
           "Children": [
             {
               "$type": "Bookmark",
@@ -33,6 +146,7 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
+<<<<<<< HEAD
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
@@ -56,13 +170,26 @@
               "RelativeDocumentMoniker": "ManajemenPerpus.GUI\\Program.cs",
               "ToolTip": "D:\\Dev\\Konstruksi PL\\TubesKPL\\ManajemenPerpus.GUI\\Program.cs",
               "RelativeToolTip": "ManajemenPerpus.GUI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T11:51:43.487Z",
+=======
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormHapusBuku.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormHapusBuku.cs",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\Forms\\FormHapusBuku.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormHapusBuku.cs*",
+              "RelativeToolTip": "ManajemenAdminGUI\\Forms\\FormHapusBuku.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T10:54:55.239Z",
+>>>>>>> c0003de7795df4280e46bf62c5ad43119813b4f4
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "UlasanService.cs",
               "DocumentMoniker": "D:\\Dev\\Konstruksi PL\\TubesKPL\\TubesKPL\\Service\\UlasanService.cs",
@@ -72,6 +199,319 @@
               "ViewState": "AgIAAE0AAAAAAAAAAAAqwJYAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T13:32:52.817Z"
+=======
+              "DocumentIndex": 10,
+              "Title": "FormHapusBuku.resx",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormHapusBuku.resx",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\Forms\\FormHapusBuku.resx",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormHapusBuku.resx*",
+              "RelativeToolTip": "ManajemenAdminGUI\\Forms\\FormHapusBuku.resx*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-06-10T10:54:51.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\TubesKPL\\Program.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Program.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\TubesKPL\\Program.cs",
+              "RelativeToolTip": "TubesKPL\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T10:40:42.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FormDaftarBuku.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormDaftarBuku.cs",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\Forms\\FormDaftarBuku.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormDaftarBuku.cs",
+              "RelativeToolTip": "ManajemenAdminGUI\\Forms\\FormDaftarBuku.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T10:23:20.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FormDaftarBuku.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormDaftarBuku.Designer.cs",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\Forms\\FormDaftarBuku.Designer.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormDaftarBuku.Designer.cs",
+              "RelativeToolTip": "ManajemenAdminGUI\\Forms\\FormDaftarBuku.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T10:19:24.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FiturSirkulasiBuku.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
+              "RelativeToolTip": "TubesKPL\\Fitur\\FiturSirkulasiBuku.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAC8AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T14:48:21.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormHapusBuku.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormHapusBuku.Designer.cs",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\Forms\\FormHapusBuku.Designer.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormHapusBuku.Designer.cs*",
+              "RelativeToolTip": "ManajemenAdminGUI\\Forms\\FormHapusBuku.Designer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T14:41:24.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FormEditBuku.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormEditBuku.Designer.cs",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\Forms\\FormEditBuku.Designer.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormEditBuku.Designer.cs",
+              "RelativeToolTip": "ManajemenAdminGUI\\Forms\\FormEditBuku.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T14:39:50.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FormEditBuku.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormEditBuku.cs",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\Forms\\FormEditBuku.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormEditBuku.cs",
+              "RelativeToolTip": "ManajemenAdminGUI\\Forms\\FormEditBuku.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T14:39:39.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FormTambahBuku.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormTambahBuku.cs",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\Forms\\FormTambahBuku.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormTambahBuku.cs",
+              "RelativeToolTip": "ManajemenAdminGUI\\Forms\\FormTambahBuku.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T14:22:07.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FormTambahBuku.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormTambahBuku.Designer.cs",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\Forms\\FormTambahBuku.Designer.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormTambahBuku.Designer.cs",
+              "RelativeToolTip": "ManajemenAdminGUI\\Forms\\FormTambahBuku.Designer.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAIBJwKYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T14:22:02.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PenggunaController.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\RestAPI\\Controllers\\PenggunaController.cs",
+              "RelativeDocumentMoniker": "RestAPI\\Controllers\\PenggunaController.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\RestAPI\\Controllers\\PenggunaController.cs",
+              "RelativeToolTip": "RestAPI\\Controllers\\PenggunaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T14:02:11.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BukuController.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\RestAPI\\Controllers\\BukuController.cs",
+              "RelativeDocumentMoniker": "RestAPI\\Controllers\\BukuController.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\RestAPI\\Controllers\\BukuController.cs",
+              "RelativeToolTip": "RestAPI\\Controllers\\BukuController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T14:02:02.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MenuAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\MenuAdmin.cs",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\Forms\\MenuAdmin.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\MenuAdmin.cs",
+              "RelativeToolTip": "ManajemenAdminGUI\\Forms\\MenuAdmin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T13:59:19.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FiturManajemenKoleksi.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
+              "RelativeToolTip": "TubesKPL\\Fitur\\FiturManajemenKoleksi.cs",
+              "ViewState": "AgIAAAwBAAAAAAAAAAAkwCQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T13:58:51.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MenuAdmin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\MenuAdmin.Designer.cs",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\Forms\\MenuAdmin.Designer.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\MenuAdmin.Designer.cs",
+              "RelativeToolTip": "ManajemenAdminGUI\\Forms\\MenuAdmin.Designer.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T13:56:34.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ManajemenAdminGUI.csproj",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\ManajemenAdminGUI.csproj",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\ManajemenAdminGUI.csproj",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\ManajemenAdminGUI.csproj",
+              "RelativeToolTip": "ManajemenAdminGUI\\ManajemenAdminGUI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-09T13:55:33.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Program.cs",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\Program.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Program.cs",
+              "RelativeToolTip": "ManajemenAdminGUI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T13:55:28.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BukuService.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\TubesKPL\\Service\\BukuService.cs",
+              "RelativeDocumentMoniker": "TubesKPL\\Service\\BukuService.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\TubesKPL\\Service\\BukuService.cs",
+              "RelativeToolTip": "TubesKPL\\Service\\BukuService.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAiwGAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T13:11:46.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Buku.cs",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenPerpus.Core\\Models\\Buku.cs",
+              "RelativeDocumentMoniker": "ManajemenPerpus.Core\\Models\\Buku.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenPerpus.Core\\Models\\Buku.cs",
+              "RelativeToolTip": "ManajemenPerpus.Core\\Models\\Buku.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T12:02:25.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DataBuku.json",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\SharedData\\DataJson\\DataBuku.json",
+              "RelativeDocumentMoniker": "SharedData\\DataJson\\DataBuku.json",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\SharedData\\DataJson\\DataBuku.json",
+              "RelativeToolTip": "SharedData\\DataJson\\DataBuku.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-09T12:02:20.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MenuAdmin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\MenuAdmin.cs",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\Forms\\MenuAdmin.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\MenuAdmin.cs [Design]",
+              "RelativeToolTip": "ManajemenAdminGUI\\Forms\\MenuAdmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T13:56:24.161Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormDaftarBuku.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormDaftarBuku.cs",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\Forms\\FormDaftarBuku.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormDaftarBuku.cs [Design]",
+              "RelativeToolTip": "ManajemenAdminGUI\\Forms\\FormDaftarBuku.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T14:05:12.074Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormHapusBuku.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormHapusBuku.cs",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\Forms\\FormHapusBuku.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormHapusBuku.cs [Design]*",
+              "RelativeToolTip": "ManajemenAdminGUI\\Forms\\FormHapusBuku.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T14:04:56.808Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormEditBuku.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormEditBuku.cs",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\Forms\\FormEditBuku.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormEditBuku.cs [Design]",
+              "RelativeToolTip": "ManajemenAdminGUI\\Forms\\FormEditBuku.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T14:04:29.647Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FormTambahBuku.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormTambahBuku.cs",
+              "RelativeDocumentMoniker": "ManajemenAdminGUI\\Forms\\FormTambahBuku.cs",
+              "ToolTip": "C:\\Users\\abdie\\Tubes KPL NEW\\ManajemenAdminGUI\\Forms\\FormTambahBuku.cs [Design]",
+              "RelativeToolTip": "ManajemenAdminGUI\\Forms\\FormTambahBuku.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T14:04:00.253Z",
+              "EditorCaption": " [Design]"
+>>>>>>> c0003de7795df4280e46bf62c5ad43119813b4f4
             }
           ]
         }

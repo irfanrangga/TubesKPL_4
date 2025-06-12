@@ -17,6 +17,7 @@
     "Kategori": "NONFIKSI",
     "Sinopsis": "-",
     "Status": "TERSEDIA",
+<<<<<<< HEAD
     "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
   },
   {
@@ -68,5 +69,28 @@
     "Sinopsis": "Bumi Manusia is a historical novel set in the Dutch colonial period in Indonesia, focusing on the life of Minke, a young Javanese student who becomes involved in the nationalist movement.",
     "Status": "TERSEDIA",
     "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
+=======
+    "TanggalMasuk": "2025-05-05T23:33:31.5114606+07:00"
+  },
+  {
+    "IdBuku": "B003",
+    "Judul": "Laut Bercerita",
+    "Penulis": "Leila S Chudori",
+    "Penerbit": "Gramedia",
+    "Kategori": "FIKSI",
+    "Sinopsis": "Mahasiswa Pen Demo",
+    "Status": "TERSEDIA",
+    "TanggalMasuk": "2025-06-09T21:52:25.3928536+07:00"
+  },
+  {
+    "IdBuku": "B004",
+    "Judul": "Norwegian Wood",
+    "Penulis": "Haruki Murakami",
+    "Penerbit": "Gramedia",
+    "Kategori": "FIKSI",
+    "Sinopsis": "abcd",
+    "Status": "TERSEDIA",
+    "TanggalMasuk": "2025-06-10T18:13:31.6148632+07:00"
+>>>>>>> c0003de7795df4280e46bf62c5ad43119813b4f4
   }
 ]
