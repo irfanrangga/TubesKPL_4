@@ -32,6 +32,7 @@
             customButton1 = new ManajemenPerpus.GUI.CustomControl.CustomButton();
             panel1 = new Panel();
             panel3 = new Panel();
+            customButton3 = new ManajemenPerpus.GUI.CustomControl.CustomButton();
             LogoutButton = new ManajemenPerpus.GUI.CustomControl.CustomButton();
             customButton2 = new ManajemenPerpus.GUI.CustomControl.CustomButton();
             panel2 = new Panel();
@@ -82,15 +83,37 @@
             // panel3
             // 
             panel3.AutoSize = true;
+            panel3.Controls.Add(customButton3);
             panel3.Controls.Add(LogoutButton);
             panel3.Controls.Add(customButton2);
             panel3.Controls.Add(customButton1);
             panel3.Dock = DockStyle.Right;
-            panel3.Location = new Point(601, 0);
+            panel3.Location = new Point(522, 0);
             panel3.Margin = new Padding(2, 1, 2, 1);
             panel3.Name = "panel3";
-            panel3.Size = new Size(407, 58);
+            panel3.Size = new Size(486, 58);
             panel3.TabIndex = 1;
+            // 
+            // customButton3
+            // 
+            customButton3.AutoSize = true;
+            customButton3.BackColor = Color.RoyalBlue;
+            customButton3.BackgroundColor = Color.RoyalBlue;
+            customButton3.BorderColor = Color.PaleVioletRed;
+            customButton3.BorderRadius = 0;
+            customButton3.BorderSize = 0;
+            customButton3.Dock = DockStyle.Right;
+            customButton3.FlatAppearance.BorderSize = 0;
+            customButton3.FlatStyle = FlatStyle.Flat;
+            customButton3.ForeColor = Color.White;
+            customButton3.Image = (Image)resources.GetObject("customButton3.Image");
+            customButton3.Location = new Point(324, 0);
+            customButton3.Name = "customButton3";
+            customButton3.Size = new Size(79, 58);
+            customButton3.TabIndex = 3;
+            customButton3.TextColor = Color.White;
+            customButton3.UseVisualStyleBackColor = false;
+            customButton3.Click += customButton3_Click_1;
             // 
             // LogoutButton
             // 
@@ -104,11 +127,11 @@
             LogoutButton.FlatStyle = FlatStyle.Flat;
             LogoutButton.ForeColor = Color.White;
             LogoutButton.Image = (Image)resources.GetObject("LogoutButton.Image");
-            LogoutButton.Location = new Point(324, 0);
+            LogoutButton.Location = new Point(403, 0);
             LogoutButton.Margin = new Padding(2, 1, 2, 1);
             LogoutButton.Name = "LogoutButton";
             LogoutButton.Size = new Size(83, 58);
-            LogoutButton.TabIndex = 3;
+            LogoutButton.TabIndex = 4;
             LogoutButton.TextColor = Color.White;
             LogoutButton.UseVisualStyleBackColor = false;
             LogoutButton.Click += LogoutButton_Click;
@@ -212,6 +235,7 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel4.ResumeLayout(false);
@@ -230,5 +254,6 @@
         private Label label2;
         private Label label3;
         private Panel panel4;
+        private CustomControl.CustomButton customButton3;
     }
 }
