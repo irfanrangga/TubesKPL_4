@@ -11,6 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ManajemenAdminGUI\ManajemenAdminGUI.csproj" />
     <ProjectReference Include="..\RestAPI\ManajemenPerpus.API.csproj" />
     <ProjectReference Include="..\TubesKPL\ManajemenPerpus.CLI.csproj" />
   </ItemGroup>

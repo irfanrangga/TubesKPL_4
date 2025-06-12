@@ -10,7 +10,7 @@ namespace ManajemenPerpus.GUI
         {
             try
             {
-                Application.Run(new MenuUtama());
+                Application.Run(new LoginForm());
             }
             catch (Exception ex)
             {

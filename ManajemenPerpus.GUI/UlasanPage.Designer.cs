@@ -74,7 +74,7 @@
             // 
             // ulasanTextBox
             // 
-            ulasanTextBox.BorderStyle = BorderStyle.FixedSingle;
+            ulasanTextBox.BackColor = SystemColors.Window;
             ulasanTextBox.Dock = DockStyle.Top;
             ulasanTextBox.Location = new Point(12, 33);
             ulasanTextBox.Multiline = true;
@@ -231,6 +231,7 @@
             PeminjamanBtn.Text = "Peminjaman";
             PeminjamanBtn.TextColor = Color.White;
             PeminjamanBtn.UseVisualStyleBackColor = false;
+            PeminjamanBtn.Click += PeminjamanBtn_Click;
             // 
             // KoleksiBtn
             // 

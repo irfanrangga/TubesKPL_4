@@ -115,5 +115,12 @@ namespace ManajemenPerpus.GUI
         {
             ulasanTextBox.Clear();
         }
+
+        private void PeminjamanBtn_Click(object sender, EventArgs e)
+        {
+            Sirkulasi sirkulasi = new Sirkulasi();
+            sirkulasi.Show();
+            this.Hide();
+        }
     }
 }

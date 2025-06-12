@@ -8,7 +8,7 @@ namespace ManajemenAdminGUI.Forms
     public partial class FormEditBuku : Form
     {
         private readonly BukuService _bukuService;
-        private Buku bukuDitemukan;
+        private BukuDeprecated bukuDitemukan;
 
         public FormEditBuku()
         {
@@ -48,9 +48,9 @@ namespace ManajemenAdminGUI.Forms
 
             try
             {
-                Buku.KATEGORIBUKU kategori = (Buku.KATEGORIBUKU)Enum.Parse(typeof(Buku.KATEGORIBUKU), cmbKategori.SelectedItem.ToString());
+                BukuDeprecated.KATEGORIBUKU kategori = (BukuDeprecated.KATEGORIBUKU)Enum.Parse(typeof(BukuDeprecated.KATEGORIBUKU), cmbKategori.SelectedItem.ToString());
 
-                Buku bukuBaru = new Buku(
+                BukuDeprecated bukuBaru = new BukuDeprecated(
                     bukuDitemukan.IdBuku,
                     txtJudul.Text,
                     txtPenulis.Text,

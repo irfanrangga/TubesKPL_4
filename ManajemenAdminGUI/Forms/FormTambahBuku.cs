@@ -15,7 +15,7 @@ namespace ManajemenAdminGUI.Forms
             _bukuService = new BukuService();
 
             // Isi ComboBox Kategori
-            cmbKategori.DataSource = Enum.GetValues(typeof(Buku.KATEGORIBUKU));
+            cmbKategori.DataSource = Enum.GetValues(typeof(BukuDeprecated.KATEGORIBUKU));
         }
 
         private void btnSimpan_Click(object sender, EventArgs e)
@@ -26,7 +26,7 @@ namespace ManajemenAdminGUI.Forms
                 string penulis = txtPenulis.Text.Trim();
                 string penerbit = txtPenerbit.Text.Trim();
                 string sinopsis = txtSinopsis.Text.Trim();
-                var kategori = (Buku.KATEGORIBUKU)cmbKategori.SelectedItem;
+                var kategori = (BukuDeprecated.KATEGORIBUKU)cmbKategori.SelectedItem;
 
                 if (string.IsNullOrEmpty(judul) || string.IsNullOrEmpty(penulis) || string.IsNullOrEmpty(penerbit))
                 {

@@ -19,7 +19,7 @@ namespace ManajemenAdminGUI.Forms
 
         private void TampilkanDaftarBuku()
         {
-            List<Buku> daftarBuku = _bukuService.GetAllBuku();
+            List<BukuDeprecated> daftarBuku = _bukuService.GetAllBuku();
             dataGridViewBuku.Rows.Clear();
 
             foreach (var buku in daftarBuku)

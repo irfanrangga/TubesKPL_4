@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ManajemenAdminGUI;
+using ManajemenAdminGUI.Forms;
 
 namespace ManajemenPerpus.GUI
 {
     public partial class LoginForm : Form
     {
+        MenuAdmin MenuAdmin;
         public LoginForm()
         {
             InitializeComponent();
@@ -39,11 +42,19 @@ namespace ManajemenPerpus.GUI
             string username = textBox1.Text;
             string password = textBox2.Text;
 
-            if (username == "admin" && password == "admin1234")
+            if (!string.IsNullOrWhiteSpace(username) && username == "admin" && password == "admin1234")
             {
-                MessageBox.Show("Selamat, anda telah berhasil login!");
+                MessageBox.Show("Selamat, anda telah berhasil login sebagai Admin!");
+                MenuAdmin menuAdmin = new MenuAdmin();
+                menuAdmin.Show();
                 this.Hide();
-
+            }
+            else if(!string.IsNullOrWhiteSpace(username) && username == "user123" && password == "user1234")
+            {
+                MessageBox.Show("Selamat, anda telah berhasil login sebagai Anggota!");
+                MenuUtama menuUtama = new MenuUtama();
+                menuUtama.Show();
+                this.Hide();
             }
             else
             {
