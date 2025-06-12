@@ -1,26 +1,8 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.IO;
-//using System.Linq;
-//using System.Text;
-//using System.Text.Json;
-//using System.Threading.Tasks;
-//using ManajemenPerpus.Core.Models;
-
-//namespace ManajemenPerpus.CLI.Service
-//{
-//    public class NotifikasiService
-//    {
-//    }
-//}
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 using ManajemenPerpus.Core.Models;
 
 namespace ManajemenPerpus.CLI.Service
@@ -32,117 +14,177 @@ namespace ManajemenPerpus.CLI.Service
 
         public NotifikasiService()
         {
-            // Get the directory where the application is running from
-            string baseDirectory = AppContext.BaseDirectory;
-
-            // Navigate up to the project root directory (assuming it's 3 levels up from bin/Debug/net8.0)
-            string projectRoot = Path.GetFullPath(Path.Combine(baseDirectory, @"..\..\..\"));
-
-            // Combine with the SharedData path
-            string sharedDataPath = Path.Combine(projectRoot, "SharedData", "DataJson");
-
-            // Ensure the directory exists
-            Directory.CreateDirectory(sharedDataPath);
-
-            _jsonFilePath = Path.Combine(sharedDataPath, "DataNotifikasi.json");
+            var root = Directory.GetParent(AppContext.BaseDirectory)?.Parent?.Parent?.Parent?.Parent?.FullName;
+            _jsonFilePath = Path.Combine(root, "SharedData", "DataJson", "DataNotifikasi.json");
             _notifikasiList = new List<Notifikasi>();
-            LoadData();
+            LoadAllData();
         }
 
-        private void LoadData()
+        #region Data Loading Methods
+        private List<Notifikasi> LoadAllData()
         {
             try
             {
                 if (File.Exists(_jsonFilePath))
                 {
-                    string jsonData = File.ReadAllText(_jsonFilePath);
-                    _notifikasiList = JsonSerializer.Deserialize<List<Notifikasi>>(jsonData) ?? new List<Notifikasi>();
+                    string json = File.ReadAllText(_jsonFilePath);
+                    _notifikasiList = JsonSerializer.Deserialize<List<Notifikasi>>(json) ?? new List<Notifikasi>();
+                    return _notifikasiList;
                 }
-                else
-                {
-                    // Create file if it doesn't exist
-                    File.WriteAllText(_jsonFilePath, "[]");
-                    _notifikasiList = new List<Notifikasi>();
-                }
+
+                // Create file if doesn't exist
+                SaveAllData(new List<Notifikasi>());
+                return new List<Notifikasi>();
             }
-            catch (Exception ex)
+            catch (JsonException ex)
             {
-                Console.WriteLine($"Error loading notification data: {ex.Message}");
-                _notifikasiList = new List<Notifikasi>();
+                Console.WriteLine($"Error deserializing JSON: {ex.Message}");
+                return new List<Notifikasi>();
             }
         }
 
-        private void SaveData()
+        public List<Notifikasi> LoadDataForUser(string idPengguna)
+        {
+            var allData = LoadAllData();
+            return allData.Where(n => n.IdPengguna == idPengguna).ToList();
+        }
+        #endregion
+
+        #region Data Saving Methods
+        public bool SaveAllData(List<Notifikasi> notifications)
         {
             try
             {
                 var options = new JsonSerializerOptions { WriteIndented = true };
-                string jsonData = JsonSerializer.Serialize(_notifikasiList, options);
+                string jsonData = JsonSerializer.Serialize(notifications, options);
                 File.WriteAllText(_jsonFilePath, jsonData);
+                _notifikasiList = notifications;
+                return true;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error saving notification data: {ex.Message}");
+                Console.WriteLine($"Error saving all notification data: {ex.Message}");
+                return false;
             }
         }
 
+        public bool SaveDataForUser(string idPengguna, List<Notifikasi> userNotifications)
+        {
+            try
+            {
+                var allNotifications = LoadAllData();
+                allNotifications.RemoveAll(n => n.IdPengguna == idPengguna);
+                allNotifications.AddRange(userNotifications);
+                return SaveAllData(allNotifications);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error saving user notification data: {ex.Message}");
+                return false;
+            }
+        }
+        #endregion
+
+        #region CRUD Operations
         public List<Notifikasi> GetAllNotifikasi()
         {
-            return _notifikasiList;
+            return LoadAllData();
         }
 
         public List<Notifikasi> GetNotifikasiByPengguna(string idPengguna)
         {
-            return _notifikasiList.Where(n => n.IdPengguna == idPengguna).ToList();
+            return LoadDataForUser(idPengguna);
         }
 
         public Notifikasi GetNotifikasiById(string id)
         {
-            return _notifikasiList.FirstOrDefault(n => n.IdNotifikasi == id);
+            return LoadAllData().FirstOrDefault(n => n.IdNotifikasi == id);
         }
 
-        public void AddNotifikasi(Notifikasi newNotifikasi)
+        public Notifikasi AddNotifikasi(Notifikasi newNotifikasi)
         {
-            if (string.IsNullOrEmpty(newNotifikasi.IdNotifikasi))
+            try
             {
-                newNotifikasi.IdNotifikasi = Guid.NewGuid().ToString();
+                if (string.IsNullOrEmpty(newNotifikasi.IdNotifikasi))
+                {
+                    newNotifikasi.IdNotifikasi = Guid.NewGuid().ToString();
+                }
+                newNotifikasi.TanggalNotifikasi = DateTime.Now;
+
+                var allNotifications = LoadAllData();
+                allNotifications.Add(newNotifikasi);
+
+                if (SaveAllData(allNotifications))
+                {
+                    return newNotifikasi;
+                }
+                return null;
             }
-            newNotifikasi.TanggalNotifikasi = DateTime.Now;
-            _notifikasiList.Add(newNotifikasi);
-            SaveData();
-        }
-
-        public void UpdateNotifikasi(Notifikasi updatedNotifikasi)
-        {
-            var existingNotifikasi = _notifikasiList.FirstOrDefault(n => n.IdNotifikasi == updatedNotifikasi.IdNotifikasi);
-            if (existingNotifikasi != null)
+            catch (Exception ex)
             {
-                existingNotifikasi.IdPengguna = updatedNotifikasi.IdPengguna;
-                existingNotifikasi.IsiNotifikasi = updatedNotifikasi.IsiNotifikasi;
-                existingNotifikasi.TanggalNotifikasi = updatedNotifikasi.TanggalNotifikasi;
-                SaveData();
-            }
-        }
-
-        public void DeleteNotifikasi(string id)
-        {
-            var notifikasiToRemove = _notifikasiList.FirstOrDefault(n => n.IdNotifikasi == id);
-            if (notifikasiToRemove != null)
-            {
-                _notifikasiList.Remove(notifikasiToRemove);
-                SaveData();
+                Console.WriteLine($"Error adding notification: {ex.Message}");
+                return null;
             }
         }
 
-        public void SendNotifikasi(string idPengguna, string message)
+        public Notifikasi UpdateNotifikasi(Notifikasi updatedNotifikasi)
         {
-            var newNotifikasi = new Notifikasi(
+            try
+            {
+                var allNotifications = LoadAllData();
+                var existing = allNotifications.FirstOrDefault(n => n.IdNotifikasi == updatedNotifikasi.IdNotifikasi);
+
+                if (existing != null)
+                {
+                    existing.IdPengguna = updatedNotifikasi.IdPengguna;
+                    existing.IsiNotifikasi = updatedNotifikasi.IsiNotifikasi;
+                    existing.TanggalNotifikasi = updatedNotifikasi.TanggalNotifikasi;
+
+                    if (SaveAllData(allNotifications))
+                    {
+                        return existing;
+                    }
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error updating notification: {ex.Message}");
+                return null;
+            }
+        }
+
+        public bool DeleteNotifikasi(string id)
+        {
+            try
+            {
+                var allNotifications = LoadAllData();
+                var toRemove = allNotifications.FirstOrDefault(n => n.IdNotifikasi == id);
+
+                if (toRemove != null)
+                {
+                    allNotifications.Remove(toRemove);
+                    return SaveAllData(allNotifications);
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error deleting notification: {ex.Message}");
+                return false;
+            }
+        }
+
+        public Notifikasi SendNotifikasi(string idPengguna, string message)
+        {
+            var newNotif = new Notifikasi(
                 idNotifikasi: Guid.NewGuid().ToString(),
                 idPengguna: idPengguna,
                 isiNotifikasi: message,
                 tanggalNotifikasi: DateTime.Now
             );
-            AddNotifikasi(newNotifikasi);
+            return AddNotifikasi(newNotif);
         }
+        #endregion
     }
 }
