@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ManajemenPerpus.Core.Helper;
+using ManajemenPerpus.Core.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +14,9 @@ namespace ManajemenPerpus.GUI
 {
     public partial class RegisterForm : Form
     {
+        List<Pengguna> penggunaList;
+        string filePath = @"D:\Dev\Konstruksi PL\TubesKPL\SharedData\DataJson\DataPengguna.json";
+
         public RegisterForm()
         {
             InitializeComponent();

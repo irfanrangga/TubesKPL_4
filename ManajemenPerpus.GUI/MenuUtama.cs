@@ -40,5 +40,12 @@ namespace ManajemenPerpus.GUI
             this.Hide();
 
         }
+
+        private void customButton3_Click_1(object sender, EventArgs e)
+        {
+            NotifikasiGui notifikasiGui = new NotifikasiGui("P001");
+            notifikasiGui.Show();
+            this.Hide();
+        }
     }
 }

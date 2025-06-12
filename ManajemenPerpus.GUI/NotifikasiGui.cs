@@ -91,7 +91,9 @@ namespace ManajemenPerpus.GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            MenuUtama menuUtama = new MenuUtama();
+            menuUtama.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)

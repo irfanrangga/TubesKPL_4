@@ -6,7 +6,7 @@
     "Penerbit": "Gramedia",
     "Kategori": "NONFIKSI",
     "Sinopsis": "Atomic Habits is a guide to building good habits and breaking bad ones. It provides practical strategies for forming habits that stick, based on the latest scientific research in psychology and neuroscience.",
-    "Status": "DIPINJAM",
+    "Status": "TERSEDIA",
     "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
   },
   {
@@ -15,7 +15,7 @@
     "Penulis": "Charles Duhigg",
     "Penerbit": "Gramedia",
     "Kategori": "NONFIKSI",
-    "Sinopsis": "-",
+    "Sinopsis": "buku yang dapat membangun habit anda menjadi lebih baik",
     "Status": "TERSEDIA",
     "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
   },
@@ -36,7 +36,7 @@
     "Penerbit": "Gramedia",
     "Kategori": "NONFIKSI",
     "Sinopsis": "Sapiens explores the history of humankind from the Stone Age to the modern age, examining how biology and history have defined us and how we have shaped the world.",
-    "Status": "DIPINJAM",
+    "Status": "TERSEDIA",
     "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
   },
   {
@@ -56,7 +56,17 @@
     "Penerbit": "Gramedia",
     "Kategori": "FIKSI",
     "Sinopsis": "Laskar Pelangi is a heartwarming story about a group of children in a small village in Indonesia who overcome adversity through education and friendship.",
-    "Status": "DIPINJAM",
+    "Status": "TERSEDIA",
+    "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
+  },
+  {
+    "IdBuku": "B007",
+    "Judul": "The Alchemist",
+    "Penulis": "Paulo Coelho",
+    "Penerbit": "Gramedia",
+    "Kategori": "FIKSI",
+    "Sinopsis": "The Alchemist is a fictional book blablabla...",
+    "Status": "TERSEDIA",
     "TanggalMasuk": "2025-06-09T06:23:35.8027141+07:00"
   }
 ]

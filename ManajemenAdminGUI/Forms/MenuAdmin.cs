@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using ManajemenPerpus.GUI;
 
 namespace ManajemenAdminGUI.Forms
 {
@@ -28,6 +29,16 @@ namespace ManajemenAdminGUI.Forms
         private void btnDaftar_Click(object sender, EventArgs e)
         {
             new FormDaftarBuku().ShowDialog();
+        }
+
+        private void btnLaporan_Click(object sender, EventArgs e)
+        {
+            new LaporanStatisticGui().ShowDialog();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
