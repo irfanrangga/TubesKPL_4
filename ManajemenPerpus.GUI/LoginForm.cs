@@ -9,16 +9,21 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ManajemenAdminGUI;
 using ManajemenAdminGUI.Forms;
+using ManajemenPerpus.CLI.Service;
+using ManajemenPerpus.Core.Models;
 
 namespace ManajemenPerpus.GUI
 {
     public partial class LoginForm : Form
     {
         MenuAdmin MenuAdmin;
+        private readonly PenggunaService _penggunaService;
         public LoginForm()
         {
             InitializeComponent();
             this.linkLabel1.LinkClicked += new LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+
+            _penggunaService = new PenggunaService();
 
         }
 
@@ -39,22 +44,35 @@ namespace ManajemenPerpus.GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string username = textBox1.Text;
+            string username = textBox1.Text?.Trim();
             string password = textBox2.Text;
 
-            if (!string.IsNullOrWhiteSpace(username) && username == "admin" && password == "admin1234")
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
-                MessageBox.Show("Selamat, anda telah berhasil login sebagai Admin!");
-                MenuAdmin menuAdmin = new MenuAdmin();
-                menuAdmin.Show();
-                this.Hide();
+                MessageBox.Show("Isi username dan password terlebih dahulu.");
+                return;
             }
-            else if(!string.IsNullOrWhiteSpace(username) && username == "user123" && password == "user1234")
+
+            var user = _penggunaService.GetAllPengguna()
+                .FirstOrDefault(p => string.Equals(p.Username, username, StringComparison.OrdinalIgnoreCase)
+                                     && p.Password == password);
+
+            if (user != null)
             {
-                MessageBox.Show("Selamat, anda telah berhasil login sebagai Anggota!");
-                MenuUtama menuUtama = new MenuUtama();
-                menuUtama.Show();
-                this.Hide();
+                if (user.Role == Pengguna.ROLEPENGGUNA.admin)
+                {
+                    MessageBox.Show("Selamat, anda telah berhasil login sebagai Admin!");
+                    MenuAdmin menuAdmin = new MenuAdmin();
+                    menuAdmin.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Selamat, anda telah berhasil login sebagai Anggota!");
+                    MenuUtama menuUtama = new MenuUtama();
+                    menuUtama.Show();
+                    this.Hide();
+                }
             }
             else
             {
